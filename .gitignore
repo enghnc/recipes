@@ -1,0 +1,11 @@
+# build artefacts — regenerate with `npm run build`
+dist/
+app/data.js
+data/data.json
+book/_assembled.html
+
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.DS_Store

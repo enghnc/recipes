@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fire &amp; Kettle</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <div class="brand" id="brand">Fire <span>&amp;</span> Kettle</div>
+    <div class="search">
+      <span class="ic">⌕</span>
+      <input id="q" type="search" placeholder="Search recipes, ingredients, techniques…" autocomplete="off">
+      <button class="clr" id="qclr" aria-label="Clear">×</button>
+    </div>
+    <div class="tabs" role="tablist">
+      <button data-view="menus" role="tab" aria-selected="true">Menus</button>
+      <button data-view="recipes" role="tab" aria-selected="false">Recipes</button>
+      <button data-view="library" role="tab" aria-selected="false">Library</button>
+      <button data-view="build" role="tab" aria-selected="false">Build</button>
+      <button data-view="list" role="tab" aria-selected="false">List</button>
+    </div>
+    <button class="iconbtn" id="themebtn" title="Toggle theme">◐</button>
+  </div>
+</header>
+
+<main>
+  <div class="layout">
+    <aside id="aside">
+      <div class="aside-head">
+        <strong>Filters</strong>
+        <button class="linkbtn" id="closefilters">Done</button>
+      </div>
+      <div id="facets"></div>
+    </aside>
+    <section id="content"></section>
+  </div>
+</main>
+
+<div id="toast"></div>
+<div class="fabbar">
+  <button class="btn ghost" id="openfilters">Filters <span id="fcount"></span></button>
+  <button class="btn" id="tolist">Shopping list</button>
+</div>
+
+<script src="./data.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

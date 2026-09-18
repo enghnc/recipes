@@ -1,0 +1,17 @@
+{
+  "name": "fire-and-kettle",
+  "version": "1.0.0",
+  "description": "A live-fire cookbook: 34 menus and 314 recipes for two Weber kettles, as a PDF and a web app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python3 scripts/build_app.py",
+    "build:fast": "python3 scripts/build_app.py --no-extract",
+    "build:pdf": "python3 scripts/build_pdf.py Fire-and-Kettle.pdf",
+    "extract": "cd data && python3 extract.py",
+    "test": "node tests/smoke.mjs",
+    "dev": "python3 -m http.server 8000 --directory app",
+    "check": "npm run build && npm test"
+  },
+  "engines": { "node": ">=18" }
+}
