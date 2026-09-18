@@ -137,6 +137,41 @@ function hl(text){
   const re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')', 'ig');
   return esc(text).replace(re, '<mark>$1</mark>');
 }
+
+/* a small, hand-verified set of technique/ingredient terms worth a further-reading link —
+   every URL here was checked to actually resolve, not guessed */
+const GLOSSARY = [
+  ['two-zone fire', 'https://en.wikipedia.org/wiki/Indirect_grilling'],
+  ['reverse sear', 'https://en.wikipedia.org/wiki/Searing'],
+  ['dry brine', 'https://en.wikipedia.org/wiki/Dry_brining'],
+  ['spatchcock', 'https://en.wikipedia.org/wiki/Butterflying'],
+  ['flanken', 'https://en.wikipedia.org/wiki/Short_ribs'],
+  ['fennel pollen', 'https://en.wikipedia.org/wiki/Fennel'],
+  ['schmaltz', 'https://en.wikipedia.org/wiki/Schmaltz'],
+  ['tallow', 'https://en.wikipedia.org/wiki/Tallow'],
+  ['robata', 'https://en.wikipedia.org/wiki/Robatayaki'],
+  ['yakitori', 'https://en.wikipedia.org/wiki/Yakitori'],
+  ['porchetta', 'https://en.wikipedia.org/wiki/Porchetta'],
+  ['asado', 'https://en.wikipedia.org/wiki/Asado'],
+];
+/* link the first mention of each glossary term in a string that has already been through
+   esc()/hl() — splits on existing tags so it never rewrites inside a <mark> or attribute */
+function glossify(safeHtml){
+  const used = new Set();
+  return safeHtml.split(/(<[^>]+>)/g).map(part => {
+    if (part.startsWith('<')) return part;
+    let out = part;
+    GLOSSARY.forEach(([term, url]) => {
+      if (used.has(term)) return;
+      const re = new RegExp('\\b(' + term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')\\b', 'i');
+      if (re.test(out)){
+        used.add(term);
+        out = out.replace(re, '<a class="gloss" href="' + url + '" target="_blank" rel="noopener" title="More about $1">$1</a>');
+      }
+    });
+    return out;
+  }).join('');
+}
 const HRS = h => h <= 6 ? 'Same day' : h <= 24 ? 'Night before'
   : h <= 72 ? Math.round(h/24) + ' days ahead' : Math.round(h/24) + ' days ahead';
 const MINS = t => t >= 60 ? (t % 60 ? Math.floor(t/60)+' hr '+(t%60)+' min' : t/60 + ' hr') : t + ' min';
@@ -312,9 +347,26 @@ function renderFacets(){
 }
 
 /* ---------- render: cards ---------- */
+/* CC-licensed photos are sourced with attribution attached. `credit:true` prints it
+   inline (required wherever the photo isn't inside another clickable element — an <a>
+   nested in a <button>, like a card, is invalid HTML and double-fires the card's own click) */
+function photoTag(img, title, cls, credit){
+  if (!img || !img.file) return '';
+  // the image sits in its own fixed-aspect-ratio, clipped frame; the credit line is a
+  // sibling *outside* that frame so a `overflow:hidden` box for cropping the photo can
+  // never also clip the attribution text (a real bug the first version of this had)
+  return '<div class="' + cls + '">' +
+    '<div class="ph-frame"><img src="./images/' + img.file + '" alt="' + esc(title || '') +
+      '" loading="lazy" onerror="this.closest(\'.' + cls + '\').remove()"></div>' +
+    (credit && img.credit ? '<a class="credit" href="' + esc(img.sourceUrl || img.creditUrl || '#') +
+      '" target="_blank" rel="noopener">Photo: ' + esc(img.credit) +
+      (img.license ? ' (' + esc(img.license) + ')' : '') + '</a>' : '') +
+    '</div>';
+}
 function menuCard(m){
   const on = favs.includes(m.id);
   return '<div class="cardwrap"><button class="card" data-menu="' + m.id + '">' +
+    photoTag(m.image, m.title, 'card-photo', false) +
     '<div class="kicker">' + esc(m.region) + '</div>' +
     '<h3>' + hl(m.title) + '</h3>' +
     '<p>' + hl(m.lead.replace(/ · /g, ' · ')) + '</p>' +
@@ -772,8 +824,8 @@ function splitIngredient(text){
 
 /* spices and dry goods nobody sells by the spoon */
 const PACKS = [
-  [/granulated (garlic|onion)|garlic powder|onion powder|paprika|cayenne|cumin|coriander seed|ground coriander|dried oregano|dried thyme|dried mint|allspice|cinnamon|nutmeg|turmeric|chilli powder|chili powder|five-spice|garam masala|ras el hanout|celery s(eed|alt)|caraway|fennel (seed|pollen)|mustard seed|peppercorn|black pepper|white pepper|shichimi|togarashi|sumac|kasoori|amchur|chaat masala|pul biber|aleppo pepper|red pepper flakes|chilli flakes|^pepper$|^salt and pepper$|saffron|cardamom|clove|star anise|bay lea|juniper|pickling spice|creole seasoning|curing salt|baking powder|baking soda|cornstarch|yeast/i,
-    'jar', 6],                                   // ~6 tbsp in a supermarket jar
+  [/granulated (garlic|onion)|garlic powder|onion powder|garlic salt|onion salt|seasoned salt|seasoning salt|chilli-lime salt|chili-lime salt|paprika|cayenne|cumin|coriander seed|ground coriander|dried oregano|dried thyme|dried mint|allspice|cinnamon|nutmeg|turmeric|chilli powder|chili powder|five-spice|garam masala|ras el hanout|celery s(eed|alt)|caraway|fennel (seed|pollen)|mustard seed|peppercorn|black pepper|white pepper|shichimi|togarashi|sumac|kasoori|amchur|chaat masala|pul biber|aleppo pepper|red pepper flakes|chilli flakes|^pepper$|^salt and pepper$|saffron|cardamom|clove|star anise|bay lea|juniper|pickling spice|creole seasoning|curing salt|baking powder|baking soda|cornstarch|yeast/i,
+    'jar', 6],                                   // ~6 tbsp in a supermarket jar; compound flavored salts belong here, not the plain-salt box below
   [/\bsalt\b/i, 'box', 96],
   [/sugar|flour|masa harina|cornmeal|semolina|matzo meal|mochiko|rice\b|lentil|bean|oats|polenta|grits/i, 'bag', 64],
   [/olive oil|neutral oil|vegetable oil|frying oil|sesame oil|ghee|lard|tallow|schmaltz/i, 'bottle', 32],
@@ -901,7 +953,7 @@ function recipeEntries(r, servings, depth){
 }
 function recipeCartItems(r, servings){ return aggregate(recipeEntries(r, servings, 0), servings); }
 
-function menuCartItems(m, servings){
+function menuRawEntries(m, servings){
   const entries = m.recipes.flatMap(r => recipeEntries(r, servings, 0));
   // fuel and any non-food line from the book's own list
   entries.push({qty: fuelAt(m, servings / 8), unit: 'chimney', name: 'charcoal', mult: 1,
@@ -910,8 +962,9 @@ function menuCartItems(m, servings){
                 mult: 1, cat: 'Fuel & wood', from: m.title}));
   parseShopping(m).filter(x => /special/i.test(x.cat)).forEach(x =>
     entries.push({qty: null, unit: '', name: x.item, mult: 1, cat: 'Special', from: m.title}));
-  return aggregate(entries, servings);
+  return entries;
 }
+function menuCartItems(m, servings){ return aggregate(menuRawEntries(m, servings), servings); }
 
 /* merge duplicates: one line per ingredient, quantities summed where they are comparable */
 function aggregate(entries, servings){
@@ -942,7 +995,7 @@ function aggregate(entries, servings){
     const emit = sub => {
       const line = shoppingLine({name: g.name, unit: sub.unit, qty: sub.qty,
                                  cat: g.cat, yieldMult: g.yieldMult}, servings);
-      out.push({cat: line.cat, item: line.text,
+      out.push({cat: line.cat, item: line.text, name: g.name,
                 from: [...g.froms].slice(0, 3).join(', ') + (g.froms.size > 3 ? ' +' + (g.froms.size - 3) : ''),
                 menuId: nameKey(g.name) + '|' + sub.unit});
     };
@@ -972,17 +1025,26 @@ function parseShopping(m){
   });
   return out;
 }
+/* where to actually buy a shopping-list item: Amazon, and a local-results search for everyone else */
+function buyLinks(name){
+  const clean = name.replace(/\s*\(.*?\)\s*/g, '').trim();
+  return {
+    amazon: 'https://www.amazon.com/s?k=' + encodeURIComponent(clean),
+    nearby: 'https://www.google.com/search?q=' + encodeURIComponent('buy ' + clean + ' near me'),
+  };
+}
 function viewList(){
   if (!cart.length){
     return '<div class="empty"><h3>Your shopping list is empty</h3>' +
       '<p>Add a whole menu from its page, or a single recipe from any recipe page. Mix as many as you like — ' +
       'items group by aisle and everything stays ticked between visits.</p></div>';
   }
-  const items = cart.flatMap(e => {
-    if (e.kind === 'menu'){ const m = MENUS.find(x => x.id === e.id); return m ? menuCartItems(m, state.scale) : []; }
+  const entries = cart.flatMap(e => {
+    if (e.kind === 'menu'){ const m = MENUS.find(x => x.id === e.id); return m ? menuRawEntries(m, state.scale) : []; }
     const r = ALLR.concat(LIBRARY).find(x => recipeKey(x) === e.id);
-    return r ? recipeCartItems(r, state.scale) : [];
+    return r ? recipeEntries(r, state.scale, 0) : [];
   });
+  const items = aggregate(entries, state.scale);
   const AISLE_ORDER = ['Meat & fish','Produce','Dairy & eggs','Bakery','Pantry','Drinks','Special','Fuel & wood'];
   const AISLE_EXTRA = ['Special'];
   const cats = [...new Set(items.map(i => i.cat))]
@@ -1003,10 +1065,15 @@ function viewList(){
     items.filter(i => i.cat === c).forEach(i => {
       const key = i.menuId + '|' + i.item;
       const done = !!checked[key];
-      h += '<label class="shopitem' + (done ? ' done' : '') + '">' +
-        '<input type="checkbox" data-check="' + esc(key) + '"' + (done ? ' checked' : '') + '>' +
+      const buy = buyLinks(i.name || i.item);
+      h += '<div class="shopitem' + (done ? ' done' : '') + '">' +
+        '<label><input type="checkbox" data-check="' + esc(key) + '"' + (done ? ' checked' : '') + '>' +
         '<span>' + esc(i.item) + (cart.length > 1 ? '<span class="from">' + esc(i.from) + '</span>' : '') +
-        '</span></label>';
+        '</span></label>' +
+        '<span class="buy">' +
+        '<a href="' + esc(buy.amazon) + '" target="_blank" rel="noopener">Amazon</a>' +
+        '<a href="' + esc(buy.nearby) + '" target="_blank" rel="noopener">Nearby stores</a>' +
+        '</span></div>';
     });
   });
   return h + '</div>';
@@ -1017,6 +1084,7 @@ function viewMenuDetail(m){
   const onList = inCart('m|' + m.id);
   const fav = favs.includes(m.id);
   let h = '<div class="detail"><button class="backbtn" data-act="back">← All menus</button>' +
+    photoTag(m.image, m.title, 'detail-photo', true) +
     '<div class="kicker">' + esc(m.part) + ' · ' + esc(m.region) + '</div>' +
     '<h1>' + esc(m.title) + '</h1><p class="lede">' + esc(m.lead) + '</p>' +
     '<div class="factgrid">' +
@@ -1073,12 +1141,13 @@ function sect(t, html){ return '<div class="sect"><h2>' + t + '</h2><div class="
 function viewRecipeDetail(r){
   const factor = state.scale / 8;
   let h = '<div class="detail"><button class="backbtn" data-act="back">← Back</button>' +
+    photoTag(r.image, r.title, 'detail-photo', true) +
     '<div class="kicker">' + esc(r.course === 'Library' ? r.chapter : r.course) +
       (r.menuTitle ? ' · ' + esc(r.menuTitle) : '') + '</div>' +
     '<h1>' + esc(r.title) + '</h1>' +
     (r.native ? '<p class="lede">' + esc(r.native) + '</p>' : '') +
     '<p class="count">' + esc(r.meta) + '</p>';
-  if (r.headnote) h += '<p class="lede" style="font-style:normal;margin-top:14px">' + esc(r.headnote) + '</p>';
+  if (r.headnote) h += '<p class="lede" style="font-style:normal;margin-top:14px">' + glossify(esc(r.headnote)) + '</p>';
 
   const rOn = inCart('r|' + recipeKey(r));
   h += '<div class="resetbar" style="margin-top:14px">' +
@@ -1120,7 +1189,7 @@ function viewRecipeDetail(r){
            'serving \u2014 the shopping list multiplies them up for you.</p>';
     }
   }
-  if (r.method.length) h += '<ol class="steps">' + r.method.map(s => '<li>' + hl(s) + '</li>').join('') + '</ol>';
+  if (r.method.length) h += '<ol class="steps">' + r.method.map(s => '<li>' + glossify(hl(s)) + '</li>').join('') + '</ol>';
   if (r.plating){
     const plbl = r.plating.style === 'keeping' ? 'Keeping' : 'To the table · ' + r.plating.style;
     h += '<div class="callout plate"><span class="lbl">' + esc(plbl) + '</span>' +

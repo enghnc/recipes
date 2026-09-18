@@ -1,6 +1,8 @@
 # build artefacts — regenerate with `npm run build`
 dist/
 app/data.js
+app/images/
+media/review.html
 data/data.json
 book/_assembled.html
 

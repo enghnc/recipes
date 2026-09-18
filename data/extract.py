@@ -18,6 +18,19 @@ try:
 except ImportError:
     IMPRESS_MENUS, IMPRESS_RECIPES = {}, {}
 
+MEDIA = pathlib.Path(__file__).resolve().parent.parent / "media"
+try:
+    _manifest = json.loads((MEDIA / "manifest.json").read_text(encoding="utf-8"))
+except FileNotFoundError:
+    _manifest = {"menus": {}, "recipes": {}}
+IMAGES_MENUS = _manifest.get("menus", {})
+IMAGES_RECIPES = _manifest.get("recipes", {})
+
+
+def image_for(key, table):
+    """Look up a photo credit/path by exact key; returns None if never sourced."""
+    return table.get(key)
+
 HERE = pathlib.Path(__file__).resolve().parent
 BOOK = HERE.parent / "book"
 MENU_FILES = ["03_part4_menus.html", "04_part5_menus.html",
@@ -370,6 +383,7 @@ def parse_menu_chapter(sec):
     out["cap"] = items
     out["impress"] = cid in IMPRESS_MENUS
     out["impressWhy"] = IMPRESS_MENUS.get(cid, "")
+    out["image"] = image_for(cid, IMAGES_MENUS)
     imp = IMPRESS_RECIPES.get(cid, [])
     plate = PLATING.get(cid, {})
     for r in out["recipes"]:
@@ -377,6 +391,7 @@ def parse_menu_chapter(sec):
         hit = next((v for k, v in plate.items() if k.lower() in r["title"].lower()), None)
         r["plating"] = hit or r.get("plating")
         r["impress"] = any(k.lower() in r["title"].lower() for k in imp)
+        r["image"] = image_for(cid + "|" + r["title"], IMAGES_RECIPES)
     return out
 
 
@@ -400,6 +415,7 @@ def parse_library():
             r["chapterId"] = cid
             r["course"] = "Library"
             r["plating"] = next((v for k, v in _PL.items() if k.lower() in r["title"].lower()), None) or r.get("plating")
+            r["image"] = image_for(cid + "|" + r["title"], IMAGES_RECIPES)
             lib.append(r)
     return lib
 
@@ -423,6 +439,7 @@ def parse_showpieces():
                 r["plating"] = {"style": style, "text": txt(pl)}
             else:
                 r["plating"] = None
+            r["image"] = image_for(r["chapterId"] + "|" + r["title"], IMAGES_RECIPES)
             out.append(r)
     return out
 

@@ -9,6 +9,8 @@
     "build:fast": "python3 scripts/build_app.py --no-extract",
     "build:pdf": "python3 scripts/build_pdf.py Fire-and-Kettle.pdf",
     "extract": "cd data && python3 extract.py",
+    "fetch-images": "python3 scripts/fetch_images.py",
+    "review-images": "python3 scripts/image_review.py",
     "test": "node tests/smoke.mjs",
     "dev": "python3 -m http.server 8000 --directory app",
     "check": "npm run build && npm test"

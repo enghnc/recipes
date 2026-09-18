@@ -1,0 +1,3138 @@
+{
+  "menus": {
+    "ch25": {
+      "credit": "Hamner_Fotos",
+      "creditUrl": "https://www.flickr.com/photos/36449894@N08",
+      "file": "menus/ch25.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Argentine Asado food",
+      "sourceUrl": "https://www.flickr.com/photos/36449894@N08/3839832905"
+    },
+    "ch26": {
+      "credit": "USAG-Humphreys",
+      "creditUrl": "https://www.flickr.com/photos/31687107@N07",
+      "file": "menus/ch26.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Beef United States barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/31687107@N07/10392536296"
+    },
+    "ch27": {
+      "credit": "JobyOne",
+      "creditUrl": "https://www.flickr.com/photos/20260568@N07",
+      "file": "menus/ch27.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Yakitori food",
+      "sourceUrl": "https://www.flickr.com/photos/20260568@N07/6971391338"
+    },
+    "ch28": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "menus/ch28.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Aegean Seafood food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/4085330386"
+    },
+    "ch29": {
+      "credit": "jarrodlombardo",
+      "creditUrl": "https://www.flickr.com/photos/62248962@N00",
+      "file": "menus/ch29.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Pork Mexico barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/62248962@N00/1344598950"
+    },
+    "ch30": {
+      "credit": "SdosRemedios",
+      "creditUrl": "https://www.flickr.com/photos/88827093@N00",
+      "file": "menus/ch30.jpg",
+      "license": "BY-ND 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "query": "roast lamb morocco",
+      "sourceUrl": "https://www.flickr.com/photos/88827093@N00/46220936461"
+    },
+    "ch31": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "menus/ch31.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "grilled radicchio fennel",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/3578602054"
+    },
+    "ch32": {
+      "credit": "morrissey",
+      "creditUrl": "https://www.flickr.com/photos/44124369279@N01",
+      "file": "menus/ch32.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Pollo a la Brasa food",
+      "sourceUrl": "https://www.flickr.com/photos/44124369279@N01/3210018583"
+    },
+    "ch33": {
+      "credit": "kavitakapoor",
+      "creditUrl": "https://www.flickr.com/photos/52872272@N00",
+      "file": "menus/ch33.jpg",
+      "license": "BY-ND 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "query": "Punjabi Tandoori food",
+      "sourceUrl": "https://www.flickr.com/photos/52872272@N00/8436916745"
+    },
+    "ch34": {
+      "credit": "HarshLight",
+      "creditUrl": "https://www.flickr.com/photos/79172203@N00",
+      "file": "menus/ch34.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Jamaican Jerk food",
+      "sourceUrl": "https://www.flickr.com/photos/79172203@N00/7928236250"
+    },
+    "ch35": {
+      "credit": "LenDog64",
+      "creditUrl": "https://www.flickr.com/photos/45968460@N03",
+      "file": "menus/ch35.jpg",
+      "license": "BY-ND 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "query": "Alsatian Christmas food",
+      "sourceUrl": "https://www.flickr.com/photos/45968460@N03/5250317397"
+    },
+    "ch36": {
+      "credit": "stuart_spivack",
+      "creditUrl": "https://www.flickr.com/photos/stuart_spivack",
+      "file": "menus/ch36.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Hanoi Bún Chả food",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=12763941"
+    },
+    "ch37": {
+      "credit": "Thoth, God of Knowledge",
+      "creditUrl": "https://www.flickr.com/photos/62025628@N00",
+      "file": "menus/ch37.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "clambake lobster",
+      "sourceUrl": "https://www.flickr.com/photos/62025628@N00/4163184371"
+    },
+    "ch38": {
+      "credit": "eekim",
+      "creditUrl": "https://www.flickr.com/photos/63669472@N00",
+      "file": "menus/ch38.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Santa Maria Style food",
+      "sourceUrl": "https://www.flickr.com/photos/63669472@N00/741112103"
+    },
+    "ch39": {
+      "credit": "David Berkowitz",
+      "creditUrl": "https://www.flickr.com/photos/25897810@N00",
+      "file": "menus/ch39.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "char grilled oysters",
+      "sourceUrl": "https://www.flickr.com/photos/25897810@N00/7161404584"
+    },
+    "ch40": {
+      "credit": "docentjoyce",
+      "creditUrl": "https://www.flickr.com/photos/99003655@N00",
+      "file": "menus/ch40.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Pacific Northwest food",
+      "sourceUrl": "https://www.flickr.com/photos/99003655@N00/14174671123"
+    },
+    "ch41": {
+      "credit": "MichaelSteeber",
+      "creditUrl": "https://www.flickr.com/photos/43698709@N08",
+      "file": "menus/ch41.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Wisconsin Tailgate food",
+      "sourceUrl": "https://www.flickr.com/photos/43698709@N08/24390304731"
+    },
+    "ch42": {
+      "credit": "Tyfferz",
+      "creditUrl": "https://www.flickr.com/photos/92506235@N00",
+      "file": "menus/ch42.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Island Style Luau food",
+      "sourceUrl": "https://www.flickr.com/photos/92506235@N00/8695419230"
+    },
+    "ch43": {
+      "credit": "williamcho",
+      "creditUrl": "https://www.flickr.com/photos/84493444@N00",
+      "file": "menus/ch43.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Lunar New Year Duck food",
+      "sourceUrl": "https://www.flickr.com/photos/84493444@N00/371190588"
+    },
+    "ch44": {
+      "credit": "Jonas B",
+      "creditUrl": "https://www.flickr.com/photos/14738242@N00",
+      "file": "menus/ch44.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Turkey barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/14738242@N00/4871708881"
+    },
+    "ch45": {
+      "credit": "Jesper Rautell Balle",
+      "creditUrl": "https://commons.wikimedia.org/wiki/User:Jrballe",
+      "file": "menus/ch45.jpg",
+      "license": "BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "query": "Mutton barbecue",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=3956465"
+    },
+    "ch46": {
+      "credit": "Edsel L",
+      "creditUrl": "https://www.flickr.com/photos/27119975@N00",
+      "file": "menus/ch46.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "venison loin roast",
+      "sourceUrl": "https://www.flickr.com/photos/27119975@N00/8390014283"
+    },
+    "ch47": {
+      "credit": "VRoig",
+      "creditUrl": "https://www.flickr.com/photos/43692834@N00",
+      "file": "menus/ch47.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Calçotada food",
+      "sourceUrl": "https://www.flickr.com/photos/43692834@N00/108334405"
+    },
+    "ch48": {
+      "credit": "Adam Jones, Ph.D. - Global Photo Archive",
+      "creditUrl": "https://www.flickr.com/photos/41000732@N04",
+      "file": "menus/ch48.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Pork Cuba barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/41000732@N04/3793852527"
+    },
+    "ch54": {
+      "credit": "promoterest",
+      "creditUrl": "https://www.flickr.com/photos/87537074@N03",
+      "file": "menus/ch54.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Beef France barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/87537074@N03/8014603378"
+    },
+    "ch55": {
+      "credit": "psd",
+      "creditUrl": "https://www.flickr.com/photos/45581782@N00",
+      "file": "menus/ch55.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Fish France barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/45581782@N00/2368782585"
+    },
+    "ch57": {
+      "credit": "reynolds.james.e",
+      "creditUrl": "https://www.flickr.com/photos/22324943@N00",
+      "file": "menus/ch57.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Carolina Pulled Pork food",
+      "sourceUrl": "https://www.flickr.com/photos/22324943@N00/2634689401"
+    },
+    "ch58": {
+      "credit": "goodiesfirst",
+      "creditUrl": "https://www.flickr.com/photos/49215102@N00",
+      "file": "menus/ch58.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Philadelphia Roast Pork food",
+      "sourceUrl": "https://www.flickr.com/photos/49215102@N00/3588153350"
+    },
+    "ch59": {
+      "credit": "goodiesfirst",
+      "creditUrl": "https://www.flickr.com/photos/49215102@N00",
+      "file": "menus/ch59.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Gua Bao food",
+      "sourceUrl": "https://www.flickr.com/photos/49215102@N00/6967408401"
+    },
+    "ch60": {
+      "credit": "Christopher Crouzet",
+      "creditUrl": "https://www.flickr.com/photos/25338288@N05",
+      "file": "menus/ch60.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Bánh Mì food",
+      "sourceUrl": "https://www.flickr.com/photos/25338288@N05/16116730745"
+    },
+    "ch61": {
+      "credit": "mehmet224",
+      "creditUrl": "https://www.flickr.com/photos/195540347@N07",
+      "file": "menus/ch61.jpg",
+      "license": "PDM 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "query": "Turkish Kahvaltı food",
+      "sourceUrl": "https://www.flickr.com/photos/195540347@N07/52046097802"
+    },
+    "ch62": {
+      "credit": "peasap",
+      "creditUrl": "https://www.flickr.com/photos/21314760@N00",
+      "file": "menus/ch62.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "New York Deli food",
+      "sourceUrl": "https://www.flickr.com/photos/21314760@N00/1913499041"
+    },
+    "ch63": {
+      "credit": "kurmanstaff",
+      "creditUrl": "https://www.flickr.com/photos/62558987@N07",
+      "file": "menus/ch63.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Southern Smoke Brunch food",
+      "sourceUrl": "https://www.flickr.com/photos/62558987@N07/16805063355"
+    },
+    "ch64": {
+      "credit": "saguayo",
+      "creditUrl": "https://www.flickr.com/photos/94187100@N00",
+      "file": "menus/ch64.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Almuerzo Mexicano food",
+      "sourceUrl": "https://www.flickr.com/photos/94187100@N00/5404781579"
+    }
+  },
+  "recipes": {
+    "ch19|Master Enriched Bun Dough": {
+      "credit": "PhysicalVenom",
+      "creditUrl": "https://www.flickr.com/photos/12446421@N08",
+      "file": "recipes/ch19/master-enriched-bun-dough.jpg",
+      "license": "BY-ND 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "query": "Master",
+      "sourceUrl": "https://www.flickr.com/photos/12446421@N08/1270440046"
+    },
+    "ch19|Variation I · New England Split-Top Rolls": {
+      "credit": "Enric Martinez",
+      "creditUrl": "https://www.flickr.com/photos/81594342@N00",
+      "file": "recipes/ch19/variation-i-new-england-split-top-rolls.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Variation I food",
+      "sourceUrl": "https://www.flickr.com/photos/81594342@N00/6297899157"
+    },
+    "ch19|Variation II · Brat Buns": {
+      "credit": "landrovermena",
+      "creditUrl": "https://www.flickr.com/photos/56682936@N03",
+      "file": "recipes/ch19/variation-ii-brat-buns.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Variation II food",
+      "sourceUrl": "https://www.flickr.com/photos/56682936@N03/18169575104"
+    },
+    "ch19|Variation III · Hawaiian Sweet Rolls": {
+      "credit": "bullittbourbon",
+      "creditUrl": "https://www.flickr.com/photos/43785033@N00",
+      "file": "recipes/ch19/variation-iii-hawaiian-sweet-rolls.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Variation III food",
+      "sourceUrl": "https://www.flickr.com/photos/43785033@N00/6514780407"
+    },
+    "ch20|Naan": {
+      "credit": "Dr. Raju Kasambe",
+      "creditUrl": "https://commons.wikimedia.org/wiki/User:Dr._Raju_Kasambe",
+      "file": "recipes/ch20/naan.jpg",
+      "license": "BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "query": "Naan food",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=90019404"
+    },
+    "ch20|Pita & Khobz": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch20/pita-khobz.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Pita food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/3464862583"
+    },
+    "ch20|Schiacciata": {
+      "credit": "fugzu",
+      "creditUrl": "https://www.flickr.com/photos/70253321@N00",
+      "file": "recipes/ch20/schiacciata.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Schiacciata food",
+      "sourceUrl": "https://www.flickr.com/photos/70253321@N00/2553617186"
+    },
+    "ch20|Tarte Flambée Base": {
+      "credit": "yashima",
+      "creditUrl": "https://www.flickr.com/photos/44032042@N00",
+      "file": "recipes/ch20/tarte-flamb-e-base.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Tarte",
+      "sourceUrl": "https://www.flickr.com/photos/44032042@N00/1458392811"
+    },
+    "ch21|All-Butter Pie Dough": {
+      "credit": "ginnerobot",
+      "creditUrl": "https://www.flickr.com/photos/78011127@N00",
+      "file": "recipes/ch21/all-butter-pie-dough.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "All-Butter Pie Dough food",
+      "sourceUrl": "https://www.flickr.com/photos/78011127@N00/3684979334"
+    },
+    "ch21|Buttermilk Biscuits": {
+      "credit": "GbergT",
+      "creditUrl": "https://www.flickr.com/photos/59216116@N00",
+      "file": "recipes/ch21/buttermilk-biscuits.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Buttermilk Biscuits food",
+      "sourceUrl": "https://www.flickr.com/photos/59216116@N00/400273814"
+    },
+    "ch21|Grunt & Cobbler Dumpling Batter": {
+      "credit": "Oxfam East Africa",
+      "creditUrl": "https://www.flickr.com/photos/46434833@N05",
+      "file": "recipes/ch21/grunt-cobbler-dumpling-batter.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Grunt food",
+      "sourceUrl": "https://www.flickr.com/photos/46434833@N05/12986797295"
+    },
+    "ch21|Pasta Frolla": {
+      "credit": "fugzu",
+      "creditUrl": "https://www.flickr.com/photos/70253321@N00",
+      "file": "recipes/ch21/pasta-frolla.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Pasta Frolla food",
+      "sourceUrl": "https://www.flickr.com/photos/70253321@N00/2413580992"
+    },
+    "ch22|Ají Amarillo Cream": {
+      "credit": "kevin dooley",
+      "creditUrl": "https://www.flickr.com/photos/12836528@N00",
+      "file": "recipes/ch22/aj-amarillo-cream.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Amarillo",
+      "sourceUrl": "https://www.flickr.com/photos/12836528@N00/15247346370"
+    },
+    "ch22|Ají Verde": {
+      "credit": "jikatu",
+      "creditUrl": "https://www.flickr.com/photos/7221539@N06",
+      "file": "recipes/ch22/aj-verde.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Ají Verde food",
+      "sourceUrl": "https://www.flickr.com/photos/7221539@N06/8854622865"
+    },
+    "ch22|Charmoula": {
+      "credit": "goodiesfirst",
+      "creditUrl": "https://www.flickr.com/photos/49215102@N00",
+      "file": "recipes/ch22/charmoula.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Charmoula food",
+      "sourceUrl": "https://www.flickr.com/photos/49215102@N00/13706822644"
+    },
+    "ch22|Chimichurri": {
+      "credit": "jeffreyw",
+      "creditUrl": "https://www.flickr.com/photos/7927684@N03",
+      "file": "recipes/ch22/chimichurri.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Chimichurri food",
+      "sourceUrl": "https://www.flickr.com/photos/7927684@N03/9680394407"
+    },
+    "ch22|Creole Rémoulade": {
+      "credit": "mkorcuska",
+      "creditUrl": "https://www.flickr.com/photos/53859752@N00",
+      "file": "recipes/ch22/creole-r-moulade.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Creole",
+      "sourceUrl": "https://www.flickr.com/photos/53859752@N00/3808620619"
+    },
+    "ch22|Harissa": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch22/harissa.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Harissa food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/3698006368"
+    },
+    "ch22|Jerk Paste": {
+      "credit": "staffan.scherz",
+      "creditUrl": "https://www.flickr.com/photos/31638323@N08",
+      "file": "recipes/ch22/jerk-paste.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Paste",
+      "sourceUrl": "https://www.flickr.com/photos/31638323@N08/9377241560"
+    },
+    "ch22|Nước Chấm": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch22/n-c-ch-m.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Nước Chấm food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/348229976"
+    },
+    "ch22|Salsa Criolla": {
+      "credit": "morrissey",
+      "creditUrl": "https://www.flickr.com/photos/44124369279@N01",
+      "file": "recipes/ch22/salsa-criolla.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Salsa Criolla food",
+      "sourceUrl": "https://www.flickr.com/photos/44124369279@N01/368070866"
+    },
+    "ch22|Salsa Roja Asada": {
+      "credit": "be creator",
+      "creditUrl": "https://www.flickr.com/photos/119678691@N02",
+      "file": "recipes/ch22/salsa-roja-asada.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Salsa",
+      "sourceUrl": "https://www.flickr.com/photos/119678691@N02/14728124229"
+    },
+    "ch22|Salsa Verde Asada": {
+      "credit": "be creator",
+      "creditUrl": "https://www.flickr.com/photos/119678691@N02",
+      "file": "recipes/ch22/salsa-verde-asada.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Salsa",
+      "sourceUrl": "https://www.flickr.com/photos/119678691@N02/14728124229"
+    },
+    "ch22|Santa Maria Salsa": {
+      "credit": "eekim",
+      "creditUrl": "https://www.flickr.com/photos/63669472@N00",
+      "file": "recipes/ch22/santa-maria-salsa.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Santa Maria Salsa food",
+      "sourceUrl": "https://www.flickr.com/photos/63669472@N00/741983056"
+    },
+    "ch22|Tzatziki": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch22/tzatziki.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Tzatziki food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/2077104173"
+    },
+    "ch22|Yakitori Tare": {
+      "credit": "Ari Helminen",
+      "creditUrl": "https://www.flickr.com/photos/36093266@N06",
+      "file": "recipes/ch22/yakitori-tare.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Yakitori Tare food",
+      "sourceUrl": "https://www.flickr.com/photos/36093266@N06/4629494990"
+    },
+    "ch23|Creole Seasoning": {
+      "credit": "Burger Baroness",
+      "creditUrl": "https://www.flickr.com/photos/66787975@N00",
+      "file": "recipes/ch23/creole-seasoning.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Creole Seasoning food",
+      "sourceUrl": "https://www.flickr.com/photos/66787975@N00/100975516"
+    },
+    "ch23|Dry Jerk Rub": {
+      "credit": "goodiesfirst",
+      "creditUrl": "https://www.flickr.com/photos/49215102@N00",
+      "file": "recipes/ch23/dry-jerk-rub.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "spice rub",
+      "sourceUrl": "https://www.flickr.com/photos/49215102@N00/20243748315"
+    },
+    "ch23|Ras el Hanout": {
+      "credit": "Richard Allaway",
+      "creditUrl": "https://www.flickr.com/photos/16287002@N00",
+      "file": "recipes/ch23/ras-el-hanout.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Ras el Hanout food",
+      "sourceUrl": "https://www.flickr.com/photos/16287002@N00/4490866682"
+    },
+    "ch23|Santa Maria Rub": {
+      "credit": "altotemi",
+      "creditUrl": "https://www.flickr.com/photos/66490057@N07",
+      "file": "recipes/ch23/santa-maria-rub.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Santa",
+      "sourceUrl": "https://www.flickr.com/photos/66490057@N07/12800490244"
+    },
+    "ch23|Sweet Pork Rib Rub": {
+      "credit": "Orchids love rainwater",
+      "creditUrl": "https://www.flickr.com/photos/37072378@N08",
+      "file": "recipes/ch23/sweet-pork-rib-rub.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Sweet",
+      "sourceUrl": "https://www.flickr.com/photos/37072378@N08/14807413873"
+    },
+    "ch23|Tandoori Masala": {
+      "credit": "TMAB2003",
+      "creditUrl": "https://www.flickr.com/photos/7617731@N02",
+      "file": "recipes/ch23/tandoori-masala.jpg",
+      "license": "BY-ND 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "query": "Tandoori Masala food",
+      "sourceUrl": "https://www.flickr.com/photos/7617731@N02/4320208514"
+    },
+    "ch23|Texas-Style Beef Rub": {
+      "credit": "Ken Lund",
+      "creditUrl": "https://www.flickr.com/photos/75683070@N00",
+      "file": "recipes/ch23/texas-style-beef-rub.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Texas",
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/66296057"
+    },
+    "ch24|Al Pastor Adobo": {
+      "credit": "jlastras",
+      "creditUrl": "https://www.flickr.com/photos/22662305@N04",
+      "file": "recipes/ch24/al-pastor-adobo.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Al Pastor Adobo food",
+      "sourceUrl": "https://www.flickr.com/photos/22662305@N04/4226082901"
+    },
+    "ch24|Anticucho Marinade": {
+      "credit": "Carly & Art",
+      "creditUrl": "https://www.flickr.com/photos/60509459@N00",
+      "file": "recipes/ch24/anticucho-marinade.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Anticucho Marinade food",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=8823127"
+    },
+    "ch24|Bún Chả Marinade": {
+      "credit": "AndyRobertsPhotos",
+      "creditUrl": "https://www.flickr.com/photos/21372046@N00",
+      "file": "recipes/ch24/b-n-ch-marinade.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Marinade",
+      "sourceUrl": "https://www.flickr.com/photos/21372046@N00/4039482636"
+    },
+    "ch24|Huli Huli Sauce": {
+      "credit": "Anthony Quintano",
+      "creditUrl": "https://www.flickr.com/photos/22882274@N04",
+      "file": "recipes/ch24/huli-huli-sauce.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Huli Huli Sauce food",
+      "sourceUrl": "https://www.flickr.com/photos/22882274@N04/4869400106"
+    },
+    "ch24|Pollo a la Brasa Marinade": {
+      "credit": "xurde",
+      "creditUrl": "https://www.flickr.com/photos/41894197861@N01",
+      "file": "recipes/ch24/pollo-a-la-brasa-marinade.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Pollo",
+      "sourceUrl": "https://www.flickr.com/photos/41894197861@N01/3362583281"
+    },
+    "ch24|Salmon Brine": {
+      "credit": "aslakr",
+      "creditUrl": "https://www.flickr.com/photos/38839434@N00",
+      "file": "recipes/ch24/salmon-brine.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Salmon Brine food",
+      "sourceUrl": "https://www.flickr.com/photos/38839434@N00/5985325"
+    },
+    "ch24|Souvlaki Marinade": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch24/souvlaki-marinade.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Souvlaki",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/3464862583"
+    },
+    "ch24|Tandoori Double Marinade": {
+      "credit": "stu_spivack",
+      "creditUrl": "https://www.flickr.com/photos/35034346243@N01",
+      "file": "recipes/ch24/tandoori-double-marinade.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Tandoori",
+      "sourceUrl": "https://www.flickr.com/photos/35034346243@N01/15038412832"
+    },
+    "ch25|Choripán": {
+      "credit": "rvcolmenares",
+      "creditUrl": "https://www.flickr.com/photos/68020561@N03",
+      "file": "recipes/ch25/chorip-n.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Choripán food",
+      "sourceUrl": "https://www.flickr.com/photos/68020561@N03/22241731882"
+    },
+    "ch25|Duraznos a la Parrilla": {
+      "credit": "dr_pablogonzalez",
+      "creditUrl": "https://www.flickr.com/photos/26160403@N02",
+      "file": "recipes/ch25/duraznos-a-la-parrilla.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Beef Argentina barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/26160403@N02/2637007836"
+    },
+    "ch25|Ensalada Mixta & Batatas a la Parrilla": {
+      "credit": "goodiesfirst",
+      "creditUrl": "https://www.flickr.com/photos/49215102@N00",
+      "file": "recipes/ch25/ensalada-mixta-batatas-a-la-parrilla.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Ensalada Mixta food",
+      "sourceUrl": "https://www.flickr.com/photos/49215102@N00/5700122240"
+    },
+    "ch25|Entraña": {
+      "credit": "jlastras",
+      "creditUrl": "https://www.flickr.com/photos/22662305@N04",
+      "file": "recipes/ch25/entra-a.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Entraña food",
+      "sourceUrl": "https://www.flickr.com/photos/22662305@N04/3477164090"
+    },
+    "ch25|Fernet con Coca & Limonada": {
+      "credit": "dr_pablogonzalez",
+      "creditUrl": "https://www.flickr.com/photos/26160403@N02",
+      "file": "recipes/ch25/fernet-con-coca-limonada.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Beef Argentina barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/26160403@N02/2637007836"
+    },
+    "ch25|Provoleta": {
+      "credit": "jlastras",
+      "creditUrl": "https://www.flickr.com/photos/22662305@N04",
+      "file": "recipes/ch25/provoleta.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Provoleta food",
+      "sourceUrl": "https://www.flickr.com/photos/22662305@N04/3476356479"
+    },
+    "ch25|Tira de Asado": {
+      "credit": "dr_pablogonzalez",
+      "creditUrl": "https://www.flickr.com/photos/26160403@N02",
+      "file": "recipes/ch25/tira-de-asado.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Tira de Asado food",
+      "sourceUrl": "https://www.flickr.com/photos/26160403@N02/2637007836"
+    },
+    "ch26|Dutch-Oven Peach Cobbler": {
+      "credit": "USAG-Humphreys",
+      "creditUrl": "https://www.flickr.com/photos/31687107@N07",
+      "file": "recipes/ch26/dutch-oven-peach-cobbler.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Beef United States barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/31687107@N07/10392536296"
+    },
+    "ch26|Pimento Cheese": {
+      "credit": "Muffet",
+      "creditUrl": "https://www.flickr.com/photos/53133240@N00",
+      "file": "recipes/ch26/pimento-cheese.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Pimento Cheese food",
+      "sourceUrl": "https://www.flickr.com/photos/53133240@N00/6997361433"
+    },
+    "ch26|Smoked Baked Beans · Buttermilk Slaw · Grilled Corn": {
+      "credit": "Tobyotter",
+      "creditUrl": "https://www.flickr.com/photos/78428166@N00",
+      "file": "recipes/ch26/smoked-baked-beans-buttermilk-slaw-grilled-corn.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Smoked Baked Beans food",
+      "sourceUrl": "https://www.flickr.com/photos/78428166@N00/4997581548"
+    },
+    "ch26|Snake-Method Brisket": {
+      "credit": "USAG-Humphreys",
+      "creditUrl": "https://www.flickr.com/photos/31687107@N07",
+      "file": "recipes/ch26/snake-method-brisket.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Beef United States barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/31687107@N07/10392536296"
+    },
+    "ch26|St. Louis Ribs, 3-2-1": {
+      "credit": "USAG-Humphreys",
+      "creditUrl": "https://www.flickr.com/photos/31687107@N07",
+      "file": "recipes/ch26/st-louis-ribs-3-2-1.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Beef United States barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/31687107@N07/10392536296"
+    },
+    "ch26|Sweet Tea & Bourbon-Peach Smash": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch26/sweet-tea-bourbon-peach-smash.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Sweet Tea food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/3060371673"
+    },
+    "ch26|Vortex Wings": {
+      "credit": "USAG-Humphreys",
+      "creditUrl": "https://www.flickr.com/photos/31687107@N07",
+      "file": "recipes/ch26/vortex-wings.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Beef United States barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/31687107@N07/10392536296"
+    },
+    "ch27|Edamame & Shishito": {
+      "credit": "ChristineLeiser",
+      "creditUrl": "https://www.flickr.com/photos/24149456@N06",
+      "file": "recipes/ch27/edamame-shishito.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Edamame food",
+      "sourceUrl": "https://www.flickr.com/photos/24149456@N06/6153879708"
+    },
+    "ch27|Grilled Pound Cake with Matcha Cream": {
+      "credit": "WordRidden",
+      "creditUrl": "https://www.flickr.com/photos/97844767@N00",
+      "file": "recipes/ch27/grilled-pound-cake-with-matcha-cream.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Chicken Japan barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/97844767@N00/3012485810"
+    },
+    "ch27|Highball & Cold Barley Tea": {
+      "credit": "StuartWebster",
+      "creditUrl": "https://www.flickr.com/photos/34883952@N02",
+      "file": "recipes/ch27/highball-cold-barley-tea.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Highball food",
+      "sourceUrl": "https://www.flickr.com/photos/34883952@N02/4291730742"
+    },
+    "ch27|Miso-Glazed Saba": {
+      "credit": "WordRidden",
+      "creditUrl": "https://www.flickr.com/photos/97844767@N00",
+      "file": "recipes/ch27/miso-glazed-saba.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Chicken Japan barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/97844767@N00/3012485810"
+    },
+    "ch27|Negima": {
+      "credit": "Haseo",
+      "creditUrl": "https://www.flickr.com/photos/19031653@N00",
+      "file": "recipes/ch27/negima.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Negima food",
+      "sourceUrl": "https://www.flickr.com/photos/19031653@N00/102968656"
+    },
+    "ch27|Tsukune": {
+      "credit": "toadstool ring",
+      "creditUrl": "https://www.flickr.com/photos/32496161@N07",
+      "file": "recipes/ch27/tsukune.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Tsukune food",
+      "sourceUrl": "https://www.flickr.com/photos/32496161@N07/3587056578"
+    },
+    "ch27|Vegetable Skewers · Sunomono · Rice": {
+      "credit": "PersonalCreations.com",
+      "creditUrl": "https://www.flickr.com/photos/127294011@N07",
+      "file": "recipes/ch27/vegetable-skewers-sunomono-rice.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Vegetable Skewers food",
+      "sourceUrl": "https://www.flickr.com/photos/127294011@N07/15075036832"
+    },
+    "ch28|Grilled Figs and Peaches with Honey and Yogurt": {
+      "credit": "Klearchos Kapoutsis",
+      "creditUrl": "https://www.flickr.com/photos/8383084@N06",
+      "file": "recipes/ch28/grilled-figs-and-peaches-with-honey-and-yogurt.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Fish Greece barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/8383084@N06/4824774818"
+    },
+    "ch28|Grilled Halloumi with Honey and Oregano": {
+      "credit": "Klearchos Kapoutsis",
+      "creditUrl": "https://www.flickr.com/photos/8383084@N06",
+      "file": "recipes/ch28/grilled-halloumi-with-honey-and-oregano.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Fish Greece barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/8383084@N06/4824774818"
+    },
+    "ch28|Grilled Octopus": {
+      "credit": "jeremiah.andrick",
+      "creditUrl": "https://www.flickr.com/photos/9368841@N07",
+      "file": "recipes/ch28/grilled-octopus.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Grilled Octopus food",
+      "sourceUrl": "https://www.flickr.com/photos/9368841@N07/17596101583"
+    },
+    "ch28|Horiatiki & Grilled Vegetables": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch28/horiatiki-grilled-vegetables.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Horiatiki food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/3483487268"
+    },
+    "ch28|Lamb Souvlaki": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch28/lamb-souvlaki.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Lamb Souvlaki food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/3464862583"
+    },
+    "ch28|Ouzo Service & Visinada": {
+      "credit": "Klearchos Kapoutsis",
+      "creditUrl": "https://www.flickr.com/photos/8383084@N06",
+      "file": "recipes/ch28/ouzo-service-visinada.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Fish Greece barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/8383084@N06/4824774818"
+    },
+    "ch28|Whole Grilled Branzino": {
+      "credit": "cookbookman17",
+      "creditUrl": "https://www.flickr.com/photos/58545726@N02",
+      "file": "recipes/ch28/whole-grilled-branzino.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Whole Grilled Branzino food",
+      "sourceUrl": "https://www.flickr.com/photos/58545726@N02/6800995752"
+    },
+    "ch29|Carne Asada": {
+      "credit": "permanently scatterbrained",
+      "creditUrl": "https://www.flickr.com/photos/88774309@N00",
+      "file": "recipes/ch29/carne-asada.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Carne Asada food",
+      "sourceUrl": "https://www.flickr.com/photos/88774309@N00/2603620260"
+    },
+    "ch29|Elote": {
+      "credit": "Vuarnet",
+      "creditUrl": "https://www.flickr.com/photos/92733789@N00",
+      "file": "recipes/ch29/elote.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Elote food",
+      "sourceUrl": "https://www.flickr.com/photos/92733789@N00/11301798725"
+    },
+    "ch29|Frijoles Charros": {
+      "credit": "jenarrr",
+      "creditUrl": "https://www.flickr.com/photos/66961498@N05",
+      "file": "recipes/ch29/frijoles-charros.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Frijoles Charros food",
+      "sourceUrl": "https://www.flickr.com/photos/66961498@N05/9488357533"
+    },
+    "ch29|Grilled Pineapple with Cajeta": {
+      "credit": "jarrodlombardo",
+      "creditUrl": "https://www.flickr.com/photos/62248962@N00",
+      "file": "recipes/ch29/grilled-pineapple-with-cajeta.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Pork Mexico barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/62248962@N00/1344598950"
+    },
+    "ch29|Margarita · Horchata · Agua de Jamaica": {
+      "credit": "chunkysalsa",
+      "creditUrl": "https://www.flickr.com/photos/45716136@N00",
+      "file": "recipes/ch29/margarita-horchata-agua-de-jamaica.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Margarita food",
+      "sourceUrl": "https://www.flickr.com/photos/45716136@N00/8486476990"
+    },
+    "ch29|Queso Fundido with Chorizo": {
+      "credit": "stu_spivack",
+      "creditUrl": "https://www.flickr.com/photos/35034346243@N01",
+      "file": "recipes/ch29/queso-fundido-with-chorizo.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Queso Fundido with Chorizo food",
+      "sourceUrl": "https://www.flickr.com/photos/35034346243@N01/123467481"
+    },
+    "ch29|Tacos al Pastor": {
+      "credit": "Ari Helminen",
+      "creditUrl": "https://www.flickr.com/photos/36093266@N06",
+      "file": "recipes/ch29/tacos-al-pastor.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Tacos al Pastor food",
+      "sourceUrl": "https://www.flickr.com/photos/36093266@N06/4401140214"
+    },
+    "ch30|Carrot-Cumin Salad & Charred Pepper Salad": {
+      "credit": "Vegan Feast Catering",
+      "creditUrl": "https://www.flickr.com/photos/25128194@N02",
+      "file": "recipes/ch30/carrot-cumin-salad-charred-pepper-salad.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Carrot-Cumin Salad food",
+      "sourceUrl": "https://www.flickr.com/photos/25128194@N02/5061157215"
+    },
+    "ch30|Grilled Merguez with Harissa": {
+      "credit": "Chongkian",
+      "creditUrl": "https://commons.wikimedia.org/wiki/User:Chongkian",
+      "file": "recipes/ch30/grilled-merguez-with-harissa.jpg",
+      "license": "BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "query": "Lamb barbecue",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=161607696"
+    },
+    "ch30|Mechoui Lamb Shoulder": {
+      "credit": "gruntzooki",
+      "creditUrl": "https://www.flickr.com/photos/37996580417@N01",
+      "file": "recipes/ch30/mechoui-lamb-shoulder.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Lamb barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/37996580417@N01/9730312034"
+    },
+    "ch30|Moroccan Mint Tea": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch30/moroccan-mint-tea.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Moroccan Mint Tea food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/1221485079"
+    },
+    "ch30|Ras el Hanout Chicken Skewers": {
+      "credit": "gruntzooki",
+      "creditUrl": "https://www.flickr.com/photos/37996580417@N01",
+      "file": "recipes/ch30/ras-el-hanout-chicken-skewers.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Lamb barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/37996580417@N01/9730312034"
+    },
+    "ch30|Semolina-Almond Cake with Grilled Oranges": {
+      "credit": "Chongkian",
+      "creditUrl": "https://commons.wikimedia.org/wiki/User:Chongkian",
+      "file": "recipes/ch30/semolina-almond-cake-with-grilled-oranges.jpg",
+      "license": "BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "query": "Lamb barbecue",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=161607696"
+    },
+    "ch30|Zaalouk": {
+      "credit": "Chongkian",
+      "creditUrl": "https://commons.wikimedia.org/wiki/User:Chongkian",
+      "file": "recipes/ch30/zaalouk.jpg",
+      "license": "BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "query": "Lamb barbecue",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=161607696"
+    },
+    "ch31|Crostata di Marmellata": {
+      "credit": "gre.ceres",
+      "creditUrl": "https://www.flickr.com/photos/56847197@N07",
+      "file": "recipes/ch31/crostata-di-marmellata.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Crostata di Marmellata food",
+      "sourceUrl": "https://www.flickr.com/photos/56847197@N07/13348608015"
+    },
+    "ch31|Fagioli all'Uccelletto": {
+      "credit": "Michela Simoncini",
+      "creditUrl": "https://www.flickr.com/photos/59422190@N00",
+      "file": "recipes/ch31/fagioli-all-uccelletto.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Fagioli all'Uccelletto food",
+      "sourceUrl": "https://www.flickr.com/photos/59422190@N00/5727813222"
+    },
+    "ch31|Fettunta": {
+      "credit": "The Marmot",
+      "creditUrl": "https://www.flickr.com/photos/38142119@N00",
+      "file": "recipes/ch31/fettunta.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Fettunta food",
+      "sourceUrl": "https://www.flickr.com/photos/38142119@N00/16207641405"
+    },
+    "ch31|Grilled Cavolo Nero": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch31/grilled-cavolo-nero.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Grilled Cavolo Nero food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/4925745967"
+    },
+    "ch31|Grilled Radicchio and Fennel": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch31/grilled-radicchio-and-fennel.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Grilled Radicchio and Fennel food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/3578602054"
+    },
+    "ch31|Rotisserie Porchetta": {
+      "credit": "Mr.TinDC",
+      "creditUrl": "https://www.flickr.com/photos/7471115@N08",
+      "file": "recipes/ch31/rotisserie-porchetta.jpg",
+      "license": "BY-ND 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "query": "Rotisserie Porchetta food",
+      "sourceUrl": "https://www.flickr.com/photos/7471115@N08/4726449446"
+    },
+    "ch31|Sage-Lemon Shrub & What to Pour": {
+      "credit": "McPig",
+      "creditUrl": "https://www.flickr.com/photos/80264890@N00",
+      "file": "recipes/ch31/sage-lemon-shrub-what-to-pour.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Pork Italy barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/80264890@N00/2095439638"
+    },
+    "ch32|Anticuchos": {
+      "credit": "ricardodiaz11",
+      "creditUrl": "https://www.flickr.com/photos/41652235@N00",
+      "file": "recipes/ch32/anticuchos.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Anticuchos food",
+      "sourceUrl": "https://www.flickr.com/photos/41652235@N00/3794388168"
+    },
+    "ch32|Choclo con Queso": {
+      "credit": "morrissey",
+      "creditUrl": "https://www.flickr.com/photos/44124369279@N01",
+      "file": "recipes/ch32/choclo-con-queso.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Chicken Peru barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/44124369279@N01/366491533"
+    },
+    "ch32|Papas a la Brasa & Ensalada Criolla": {
+      "credit": "morrissey",
+      "creditUrl": "https://www.flickr.com/photos/44124369279@N01",
+      "file": "recipes/ch32/papas-a-la-brasa-ensalada-criolla.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Chicken Peru barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/44124369279@N01/366491533"
+    },
+    "ch32|Picarones with Chancaca Syrup": {
+      "credit": "morrissey",
+      "creditUrl": "https://www.flickr.com/photos/44124369279@N01",
+      "file": "recipes/ch32/picarones-with-chancaca-syrup.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Chicken Peru barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/44124369279@N01/366491533"
+    },
+    "ch32|Pisco Sour & Chicha Morada": {
+      "credit": "David Berkowitz",
+      "creditUrl": "https://www.flickr.com/photos/25897810@N00",
+      "file": "recipes/ch32/pisco-sour-chicha-morada.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Pisco Sour & Chicha Morada food",
+      "sourceUrl": "https://www.flickr.com/photos/25897810@N00/7672777092"
+    },
+    "ch32|Pollo a la Brasa": {
+      "credit": "morrissey",
+      "creditUrl": "https://www.flickr.com/photos/44124369279@N01",
+      "file": "recipes/ch32/pollo-a-la-brasa.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Pollo a la Brasa food",
+      "sourceUrl": "https://www.flickr.com/photos/44124369279@N01/3210018583"
+    },
+    "ch33|Chicken Malai Tikka": {
+      "credit": "wallygrom",
+      "creditUrl": "https://www.flickr.com/photos/33037982@N04",
+      "file": "recipes/ch33/chicken-malai-tikka.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Chicken Malai Tikka food",
+      "sourceUrl": "https://www.flickr.com/photos/33037982@N04/4371066701"
+    },
+    "ch33|Dal Makhani": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch33/dal-makhani.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Dal Makhani food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/2109413461"
+    },
+    "ch33|Gajar ka Halwa": {
+      "credit": "Sandip Bhattacharya",
+      "creditUrl": "https://www.flickr.com/photos/65108667@N00",
+      "file": "recipes/ch33/gajar-ka-halwa.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Gajar ka Halwa food",
+      "sourceUrl": "https://www.flickr.com/photos/65108667@N00/9537397995"
+    },
+    "ch33|Jeera Rice & Kachumber": {
+      "credit": "rovingI",
+      "creditUrl": "https://www.flickr.com/photos/70522326@N00",
+      "file": "recipes/ch33/jeera-rice-kachumber.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Jeera Rice food",
+      "sourceUrl": "https://www.flickr.com/photos/70522326@N00/305698269"
+    },
+    "ch33|Lassi, Nimbu Pani & Masala Chai": {
+      "credit": "Find Your Feet",
+      "creditUrl": "https://www.flickr.com/photos/31042566@N06",
+      "file": "recipes/ch33/lassi-nimbu-pani-masala-chai.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Chicken India barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/31042566@N06/4818424926"
+    },
+    "ch33|Paneer Tikka & Papad": {
+      "credit": "SteFou!",
+      "creditUrl": "https://www.flickr.com/photos/41614647@N04",
+      "file": "recipes/ch33/paneer-tikka-papad.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Paneer Tikka food",
+      "sourceUrl": "https://www.flickr.com/photos/41614647@N04/6268131892"
+    },
+    "ch33|Tandoori Chicken": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch33/tandoori-chicken.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Tandoori Chicken food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/3087384627"
+    },
+    "ch34|Festival": {
+      "credit": "Abi Skipp",
+      "creditUrl": "https://www.flickr.com/photos/9557815@N05",
+      "file": "recipes/ch34/festival.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Festival food",
+      "sourceUrl": "https://www.flickr.com/photos/9557815@N05/3852936926"
+    },
+    "ch34|Jerk Chicken & Jerk Wings": {
+      "credit": "Dan4th",
+      "creditUrl": "https://www.flickr.com/photos/43264265@N00",
+      "file": "recipes/ch34/jerk-chicken-jerk-wings.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Jerk Chicken food",
+      "sourceUrl": "https://www.flickr.com/photos/43264265@N00/1571092155"
+    },
+    "ch34|Jerk Pork Shoulder": {
+      "credit": "Calgary Reviews",
+      "creditUrl": "https://www.flickr.com/photos/51930963@N02",
+      "file": "recipes/ch34/jerk-pork-shoulder.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Pork Jamaica barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/51930963@N02/5776794956"
+    },
+    "ch34|Mango Salsa & Steamed Cabbage": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch34/mango-salsa-steamed-cabbage.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Mango Salsa food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/297986190"
+    },
+    "ch34|Rice and Peas": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch34/rice-and-peas.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Rice and Peas food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/4139673555"
+    },
+    "ch34|Sorrel, Ginger Beer & Rum Punch": {
+      "credit": "Calgary Reviews",
+      "creditUrl": "https://www.flickr.com/photos/51930963@N02",
+      "file": "recipes/ch34/sorrel-ginger-beer-rum-punch.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Pork Jamaica barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/51930963@N02/5776794956"
+    },
+    "ch34|Sweet Potato Pudding & Rum Bananas": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch34/sweet-potato-pudding-rum-bananas.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Sweet Potato Pudding food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/2461267274"
+    },
+    "ch35|Bacon-Wrapped Prunes": {
+      "credit": "CpILL",
+      "creditUrl": "https://www.flickr.com/photos/63695861@N00",
+      "file": "recipes/ch35/bacon-wrapped-prunes.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Bacon-Wrapped Prunes food",
+      "sourceUrl": "https://www.flickr.com/photos/63695861@N00/2141526922"
+    },
+    "ch35|Choucroute": {
+      "credit": "hern42",
+      "creditUrl": "https://www.flickr.com/photos/19736899@N04",
+      "file": "recipes/ch35/choucroute.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Choucroute food",
+      "sourceUrl": "https://www.flickr.com/photos/19736899@N04/9895752866"
+    },
+    "ch35|Drip-Pan Root Vegetables & Crisped Spaetzle": {
+      "credit": "promoterest",
+      "creditUrl": "https://www.flickr.com/photos/87537074@N03",
+      "file": "recipes/ch35/drip-pan-root-vegetables-crisped-spaetzle.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Poultry France barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/87537074@N03/8014603378"
+    },
+    "ch35|Rotisserie Capon with Riesling Pan Sauce": {
+      "credit": "promoterest",
+      "creditUrl": "https://www.flickr.com/photos/87537074@N03",
+      "file": "recipes/ch35/rotisserie-capon-with-riesling-pan-sauce.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Poultry France barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/87537074@N03/8014603378"
+    },
+    "ch35|Spiced Apple Juice & What to Pour": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch35/spiced-apple-juice-what-to-pour.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Spiced Apple Juice food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/3063561798"
+    },
+    "ch35|Sweet Tarte Flambée & Baked Apples": {
+      "credit": "promoterest",
+      "creditUrl": "https://www.flickr.com/photos/87537074@N03",
+      "file": "recipes/ch35/sweet-tarte-flamb-e-baked-apples.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Poultry France barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/87537074@N03/8014603378"
+    },
+    "ch35|Tarte Flambée": {
+      "credit": "roland",
+      "creditUrl": "https://www.flickr.com/photos/35034347371@N01",
+      "file": "recipes/ch35/tarte-flamb-e.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "query": "Tarte Flambée food",
+      "sourceUrl": "https://www.flickr.com/photos/35034347371@N01/113901"
+    },
+    "ch36|Bún Chả": {
+      "credit": "stuart_spivack",
+      "creditUrl": "https://www.flickr.com/photos/stuart_spivack",
+      "file": "recipes/ch36/b-n-ch.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Bún Chả food",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=12763941"
+    },
+    "ch36|Chuối Nướng": {
+      "credit": "Tri Nguyen",
+      "creditUrl": "",
+      "file": "recipes/ch36/chu-i-n-ng.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Chuối Nướng food",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=132057154"
+    },
+    "ch36|Cà Phê Sữa Đá & Chanh Muối": {
+      "credit": "sfllaw",
+      "creditUrl": "https://www.flickr.com/photos/50642338@N00",
+      "file": "recipes/ch36/c-ph-s-a-chanh-mu-i.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Cà Phê Sữa Đá food",
+      "sourceUrl": "https://www.flickr.com/photos/50642338@N00/2662307247"
+    },
+    "ch36|Nem Nướng": {
+      "credit": "Đam Mê Ẩm Thực",
+      "creditUrl": "https://www.flickr.com/photos/148481438@N03",
+      "file": "recipes/ch36/nem-n-ng.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Nem Nướng food",
+      "sourceUrl": "https://www.flickr.com/photos/148481438@N03/39404627221"
+    },
+    "ch36|Scallion Oil, Grilled Corn and Eggplant": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch36/scallion-oil-grilled-corn-and-eggplant.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Pork Vietnam barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/4926481248"
+    },
+    "ch37|Blueberry Grunt": {
+      "credit": "usabin",
+      "creditUrl": "https://www.flickr.com/photos/55482518@N00",
+      "file": "recipes/ch37/blueberry-grunt.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Shellfish barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/55482518@N00/827408387"
+    },
+    "ch37|Cider-Vinegar Slaw & Drawn Butter": {
+      "credit": "Vegan Feast Catering",
+      "creditUrl": "https://www.flickr.com/photos/25128194@N02",
+      "file": "recipes/ch37/cider-vinegar-slaw-drawn-butter.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Cider-Vinegar Slaw food",
+      "sourceUrl": "https://www.flickr.com/photos/25128194@N02/3896654371"
+    },
+    "ch37|Grilled Littlenecks": {
+      "credit": "norio_nomura",
+      "creditUrl": "https://www.flickr.com/photos/35973682@N04",
+      "file": "recipes/ch37/grilled-littlenecks.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Grilled Littlenecks food",
+      "sourceUrl": "https://www.flickr.com/photos/35973682@N04/4995085409"
+    },
+    "ch37|Lobster Rolls, Both Ways": {
+      "credit": "usabin",
+      "creditUrl": "https://www.flickr.com/photos/55482518@N00",
+      "file": "recipes/ch37/lobster-rolls-both-ways.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Shellfish barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/55482518@N00/827408387"
+    },
+    "ch37|New England Clam Dip": {
+      "credit": "usabin",
+      "creditUrl": "https://www.flickr.com/photos/55482518@N00",
+      "file": "recipes/ch37/new-england-clam-dip.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Shellfish barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/55482518@N00/827408387"
+    },
+    "ch37|Switchel & Dark 'n' Stormy": {
+      "credit": "usabin",
+      "creditUrl": "https://www.flickr.com/photos/55482518@N00",
+      "file": "recipes/ch37/switchel-dark-n-stormy.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Shellfish barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/55482518@N00/827408387"
+    },
+    "ch37|The Bake": {
+      "credit": "Didriks",
+      "creditUrl": "https://www.flickr.com/photos/49889671@N03",
+      "file": "recipes/ch37/the-bake.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "The Bake food",
+      "sourceUrl": "https://www.flickr.com/photos/49889671@N03/8019717437"
+    },
+    "ch38|Garlic Bread & Grilled Vegetables": {
+      "credit": "Muffet",
+      "creditUrl": "https://www.flickr.com/photos/53133240@N00",
+      "file": "recipes/ch38/garlic-bread-grilled-vegetables.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Garlic Bread & Grilled Vegetables food",
+      "sourceUrl": "https://www.flickr.com/photos/53133240@N00/6997361433"
+    },
+    "ch38|Grilled Artichokes with Lemon Aioli": {
+      "credit": "USAG-Humphreys",
+      "creditUrl": "https://www.flickr.com/photos/31687107@N07",
+      "file": "recipes/ch38/grilled-artichokes-with-lemon-aioli.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Beef United States barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/31687107@N07/10392536296"
+    },
+    "ch38|Meyer Lemon and Mint Iced Tea": {
+      "credit": "USAG-Humphreys",
+      "creditUrl": "https://www.flickr.com/photos/31687107@N07",
+      "file": "recipes/ch38/meyer-lemon-and-mint-iced-tea.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Beef United States barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/31687107@N07/10392536296"
+    },
+    "ch38|Pinquito Beans": {
+      "credit": "eekim",
+      "creditUrl": "https://www.flickr.com/photos/63669472@N00",
+      "file": "recipes/ch38/pinquito-beans.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Pinquito Beans food",
+      "sourceUrl": "https://www.flickr.com/photos/63669472@N00/741983056"
+    },
+    "ch38|Santa Maria Tri-Tip": {
+      "credit": "eekim",
+      "creditUrl": "https://www.flickr.com/photos/63669472@N00",
+      "file": "recipes/ch38/santa-maria-tri-tip.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Santa Maria Tri-Tip food",
+      "sourceUrl": "https://www.flickr.com/photos/63669472@N00/741112103"
+    },
+    "ch38|Strawberry Shortcake on Grilled Biscuits": {
+      "credit": "USAG-Humphreys",
+      "creditUrl": "https://www.flickr.com/photos/31687107@N07",
+      "file": "recipes/ch38/strawberry-shortcake-on-grilled-biscuits.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Beef United States barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/31687107@N07/10392536296"
+    },
+    "ch39|BBQ Shrimp": {
+      "credit": "WxMom",
+      "creditUrl": "https://www.flickr.com/photos/39456527@N00",
+      "file": "recipes/ch39/bbq-shrimp.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "BBQ Shrimp food",
+      "sourceUrl": "https://www.flickr.com/photos/39456527@N00/2140776303"
+    },
+    "ch39|Bananas Foster": {
+      "credit": "kurmanstaff",
+      "creditUrl": "https://www.flickr.com/photos/62558987@N07",
+      "file": "recipes/ch39/bananas-foster.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Bananas Foster food",
+      "sourceUrl": "https://www.flickr.com/photos/62558987@N07/16805063355"
+    },
+    "ch39|Char-Grilled Oysters": {
+      "credit": "David Berkowitz",
+      "creditUrl": "https://www.flickr.com/photos/25897810@N00",
+      "file": "recipes/ch39/char-grilled-oysters.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Char-Grilled Oysters food",
+      "sourceUrl": "https://www.flickr.com/photos/25897810@N00/7161404584"
+    },
+    "ch39|Chicken and Andouille Jambalaya": {
+      "credit": "Burger Baroness",
+      "creditUrl": "https://www.flickr.com/photos/66787975@N00",
+      "file": "recipes/ch39/chicken-and-andouille-jambalaya.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Chicken and Andouille Jambalaya food",
+      "sourceUrl": "https://www.flickr.com/photos/66787975@N00/100975516"
+    },
+    "ch39|Maque Choux & Grilled Okra": {
+      "credit": "stu_spivack",
+      "creditUrl": "https://www.flickr.com/photos/35034346243@N01",
+      "file": "recipes/ch39/maque-choux-grilled-okra.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Maque Choux food",
+      "sourceUrl": "https://www.flickr.com/photos/35034346243@N01/309576474"
+    },
+    "ch39|Sazerac, Chicory Café au Lait & Virgin Hurricane": {
+      "credit": "usabin",
+      "creditUrl": "https://www.flickr.com/photos/55482518@N00",
+      "file": "recipes/ch39/sazerac-chicory-caf-au-lait-virgin-hurricane.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Shellfish barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/55482518@N00/827408387"
+    },
+    "ch40|Cedar-Plank Salmon": {
+      "credit": "Neeta Lind",
+      "creditUrl": "https://www.flickr.com/photos/71132408@N00",
+      "file": "recipes/ch40/cedar-plank-salmon.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Cedar-Plank Salmon food",
+      "sourceUrl": "https://www.flickr.com/photos/71132408@N00/916171651"
+    },
+    "ch40|Chanterelle and Hazelnut Toasts": {
+      "credit": "Minhas Kamal",
+      "creditUrl": "https://www.flickr.com/photos/153908724@N04",
+      "file": "recipes/ch40/chanterelle-and-hazelnut-toasts.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "query": "Fish barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/153908724@N04/40486545232"
+    },
+    "ch40|Delicata Squash & Apple-Fennel Slaw": {
+      "credit": "Stacy Spensley",
+      "creditUrl": "https://www.flickr.com/photos/21001756@N06",
+      "file": "recipes/ch40/delicata-squash-apple-fennel-slaw.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Delicata Squash food",
+      "sourceUrl": "https://www.flickr.com/photos/21001756@N06/8304591996"
+    },
+    "ch40|Grilled Dungeness Crab": {
+      "credit": "irrational_cat",
+      "creditUrl": "https://www.flickr.com/photos/80335855@N00",
+      "file": "recipes/ch40/grilled-dungeness-crab.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Grilled Dungeness Crab food",
+      "sourceUrl": "https://www.flickr.com/photos/80335855@N00/253804828"
+    },
+    "ch40|Marionberry Hand Pies": {
+      "credit": "Minhas Kamal",
+      "creditUrl": "https://www.flickr.com/photos/153908724@N04",
+      "file": "recipes/ch40/marionberry-hand-pies.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "query": "Fish barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/153908724@N04/40486545232"
+    },
+    "ch40|Marionberry Shrub & Spiced Cider": {
+      "credit": "Minhas Kamal",
+      "creditUrl": "https://www.flickr.com/photos/153908724@N04",
+      "file": "recipes/ch40/marionberry-shrub-spiced-cider.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "query": "Fish barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/153908724@N04/40486545232"
+    },
+    "ch41|Beer Brats": {
+      "credit": "Afroswede",
+      "creditUrl": "https://www.flickr.com/photos/51035768826@N01",
+      "file": "recipes/ch41/beer-brats.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Beer Brats food",
+      "sourceUrl": "https://www.flickr.com/photos/51035768826@N01/477678208"
+    },
+    "ch41|Brandy Old Fashioned Sweet": {
+      "credit": "smithsonian",
+      "creditUrl": "",
+      "file": "recipes/ch41/brandy-old-fashioned-sweet.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "query": "Pork United States barbecue",
+      "sourceUrl": "https://n2t.net/ark:/65665/ng49ca746b3-ee09-704b-e053-15f76fa0b4fa"
+    },
+    "ch41|Butter Burgers": {
+      "credit": "stu_spivack",
+      "creditUrl": "https://www.flickr.com/photos/35034346243@N01",
+      "file": "recipes/ch41/butter-burgers.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Butter Burgers food",
+      "sourceUrl": "https://www.flickr.com/photos/35034346243@N01/3289343520"
+    },
+    "ch41|Frozen Custard with Door County Cherry Sauce": {
+      "credit": "smithsonian",
+      "creditUrl": "",
+      "file": "recipes/ch41/frozen-custard-with-door-county-cherry-sauce.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "query": "Pork United States barbecue",
+      "sourceUrl": "https://n2t.net/ark:/65665/ng49ca746b3-ee09-704b-e053-15f76fa0b4fa"
+    },
+    "ch41|German Potato Salad": {
+      "credit": "jeffreyw",
+      "creditUrl": "https://www.flickr.com/photos/7927684@N03",
+      "file": "recipes/ch41/german-potato-salad.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "German Potato Salad food",
+      "sourceUrl": "https://www.flickr.com/photos/7927684@N03/7381913076"
+    },
+    "ch41|Grilled Cheese Curds": {
+      "credit": "smithsonian",
+      "creditUrl": "",
+      "file": "recipes/ch41/grilled-cheese-curds.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "query": "Pork United States barbecue",
+      "sourceUrl": "https://n2t.net/ark:/65665/ng49ca746b3-ee09-704b-e053-15f76fa0b4fa"
+    },
+    "ch42|Ahi Poke": {
+      "credit": "photoskate",
+      "creditUrl": "https://www.flickr.com/photos/44447572@N06",
+      "file": "recipes/ch42/ahi-poke.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Ahi Poke food",
+      "sourceUrl": "https://www.flickr.com/photos/44447572@N06/5442182933"
+    },
+    "ch42|Butter Mochi & Haupia": {
+      "credit": "stu_spivack",
+      "creditUrl": "https://www.flickr.com/photos/35034346243@N01",
+      "file": "recipes/ch42/butter-mochi-haupia.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Butter Mochi food",
+      "sourceUrl": "https://www.flickr.com/photos/35034346243@N01/645500912"
+    },
+    "ch42|Grilled Spam Musubi": {
+      "credit": "dtweney",
+      "creditUrl": "https://www.flickr.com/photos/31855341@N00",
+      "file": "recipes/ch42/grilled-spam-musubi.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Grilled Spam Musubi food",
+      "sourceUrl": "https://www.flickr.com/photos/31855341@N00/371370396"
+    },
+    "ch42|Huli Huli Chicken": {
+      "credit": "~MVI~ (warped)",
+      "creditUrl": "https://www.flickr.com/photos/20119750@N00",
+      "file": "recipes/ch42/huli-huli-chicken.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Huli Huli Chicken food",
+      "sourceUrl": "https://www.flickr.com/photos/20119750@N00/2153627558"
+    },
+    "ch42|Kalua Pork": {
+      "credit": "joyosity",
+      "creditUrl": "https://www.flickr.com/photos/33993074@N00",
+      "file": "recipes/ch42/kalua-pork.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Kalua Pork food",
+      "sourceUrl": "https://www.flickr.com/photos/33993074@N00/4285979459"
+    },
+    "ch42|Lomi Lomi Salmon & Mac Salad": {
+      "credit": "stu_spivack",
+      "creditUrl": "https://www.flickr.com/photos/35034346243@N01",
+      "file": "recipes/ch42/lomi-lomi-salmon-mac-salad.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Lomi Lomi Salmon food",
+      "sourceUrl": "https://www.flickr.com/photos/35034346243@N01/2540409154"
+    },
+    "ch42|Mai Tai & POG": {
+      "credit": "orxeira",
+      "creditUrl": "https://www.flickr.com/photos/25347364@N06",
+      "file": "recipes/ch42/mai-tai-pog.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Mai Tai food",
+      "sourceUrl": "https://www.flickr.com/photos/25347364@N06/2387286321"
+    },
+    "ch43|Charred Gai Lan & Smoky Eggplant": {
+      "credit": "cogdogblog",
+      "creditUrl": "https://www.flickr.com/photos/37996646802@N01",
+      "file": "recipes/ch43/charred-gai-lan-smoky-eggplant.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "query": "Duck China barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/37996646802@N01/2863443552"
+    },
+    "ch43|Egg Tarts": {
+      "credit": "Gedumkowtya HKSO",
+      "creditUrl": "https://commons.wikimedia.org/wiki/User:Gedumkowtya_HKSO",
+      "file": "recipes/ch43/egg-tarts.jpg",
+      "license": "BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "query": "Egg Tarts food",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=92379238"
+    },
+    "ch43|Jasmine Tea, Chrysanthemum & Salted Plum Soda": {
+      "credit": "cogdogblog",
+      "creditUrl": "https://www.flickr.com/photos/37996646802@N01",
+      "file": "recipes/ch43/jasmine-tea-chrysanthemum-salted-plum-soda.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "query": "Duck China barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/37996646802@N01/2863443552"
+    },
+    "ch43|Mandarin Pancakes": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch43/mandarin-pancakes.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Mandarin Pancakes food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/4981135241"
+    },
+    "ch43|Rotisserie Duck": {
+      "credit": "nyaa_birdies_perch",
+      "creditUrl": "https://www.flickr.com/photos/94862897@N00",
+      "file": "recipes/ch43/rotisserie-duck.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Rotisserie Duck food",
+      "sourceUrl": "https://www.flickr.com/photos/94862897@N00/1335661545"
+    },
+    "ch43|Scallion Pancakes": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch43/scallion-pancakes.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Scallion Pancakes food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/2299404081"
+    },
+    "ch43|Smashed Cucumber Salad": {
+      "credit": "Augapfel",
+      "creditUrl": "https://www.flickr.com/photos/47038415@N00",
+      "file": "recipes/ch43/smashed-cucumber-salad.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Smashed Cucumber Salad food",
+      "sourceUrl": "https://www.flickr.com/photos/47038415@N00/1558902346"
+    },
+    "ch44|Cast-Iron Baked Brie": {
+      "credit": "Jonas B",
+      "creditUrl": "https://www.flickr.com/photos/14738242@N00",
+      "file": "recipes/ch44/cast-iron-baked-brie.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Turkey barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/14738242@N00/4871708881"
+    },
+    "ch44|Charred Brussels Sprouts, Smoked Sweet Potatoes & Cranberry Relish": {
+      "credit": "Jonas B",
+      "creditUrl": "https://www.flickr.com/photos/14738242@N00",
+      "file": "recipes/ch44/charred-brussels-sprouts-smoked-sweet-potatoes-cranberry-rel.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Turkey barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/14738242@N00/4871708881"
+    },
+    "ch44|Cornbread and Sausage Dressing": {
+      "credit": "Jonas B",
+      "creditUrl": "https://www.flickr.com/photos/14738242@N00",
+      "file": "recipes/ch44/cornbread-and-sausage-dressing.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Turkey barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/14738242@N00/4871708881"
+    },
+    "ch44|Ember-Roasted Onion Dip": {
+      "credit": "Jonas B",
+      "creditUrl": "https://www.flickr.com/photos/14738242@N00",
+      "file": "recipes/ch44/ember-roasted-onion-dip.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Turkey barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/14738242@N00/4871708881"
+    },
+    "ch44|Hot Spiced Cranberry Punch": {
+      "credit": "Jonas B",
+      "creditUrl": "https://www.flickr.com/photos/14738242@N00",
+      "file": "recipes/ch44/hot-spiced-cranberry-punch.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Turkey barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/14738242@N00/4871708881"
+    },
+    "ch44|Maple-Bourbon Pecan Pie": {
+      "credit": "Jonas B",
+      "creditUrl": "https://www.flickr.com/photos/14738242@N00",
+      "file": "recipes/ch44/maple-bourbon-pecan-pie.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Turkey barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/14738242@N00/4871708881"
+    },
+    "ch44|Spatchcocked Turkey": {
+      "credit": "dane brian",
+      "creditUrl": "https://www.flickr.com/photos/12955651@N07",
+      "file": "recipes/ch44/spatchcocked-turkey.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Spatchcocked Turkey food",
+      "sourceUrl": "https://www.flickr.com/photos/12955651@N07/4216928271"
+    },
+    "ch45|Barbecued Mutton with Black Dip": {
+      "credit": "Jesper Rautell Balle",
+      "creditUrl": "https://commons.wikimedia.org/wiki/User:Jrballe",
+      "file": "recipes/ch45/barbecued-mutton-with-black-dip.jpg",
+      "license": "BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "query": "Mutton barbecue",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=3956465"
+    },
+    "ch45|Beer Cheese": {
+      "credit": "nixiepixel",
+      "creditUrl": "https://www.flickr.com/photos/33440118@N05",
+      "file": "recipes/ch45/beer-cheese.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Beer Cheese food",
+      "sourceUrl": "https://www.flickr.com/photos/33440118@N05/5000461274"
+    },
+    "ch45|Bourbon Chess Pie": {
+      "credit": "Jesper Rautell Balle",
+      "creditUrl": "https://commons.wikimedia.org/wiki/User:Jrballe",
+      "file": "recipes/ch45/bourbon-chess-pie.jpg",
+      "license": "BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "query": "Mutton barbecue",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=3956465"
+    },
+    "ch45|Burgoo": {
+      "credit": "Happy Tummy",
+      "creditUrl": "https://www.flickr.com/photos/29198474@N05",
+      "file": "recipes/ch45/burgoo.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Burgoo food",
+      "sourceUrl": "https://www.flickr.com/photos/29198474@N05/3031381746"
+    },
+    "ch45|Grilled Bologna": {
+      "credit": "stu_spivack",
+      "creditUrl": "https://www.flickr.com/photos/35034346243@N01",
+      "file": "recipes/ch45/grilled-bologna.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Grilled Bologna food",
+      "sourceUrl": "https://www.flickr.com/photos/35034346243@N01/1746866"
+    },
+    "ch45|Mint Julep & Peach Tea": {
+      "credit": "thebittenword.com",
+      "creditUrl": "https://www.flickr.com/photos/22198928@N00",
+      "file": "recipes/ch45/mint-julep-peach-tea.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Mint Julep food",
+      "sourceUrl": "https://www.flickr.com/photos/22198928@N00/1675540563"
+    },
+    "ch45|Skillet Cornbread, Vinegar Slaw & Cucumbers": {
+      "credit": "Jesper Rautell Balle",
+      "creditUrl": "https://commons.wikimedia.org/wiki/User:Jrballe",
+      "file": "recipes/ch45/skillet-cornbread-vinegar-slaw-cucumbers.jpg",
+      "license": "BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "query": "Mutton barbecue",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=3956465"
+    },
+    "ch46|Aquavit Service & Non-Alcoholic Glögg": {
+      "credit": "Bernt Rostad",
+      "creditUrl": "https://www.flickr.com/photos/67975030@N00",
+      "file": "recipes/ch46/aquavit-service-non-alcoholic-gl-gg.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Aquavit Service food",
+      "sourceUrl": "https://www.flickr.com/photos/67975030@N00/5528277449"
+    },
+    "ch46|Gravlax": {
+      "credit": "Kent Wang",
+      "creditUrl": "https://www.flickr.com/photos/27454212@N00",
+      "file": "recipes/ch46/gravlax.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Gravlax food",
+      "sourceUrl": "https://www.flickr.com/photos/27454212@N00/377032235"
+    },
+    "ch46|Hasselback Potatoes & Buttered Root Vegetables": {
+      "credit": "grongar",
+      "creditUrl": "https://www.flickr.com/photos/70757891@N00",
+      "file": "recipes/ch46/hasselback-potatoes-buttered-root-vegetables.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Hasselback Potatoes food",
+      "sourceUrl": "https://www.flickr.com/photos/70757891@N00/9650433858"
+    },
+    "ch46|Kladdkaka": {
+      "credit": "acrookston",
+      "creditUrl": "https://www.flickr.com/photos/39587668@N04",
+      "file": "recipes/ch46/kladdkaka.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Kladdkaka food",
+      "sourceUrl": "https://www.flickr.com/photos/39587668@N04/4993136766"
+    },
+    "ch46|Pickled Red Cabbage": {
+      "credit": "gamene",
+      "creditUrl": "https://www.flickr.com/photos/12670507@N02",
+      "file": "recipes/ch46/pickled-red-cabbage.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Pickled Red Cabbage food",
+      "sourceUrl": "https://www.flickr.com/photos/12670507@N02/4015192611"
+    },
+    "ch46|Rye Crispbread": {
+      "credit": "LindaH",
+      "creditUrl": "https://www.flickr.com/photos/25747180@N00",
+      "file": "recipes/ch46/rye-crispbread.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Rye Crispbread food",
+      "sourceUrl": "https://www.flickr.com/photos/25747180@N00/15735759023"
+    },
+    "ch46|Venison Loin with Lingonberry-Juniper Sauce": {
+      "credit": "Joe Shlabotnik",
+      "creditUrl": "https://www.flickr.com/photos/40646519@N00",
+      "file": "recipes/ch46/venison-loin-with-lingonberry-juniper-sauce.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Venison barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/40646519@N00/561707660"
+    },
+    "ch47|Calçots": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch47/cal-ots.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Calçots food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/5122586029"
+    },
+    "ch47|Conill a la Brasa": {
+      "credit": "rikkis_refuge",
+      "creditUrl": "https://www.flickr.com/photos/60109376@N00",
+      "file": "recipes/ch47/conill-a-la-brasa.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Rabbit barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/60109376@N00/470509582"
+    },
+    "ch47|Crema Catalana": {
+      "credit": "CytecK",
+      "creditUrl": "https://www.flickr.com/photos/19516011@N00",
+      "file": "recipes/ch47/crema-catalana.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Crema Catalana food",
+      "sourceUrl": "https://www.flickr.com/photos/19516011@N00/3032860010"
+    },
+    "ch47|Escalivada & Mongetes": {
+      "credit": "Ignotus the Mage",
+      "creditUrl": "https://www.flickr.com/photos/83705438@N00",
+      "file": "recipes/ch47/escalivada-mongetes.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Escalivada food",
+      "sourceUrl": "https://www.flickr.com/photos/83705438@N00/4025596001"
+    },
+    "ch47|Grilled Quail & Botifarra": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch47/grilled-quail-botifarra.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Grilled Quail food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/2462987456"
+    },
+    "ch47|Romesco": {
+      "credit": "Daniel García Peris",
+      "creditUrl": "https://www.flickr.com/photos/17876426@N05",
+      "file": "recipes/ch47/romesco.jpg",
+      "license": "BY-ND 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "query": "Romesco food",
+      "sourceUrl": "https://www.flickr.com/photos/17876426@N05/15772290310"
+    },
+    "ch47|Vermut, Cava & Orxata": {
+      "credit": "rikkis_refuge",
+      "creditUrl": "https://www.flickr.com/photos/60109376@N00",
+      "file": "recipes/ch47/vermut-cava-orxata.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Rabbit barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/60109376@N00/470509582"
+    },
+    "ch48|Congrí & Plátanos Maduros": {
+      "credit": "Adam Jones, Ph.D. - Global Photo Archive",
+      "creditUrl": "https://www.flickr.com/photos/41000732@N04",
+      "file": "recipes/ch48/congr-pl-tanos-maduros.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Pork Cuba barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/41000732@N04/3793852527"
+    },
+    "ch48|Daiquiri, Cuba Libre & Cafecito": {
+      "credit": "Adam Jones, Ph.D. - Global Photo Archive",
+      "creditUrl": "https://www.flickr.com/photos/41000732@N04",
+      "file": "recipes/ch48/daiquiri-cuba-libre-cafecito.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Pork Cuba barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/41000732@N04/3793852527"
+    },
+    "ch48|Flan de Coco & Guava Pastelitos": {
+      "credit": "juzsan",
+      "creditUrl": "https://www.flickr.com/photos/44526250@N00",
+      "file": "recipes/ch48/flan-de-coco-guava-pastelitos.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Flan de Coco food",
+      "sourceUrl": "https://www.flickr.com/photos/44526250@N00/89708274"
+    },
+    "ch48|Lechón Asado": {
+      "credit": "Adam Jones, Ph.D. - Global Photo Archive",
+      "creditUrl": "https://www.flickr.com/photos/41000732@N04",
+      "file": "recipes/ch48/lech-n-asado.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Pork Cuba barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/41000732@N04/3793852527"
+    },
+    "ch48|Mojo Criollo": {
+      "credit": "Chuck.falzone",
+      "creditUrl": "https://www.flickr.com/photos/15450567@N04",
+      "file": "recipes/ch48/mojo-criollo.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Mojo Criollo food",
+      "sourceUrl": "https://www.flickr.com/photos/15450567@N04/3939108829"
+    },
+    "ch48|Tostones & Yuca con Mojo": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch48/tostones-yuca-con-mojo.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Tostones food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/5040742988"
+    },
+    "ch50|Asado al Palo": {
+      "credit": "Ruanon",
+      "creditUrl": "https://www.flickr.com/photos/70873497@N02",
+      "file": "recipes/ch50/asado-al-palo.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Asado",
+      "sourceUrl": "https://www.flickr.com/photos/70873497@N02/8133093406"
+    },
+    "ch50|Caveman Ribeye": {
+      "credit": "Lord Jim",
+      "creditUrl": "https://www.flickr.com/photos/25028863@N00",
+      "file": "recipes/ch50/caveman-ribeye.jpg",
+      "license": "BY-ND 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "query": "Caveman",
+      "sourceUrl": "https://www.flickr.com/photos/25028863@N00/2245362817"
+    },
+    "ch50|Côte de Boeuf for the Table": {
+      "credit": "Chun's Pictures",
+      "creditUrl": "https://www.flickr.com/photos/23203692@N03",
+      "file": "recipes/ch50/c-te-de-boeuf-for-the-table.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Côte de Boeuf for the Table food",
+      "sourceUrl": "https://www.flickr.com/photos/23203692@N03/12003757485"
+    },
+    "ch50|Dry-Aged Ribeye at Home": {
+      "credit": "BrownGuacamole",
+      "creditUrl": "https://www.flickr.com/photos/20688578@N00",
+      "file": "recipes/ch50/dry-aged-ribeye-at-home.jpg",
+      "license": "BY-ND 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "query": "Dry-Aged Ribeye at Home food",
+      "sourceUrl": "https://www.flickr.com/photos/20688578@N00/3454136642"
+    },
+    "ch50|Fire-Roasted Bone Marrow": {
+      "credit": "dolbinator1000",
+      "creditUrl": "https://www.flickr.com/photos/126654539@N08",
+      "file": "recipes/ch50/fire-roasted-bone-marrow.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Roasted",
+      "sourceUrl": "https://www.flickr.com/photos/126654539@N08/15597001863"
+    },
+    "ch50|Paella over Live Fire": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch50/paella-over-live-fire.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Paella",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/1158217645"
+    },
+    "ch50|Reverse-Seared Tomahawk": {
+      "credit": "aag_photos",
+      "creditUrl": "https://www.flickr.com/photos/120360673@N04",
+      "file": "recipes/ch50/reverse-seared-tomahawk.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Reverse",
+      "sourceUrl": "https://www.flickr.com/photos/120360673@N04/13856233384"
+    },
+    "ch50|Salt-Dome Whole Fish": {
+      "credit": "JeepersMedia",
+      "creditUrl": "https://www.flickr.com/photos/39160147@N03",
+      "file": "recipes/ch50/salt-dome-whole-fish.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Whole",
+      "sourceUrl": "https://www.flickr.com/photos/39160147@N03/14116699911"
+    },
+    "ch50|Whole Turbot on the Bone": {
+      "credit": "JeepersMedia",
+      "creditUrl": "https://www.flickr.com/photos/39160147@N03",
+      "file": "recipes/ch50/whole-turbot-on-the-bone.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Whole",
+      "sourceUrl": "https://www.flickr.com/photos/39160147@N03/14116699911"
+    },
+    "ch51|Demi-Glace": {
+      "credit": "meshmar2",
+      "creditUrl": "https://www.flickr.com/photos/21837558@N00",
+      "file": "recipes/ch51/demi-glace.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Demi-Glace food",
+      "sourceUrl": "https://www.flickr.com/photos/21837558@N00/363014352"
+    },
+    "ch51|Espagnole": {
+      "credit": "miguel.discart",
+      "creditUrl": "https://www.flickr.com/photos/69506664@N06",
+      "file": "recipes/ch51/espagnole.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Espagnole food",
+      "sourceUrl": "https://www.flickr.com/photos/69506664@N06/49551508468"
+    },
+    "ch51|Fire-Roasted Brown Stock": {
+      "credit": "dolbinator1000",
+      "creditUrl": "https://www.flickr.com/photos/126654539@N08",
+      "file": "recipes/ch51/fire-roasted-brown-stock.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Roasted",
+      "sourceUrl": "https://www.flickr.com/photos/126654539@N08/15597001863"
+    },
+    "ch51|Glace de Viande": {
+      "credit": "fred_v",
+      "creditUrl": "https://www.flickr.com/photos/8514720@N04",
+      "file": "recipes/ch51/glace-de-viande.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Glace de Viande food",
+      "sourceUrl": "https://www.flickr.com/photos/8514720@N04/8414652446"
+    },
+    "ch51|Red Wine Jus": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch51/red-wine-jus.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Red Wine Jus food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/3748588329"
+    },
+    "ch51|Sauce Bordelaise": {
+      "credit": "Peter O'Connor aka anemoneprojectors",
+      "creditUrl": "https://www.flickr.com/photos/58414938@N00",
+      "file": "recipes/ch51/sauce-bordelaise.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Sauce Bordelaise food",
+      "sourceUrl": "https://www.flickr.com/photos/58414938@N00/11493952403"
+    },
+    "ch51|Sauce Chasseur": {
+      "credit": "Rusty Clark ~ 100K Photos",
+      "creditUrl": "https://www.flickr.com/photos/23206546@N04",
+      "file": "recipes/ch51/sauce-chasseur.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Sauce Chasseur food",
+      "sourceUrl": "https://www.flickr.com/photos/23206546@N04/7624943598"
+    },
+    "ch51|Sauce Diable": {
+      "credit": "goodiesfirst",
+      "creditUrl": "https://www.flickr.com/photos/49215102@N00",
+      "file": "recipes/ch51/sauce-diable.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Sauce Diable food",
+      "sourceUrl": "https://www.flickr.com/photos/49215102@N00/14840378212"
+    },
+    "ch51|Sauce Périgueux": {
+      "credit": "scubadive67",
+      "creditUrl": "https://www.flickr.com/photos/71217725@N00",
+      "file": "recipes/ch51/sauce-p-rigueux.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Sauce",
+      "sourceUrl": "https://www.flickr.com/photos/71217725@N00/107907246"
+    },
+    "ch51|Sauce Robert & Sauce Charcutière": {
+      "credit": "Valerie Everett",
+      "creditUrl": "https://www.flickr.com/photos/66742614@N00",
+      "file": "recipes/ch51/sauce-robert-sauce-charcuti-re.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Sauce Robert food",
+      "sourceUrl": "https://www.flickr.com/photos/66742614@N00/2682738872"
+    },
+    "ch51|Sauce au Poivre": {
+      "credit": "meshmar2",
+      "creditUrl": "https://www.flickr.com/photos/21837558@N00",
+      "file": "recipes/ch51/sauce-au-poivre.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Sauce au Poivre food",
+      "sourceUrl": "https://www.flickr.com/photos/21837558@N00/363014319"
+    },
+    "ch52|Anchovy, Roquefort and Bone Marrow Butters": {
+      "credit": "fifikins",
+      "creditUrl": "https://www.flickr.com/photos/25925793@N00",
+      "file": "recipes/ch52/anchovy-roquefort-and-bone-marrow-butters.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Anchovy",
+      "sourceUrl": "https://www.flickr.com/photos/25925793@N00/4681772866"
+    },
+    "ch52|Beurre Blanc": {
+      "credit": "ralph and jenny",
+      "creditUrl": "https://www.flickr.com/photos/92269745@N00",
+      "file": "recipes/ch52/beurre-blanc.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Beurre Blanc food",
+      "sourceUrl": "https://www.flickr.com/photos/92269745@N00/7623700860"
+    },
+    "ch52|Béarnaise": {
+      "credit": "thebittenword.com",
+      "creditUrl": "https://www.flickr.com/photos/22198928@N00",
+      "file": "recipes/ch52/b-arnaise.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Béarnaise food",
+      "sourceUrl": "https://www.flickr.com/photos/22198928@N00/2326711272"
+    },
+    "ch52|Café de Paris Butter": {
+      "credit": "solarisgirl",
+      "creditUrl": "https://www.flickr.com/photos/7252160@N04",
+      "file": "recipes/ch52/caf-de-paris-butter.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Paris",
+      "sourceUrl": "https://www.flickr.com/photos/7252160@N04/9112460203"
+    },
+    "ch52|Hollandaise": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch52/hollandaise.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Hollandaise food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/4140435178"
+    },
+    "ch52|Marchand de Vin Butter": {
+      "credit": "pilllpat (agence eureka)",
+      "creditUrl": "https://www.flickr.com/photos/30533017@N00",
+      "file": "recipes/ch52/marchand-de-vin-butter.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Marchand",
+      "sourceUrl": "https://www.flickr.com/photos/30533017@N00/2605998052"
+    },
+    "ch52|Maître d'Hôtel Butter": {
+      "credit": "grongar",
+      "creditUrl": "https://www.flickr.com/photos/70757891@N00",
+      "file": "recipes/ch52/ma-tre-d-h-tel-butter.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Butter",
+      "sourceUrl": "https://www.flickr.com/photos/70757891@N00/4280002347"
+    },
+    "ch53|Filet Mignon with Périgueux": {
+      "credit": "BiblioArchives / LibraryArchives",
+      "creditUrl": "https://www.flickr.com/photos/28853433@N02",
+      "file": "recipes/ch53/filet-mignon-with-p-rigueux.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Filet",
+      "sourceUrl": "https://www.flickr.com/photos/28853433@N02/7509286922"
+    },
+    "ch53|Hanger and Bavette": {
+      "credit": "kimberlyannryan",
+      "creditUrl": "https://www.flickr.com/photos/25034998@N05",
+      "file": "recipes/ch53/hanger-and-bavette.jpg",
+      "license": "BY-ND 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "query": "Hanger",
+      "sourceUrl": "https://www.flickr.com/photos/25034998@N05/3328883736"
+    },
+    "ch53|Hot and Fast": {
+      "credit": "rawpixel",
+      "creditUrl": "",
+      "file": "recipes/ch53/hot-and-fast.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "query": "Hot and Fast food",
+      "sourceUrl": "https://www.rawpixel.com/image/6018833/hot-dog-fast-food-free-public-domain-cc0-image"
+    },
+    "ch53|Picanha on the Rotisserie": {
+      "credit": "L.A. Foodie",
+      "creditUrl": "https://www.flickr.com/photos/67839741@N06",
+      "file": "recipes/ch53/picanha-on-the-rotisserie.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Picanha",
+      "sourceUrl": "https://www.flickr.com/photos/67839741@N06/12786405153"
+    },
+    "ch53|Porterhouse for Two": {
+      "credit": "infomatique",
+      "creditUrl": "https://www.flickr.com/photos/80824546@N00",
+      "file": "recipes/ch53/porterhouse-for-two.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Porterhouse for Two food",
+      "sourceUrl": "https://www.flickr.com/photos/80824546@N00/46937325214"
+    },
+    "ch53|The Reverse Sear": {
+      "credit": "Key West Wedding Photography",
+      "creditUrl": "https://www.flickr.com/photos/58003213@N00",
+      "file": "recipes/ch53/the-reverse-sear.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "The Reverse Sear food",
+      "sourceUrl": "https://www.flickr.com/photos/58003213@N00/40717122000"
+    },
+    "ch54|Frites": {
+      "credit": "Lizatanmenhua",
+      "creditUrl": "https://commons.wikimedia.org/w/index.php?title=User:Lizatanmenhua&action=edit&redlink=1",
+      "file": "recipes/ch54/frites.jpg",
+      "license": "BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "query": "Frites food",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=45751975"
+    },
+    "ch54|Gougères": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch54/goug-res.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Gougères food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/3134501610"
+    },
+    "ch54|Kir & What to Pour": {
+      "credit": "Kim Bach",
+      "creditUrl": "https://www.flickr.com/photos/63934584@N00",
+      "file": "recipes/ch54/kir-what-to-pour.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Kir food",
+      "sourceUrl": "https://www.flickr.com/photos/63934584@N00/2782791601"
+    },
+    "ch54|Salade Verte": {
+      "credit": "Geoff Peters 604",
+      "creditUrl": "https://www.flickr.com/photos/54359128@N00",
+      "file": "recipes/ch54/salade-verte.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Salade Verte food",
+      "sourceUrl": "https://www.flickr.com/photos/54359128@N00/3384265044"
+    },
+    "ch54|Soupe à l'Oignon Gratinée": {
+      "credit": "promoterest",
+      "creditUrl": "https://www.flickr.com/photos/87537074@N03",
+      "file": "recipes/ch54/soupe-l-oignon-gratin-e.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Beef France barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/87537074@N03/8014603378"
+    },
+    "ch54|Steak Frites, Two Ways": {
+      "credit": "promoterest",
+      "creditUrl": "https://www.flickr.com/photos/87537074@N03",
+      "file": "recipes/ch54/steak-frites-two-ways.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Beef France barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/87537074@N03/8014603378"
+    },
+    "ch54|Tarte Tatin": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch54/tarte-tatin.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Tarte Tatin food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/564786837"
+    },
+    "ch55|Aïoli": {
+      "credit": "balise42",
+      "creditUrl": "https://www.flickr.com/photos/22722986@N08",
+      "file": "recipes/ch55/a-oli.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Aïoli food",
+      "sourceUrl": "https://www.flickr.com/photos/22722986@N08/4086527162"
+    },
+    "ch55|Eggs, Potatoes and Beans": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch55/eggs-potatoes-and-beans.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Eggs, Potatoes and Beans food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/2373286750"
+    },
+    "ch55|Ember Vegetables": {
+      "credit": "PincasPhoto",
+      "creditUrl": "https://www.flickr.com/photos/43243154@N07",
+      "file": "recipes/ch55/ember-vegetables.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Ember Vegetables food",
+      "sourceUrl": "https://www.flickr.com/photos/43243154@N07/7395441136"
+    },
+    "ch55|Grilled Apricots with Lavender Honey": {
+      "credit": "psd",
+      "creditUrl": "https://www.flickr.com/photos/45581782@N00",
+      "file": "recipes/ch55/grilled-apricots-with-lavender-honey.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Fish France barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/45581782@N00/2368782585"
+    },
+    "ch55|Pastis & Rosé": {
+      "credit": "Acabashi",
+      "creditUrl": "https://www.flickr.com/photos/150012178@N06",
+      "file": "recipes/ch55/pastis-ros.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Pastis & Rosé food",
+      "sourceUrl": "https://www.flickr.com/photos/150012178@N06/50054010081"
+    },
+    "ch55|Salt Cod and Grilled Fish": {
+      "credit": "mccun934",
+      "creditUrl": "https://www.flickr.com/photos/51035597937@N01",
+      "file": "recipes/ch55/salt-cod-and-grilled-fish.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Salt Cod and Grilled Fish food",
+      "sourceUrl": "https://www.flickr.com/photos/51035597937@N01/2762269661"
+    },
+    "ch55|Tapenade & Anchoïade": {
+      "credit": "seanmfreese",
+      "creditUrl": "https://www.flickr.com/photos/66779558@N02",
+      "file": "recipes/ch55/tapenade-ancho-ade.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Tapenade food",
+      "sourceUrl": "https://www.flickr.com/photos/66779558@N02/7540815222"
+    },
+    "ch56|Alabama White Sauce": {
+      "credit": "ralph and jenny",
+      "creditUrl": "https://www.flickr.com/photos/92269745@N00",
+      "file": "recipes/ch56/alabama-white-sauce.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Alabama White Sauce food",
+      "sourceUrl": "https://www.flickr.com/photos/92269745@N00/6408123327"
+    },
+    "ch56|Eastern North Carolina Sauce": {
+      "credit": "Steven Penton",
+      "creditUrl": "https://www.flickr.com/photos/136315829@N03",
+      "file": "recipes/ch56/eastern-north-carolina-sauce.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Eastern",
+      "sourceUrl": "https://www.flickr.com/photos/136315829@N03/25127255287"
+    },
+    "ch56|Florida Citrus-Mango Sauce": {
+      "credit": "colros",
+      "creditUrl": "https://www.flickr.com/photos/73416633@N00",
+      "file": "recipes/ch56/florida-citrus-mango-sauce.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Florida",
+      "sourceUrl": "https://www.flickr.com/photos/73416633@N00/286762872"
+    },
+    "ch56|Georgia Peach Sauce": {
+      "credit": "Eva Rinaldi Celebrity Photographer",
+      "creditUrl": "https://www.flickr.com/photos/58820009@N05",
+      "file": "recipes/ch56/georgia-peach-sauce.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Georgia",
+      "sourceUrl": "https://www.flickr.com/photos/58820009@N05/8187911778"
+    },
+    "ch56|Kansas City Sauce": {
+      "credit": "Walmart Corporate",
+      "creditUrl": "https://www.flickr.com/photos/50128414@N05",
+      "file": "recipes/ch56/kansas-city-sauce.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Kansas City Sauce food",
+      "sourceUrl": "https://www.flickr.com/photos/50128414@N05/5684838910"
+    },
+    "ch56|Lexington Dip": {
+      "credit": "Jeffery Loo",
+      "creditUrl": "https://www.flickr.com/people/58915463@N05",
+      "file": "recipes/ch56/lexington-dip.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Lexington Dip food",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=20163943"
+    },
+    "ch56|Memphis Sauce": {
+      "credit": "Southern Foodways Alliance",
+      "creditUrl": "https://www.flickr.com/photos/25257922@N07",
+      "file": "recipes/ch56/memphis-sauce.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Memphis Sauce food",
+      "sourceUrl": "https://www.flickr.com/photos/25257922@N07/4307051459"
+    },
+    "ch56|South Carolina Mustard Sauce": {
+      "credit": "NASA Goddard Photo and Video",
+      "creditUrl": "https://www.flickr.com/photos/24662369@N07",
+      "file": "recipes/ch56/south-carolina-mustard-sauce.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "South",
+      "sourceUrl": "https://www.flickr.com/photos/24662369@N07/22185228401"
+    },
+    "ch56|St. Louis Sauce": {
+      "credit": "theCSSdiv",
+      "creditUrl": "https://www.flickr.com/photos/92146798@N00",
+      "file": "recipes/ch56/st-louis-sauce.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "St. Louis Sauce food",
+      "sourceUrl": "https://www.flickr.com/photos/92146798@N00/6949856491"
+    },
+    "ch56|Texas Mop": {
+      "credit": "Ken Lund",
+      "creditUrl": "https://www.flickr.com/photos/75683070@N00",
+      "file": "recipes/ch56/texas-mop.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Texas",
+      "sourceUrl": "https://www.flickr.com/photos/75683070@N00/66296057"
+    },
+    "ch57|Banana Pudding": {
+      "credit": "stu_spivack",
+      "creditUrl": "https://www.flickr.com/photos/35034346243@N01",
+      "file": "recipes/ch57/banana-pudding.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Banana Pudding food",
+      "sourceUrl": "https://www.flickr.com/photos/35034346243@N01/2221464775"
+    },
+    "ch57|Boiled Peanuts": {
+      "credit": "watts_photos",
+      "creditUrl": "https://www.flickr.com/photos/126288307@N05",
+      "file": "recipes/ch57/boiled-peanuts.jpg",
+      "license": "PDM 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "query": "Boiled Peanuts food",
+      "sourceUrl": "https://www.flickr.com/photos/126288307@N05/18134192648"
+    },
+    "ch57|Collard Greens": {
+      "credit": "IcronticPrime",
+      "creditUrl": "https://www.flickr.com/photos/29021314@N07",
+      "file": "recipes/ch57/collard-greens.jpg",
+      "license": "BY-ND 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "query": "Collard Greens food",
+      "sourceUrl": "https://www.flickr.com/photos/29021314@N07/6330172401"
+    },
+    "ch57|Hush Puppies": {
+      "credit": "jeffreyw",
+      "creditUrl": "https://www.flickr.com/photos/7927684@N03",
+      "file": "recipes/ch57/hush-puppies.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Hush Puppies food",
+      "sourceUrl": "https://www.flickr.com/photos/7927684@N03/5524492376"
+    },
+    "ch57|Pulled Pork": {
+      "credit": "Dana Moos",
+      "creditUrl": "https://www.flickr.com/photos/32870650@N08",
+      "file": "recipes/ch57/pulled-pork.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Pulled Pork food",
+      "sourceUrl": "https://www.flickr.com/photos/32870650@N08/4044396570"
+    },
+    "ch57|Red Slaw and White Slaw": {
+      "credit": "Mohammed Kateregga",
+      "creditUrl": "http://xerusmediagroup.com",
+      "file": "recipes/ch57/red-slaw-and-white-slaw.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "query": "Red Slaw and White Slaw food",
+      "sourceUrl": "https://wordpress.org/photos/photo/91869d4f50/"
+    },
+    "ch57|Sweet Tea, Cheerwine & Bourbon": {
+      "credit": "smithsonian",
+      "creditUrl": "",
+      "file": "recipes/ch57/sweet-tea-cheerwine-bourbon.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "query": "Pork United States barbecue",
+      "sourceUrl": "https://n2t.net/ark:/65665/ng49ca746b3-ee09-704b-e053-15f76fa0b4fa"
+    },
+    "ch58|Broccoli Rabe & Roasted Long Hots": {
+      "credit": "benketaro",
+      "creditUrl": "https://www.flickr.com/photos/56525796@N00",
+      "file": "recipes/ch58/broccoli-rabe-roasted-long-hots.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Broccoli Rabe food",
+      "sourceUrl": "https://www.flickr.com/photos/56525796@N00/585383966"
+    },
+    "ch58|Lemon Water Ice": {
+      "credit": "wwarby",
+      "creditUrl": "https://www.flickr.com/photos/26782864@N00",
+      "file": "recipes/ch58/lemon-water-ice.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Lemon Water Ice food",
+      "sourceUrl": "https://www.flickr.com/photos/26782864@N00/11782417484"
+    },
+    "ch58|Rotisserie Roast Pork Italian": {
+      "credit": "Mr.TinDC",
+      "creditUrl": "https://www.flickr.com/photos/7471115@N08",
+      "file": "recipes/ch58/rotisserie-roast-pork-italian.jpg",
+      "license": "BY-ND 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "query": "Rotisserie Roast Pork Italian food",
+      "sourceUrl": "https://www.flickr.com/photos/7471115@N08/4726449446"
+    },
+    "ch58|Seeded Hoagie Rolls": {
+      "credit": "smithsonian",
+      "creditUrl": "",
+      "file": "recipes/ch58/seeded-hoagie-rolls.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "query": "Pork United States barbecue",
+      "sourceUrl": "https://n2t.net/ark:/65665/ng49ca746b3-ee09-704b-e053-15f76fa0b4fa"
+    },
+    "ch58|Soft Pretzels": {
+      "credit": "bochalla",
+      "creditUrl": "https://www.flickr.com/photos/98627683@N00",
+      "file": "recipes/ch58/soft-pretzels.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Soft Pretzels food",
+      "sourceUrl": "https://www.flickr.com/photos/98627683@N00/7720927610"
+    },
+    "ch58|The Citywide & Birch Beer": {
+      "credit": "The National Guard",
+      "creditUrl": "https://www.flickr.com/photos/33252741@N08",
+      "file": "recipes/ch58/the-citywide-birch-beer.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "The Citywide food",
+      "sourceUrl": "https://www.flickr.com/photos/33252741@N08/49743718193"
+    },
+    "ch59|Gua Bao": {
+      "credit": "goodiesfirst",
+      "creditUrl": "https://www.flickr.com/photos/49215102@N00",
+      "file": "recipes/ch59/gua-bao.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Gua Bao food",
+      "sourceUrl": "https://www.flickr.com/photos/49215102@N00/6967408401"
+    },
+    "ch59|Peanut Ice Cream Rolls": {
+      "credit": "Vegan Feast Catering",
+      "creditUrl": "https://www.flickr.com/photos/25128194@N02",
+      "file": "recipes/ch59/peanut-ice-cream-rolls.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Peanut Ice Cream Rolls food",
+      "sourceUrl": "https://www.flickr.com/photos/25128194@N02/5019163719"
+    },
+    "ch59|Pickled Mustard Greens": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch59/pickled-mustard-greens.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Pickled Mustard Greens food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/3455799334"
+    },
+    "ch59|Smoked Tea Eggs": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch59/smoked-tea-eggs.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Smoked Tea Eggs food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/5053687131"
+    },
+    "ch59|Steamed Bao Buns": {
+      "credit": "thefoodgroup",
+      "creditUrl": "https://www.flickr.com/photos/54449565@N08",
+      "file": "recipes/ch59/steamed-bao-buns.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Steamed Bao Buns food",
+      "sourceUrl": "https://www.flickr.com/photos/54449565@N08/5733512120"
+    },
+    "ch59|Taiwanese Popcorn Chicken": {
+      "credit": "SodanieChea",
+      "creditUrl": "https://www.flickr.com/photos/41942551@N02",
+      "file": "recipes/ch59/taiwanese-popcorn-chicken.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Taiwanese Popcorn Chicken food",
+      "sourceUrl": "https://www.flickr.com/photos/41942551@N02/7465147362"
+    },
+    "ch59|Winter Melon Tea & What to Pour": {
+      "credit": "Jpatokal",
+      "creditUrl": "",
+      "file": "recipes/ch59/winter-melon-tea-what-to-pour.jpg",
+      "license": "BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "query": "Winter Melon Tea food",
+      "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=22923060"
+    },
+    "ch60|Bánh Mì Thịt Nướng": {
+      "credit": "Đam Mê Ẩm Thực",
+      "creditUrl": "https://www.flickr.com/photos/148481438@N03",
+      "file": "recipes/ch60/b-nh-m-th-t-n-ng.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Bánh Mì Thịt Nướng food",
+      "sourceUrl": "https://www.flickr.com/photos/148481438@N03/24565366987"
+    },
+    "ch60|Bò Lá Lốt": {
+      "credit": "Đam Mê Ẩm Thực",
+      "creditUrl": "https://www.flickr.com/photos/148481438@N03",
+      "file": "recipes/ch60/b-l-l-t.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Bò Lá Lốt food",
+      "sourceUrl": "https://www.flickr.com/photos/148481438@N03/39399188281"
+    },
+    "ch60|Chicken Liver Pâté": {
+      "credit": "ndrwfgg",
+      "creditUrl": "https://www.flickr.com/photos/69024001@N00",
+      "file": "recipes/ch60/chicken-liver-p-t.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Chicken Liver Pâté food",
+      "sourceUrl": "https://www.flickr.com/photos/69024001@N00/76652606"
+    },
+    "ch60|Chè Ba Màu": {
+      "credit": "Đam Mê Ẩm Thực",
+      "creditUrl": "https://www.flickr.com/photos/148481438@N03",
+      "file": "recipes/ch60/ch-ba-m-u.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Chè Ba Màu food",
+      "sourceUrl": "https://www.flickr.com/photos/148481438@N03/38796810961"
+    },
+    "ch60|Gỏi Cuốn": {
+      "credit": "Đam Mê Ẩm Thực",
+      "creditUrl": "https://www.flickr.com/photos/148481438@N03",
+      "file": "recipes/ch60/g-i-cu-n.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Gỏi Cuốn food",
+      "sourceUrl": "https://www.flickr.com/photos/148481438@N03/27620394159"
+    },
+    "ch60|Sinh Tố Bơ & Soda Chanh": {
+      "credit": "Đam Mê Ẩm Thực",
+      "creditUrl": "https://www.flickr.com/photos/148481438@N03",
+      "file": "recipes/ch60/sinh-t-b-soda-chanh.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Sinh Tố Bơ food",
+      "sourceUrl": "https://www.flickr.com/photos/148481438@N03/38768201132"
+    },
+    "ch60|Vietnamese Baguettes": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch60/vietnamese-baguettes.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Vietnamese Baguettes food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/3839254485"
+    },
+    "ch61|Menemen": {
+      "credit": "Paul Keller",
+      "creditUrl": "https://www.flickr.com/photos/18259771@N00",
+      "file": "recipes/ch61/menemen.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Menemen food",
+      "sourceUrl": "https://www.flickr.com/photos/18259771@N00/5153426633"
+    },
+    "ch61|Muhammara": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch61/muhammara.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Muhammara food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/3698022930"
+    },
+    "ch61|Simit": {
+      "credit": "jeffdjevdet",
+      "creditUrl": "https://www.flickr.com/photos/126917537@N03",
+      "file": "recipes/ch61/simit.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Simit food",
+      "sourceUrl": "https://www.flickr.com/photos/126917537@N03/28163449590"
+    },
+    "ch61|Sucuklu Yumurta": {
+      "credit": "Shreveport-Bossier: Louisiana's Other Side",
+      "creditUrl": "https://www.flickr.com/photos/57902140@N08",
+      "file": "recipes/ch61/sucuklu-yumurta.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Sausage Turkey barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/57902140@N08/6837323201"
+    },
+    "ch61|The Kahvaltı Board": {
+      "credit": "Shreveport-Bossier: Louisiana's Other Side",
+      "creditUrl": "https://www.flickr.com/photos/57902140@N08",
+      "file": "recipes/ch61/the-kahvalt-board.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Sausage Turkey barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/57902140@N08/6837323201"
+    },
+    "ch61|Çay and Coffee in the Embers": {
+      "credit": "Shreveport-Bossier: Louisiana's Other Side",
+      "creditUrl": "https://www.flickr.com/photos/57902140@N08",
+      "file": "recipes/ch61/ay-and-coffee-in-the-embers.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Sausage Turkey barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/57902140@N08/6837323201"
+    },
+    "ch61|Çılbır": {
+      "credit": "Shreveport-Bossier: Louisiana's Other Side",
+      "creditUrl": "https://www.flickr.com/photos/57902140@N08",
+      "file": "recipes/ch61/lb-r.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Sausage Turkey barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/57902140@N08/6837323201"
+    },
+    "ch62|Black-and-White Cookies": {
+      "credit": "Wonderlane",
+      "creditUrl": "https://www.flickr.com/photos/71401718@N00",
+      "file": "recipes/ch62/black-and-white-cookies.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Black-and-White Cookies food",
+      "sourceUrl": "https://www.flickr.com/photos/71401718@N00/8664125024"
+    },
+    "ch62|Coleslaw & Russian Dressing": {
+      "credit": "jbcurio",
+      "creditUrl": "https://www.flickr.com/photos/69131582@N00",
+      "file": "recipes/ch62/coleslaw-russian-dressing.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Coleslaw & Russian Dressing food",
+      "sourceUrl": "https://www.flickr.com/photos/69131582@N00/2827151142"
+    },
+    "ch62|Deli Rye": {
+      "credit": "jeffreyw",
+      "creditUrl": "https://www.flickr.com/photos/7927684@N03",
+      "file": "recipes/ch62/deli-rye.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Deli Rye food",
+      "sourceUrl": "https://www.flickr.com/photos/7927684@N03/6288921381"
+    },
+    "ch62|Egg Cream": {
+      "credit": "scubadive67",
+      "creditUrl": "https://www.flickr.com/photos/71217725@N00",
+      "file": "recipes/ch62/egg-cream.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Egg Cream food",
+      "sourceUrl": "https://www.flickr.com/photos/71217725@N00/1905665"
+    },
+    "ch62|Half-Sour Pickles": {
+      "credit": "Muffet",
+      "creditUrl": "https://www.flickr.com/photos/53133240@N00",
+      "file": "recipes/ch62/half-sour-pickles.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Half-Sour Pickles food",
+      "sourceUrl": "https://www.flickr.com/photos/53133240@N00/7308126710"
+    },
+    "ch62|Latkes": {
+      "credit": "gamene",
+      "creditUrl": "https://www.flickr.com/photos/12670507@N02",
+      "file": "recipes/ch62/latkes.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Latkes food",
+      "sourceUrl": "https://www.flickr.com/photos/12670507@N02/4186788170"
+    },
+    "ch62|Matzo Ball Soup": {
+      "credit": "moonlightbulb",
+      "creditUrl": "https://www.flickr.com/photos/24532534@N02",
+      "file": "recipes/ch62/matzo-ball-soup.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Matzo Ball Soup food",
+      "sourceUrl": "https://www.flickr.com/photos/24532534@N02/8278411920"
+    },
+    "ch62|Pastrami": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch62/pastrami.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Pastrami food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/2167721240"
+    },
+    "ch63|Biscuits and Sausage Gravy": {
+      "credit": "jeffreyw",
+      "creditUrl": "https://www.flickr.com/photos/7927684@N03",
+      "file": "recipes/ch63/biscuits-and-sausage-gravy.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Biscuits and Sausage Gravy food",
+      "sourceUrl": "https://www.flickr.com/photos/7927684@N03/6864966600"
+    },
+    "ch63|Brisket Hash with Eggs": {
+      "credit": "jeffreyw",
+      "creditUrl": "https://www.flickr.com/photos/7927684@N03",
+      "file": "recipes/ch63/brisket-hash-with-eggs.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Brisket Hash with Eggs food",
+      "sourceUrl": "https://www.flickr.com/photos/7927684@N03/8757928319"
+    },
+    "ch63|Cheese Grits": {
+      "credit": "avlxyz",
+      "creditUrl": "https://www.flickr.com/photos/10559879@N00",
+      "file": "recipes/ch63/cheese-grits.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Cheese Grits food",
+      "sourceUrl": "https://www.flickr.com/photos/10559879@N00/4823411848"
+    },
+    "ch63|Country Ham with Grilled Peaches": {
+      "credit": "USAG-Humphreys",
+      "creditUrl": "https://www.flickr.com/photos/31687107@N07",
+      "file": "recipes/ch63/country-ham-with-grilled-peaches.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Beef United States barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/31687107@N07/10392536296"
+    },
+    "ch63|Pecan Sticky Buns": {
+      "credit": "stu_spivack",
+      "creditUrl": "https://www.flickr.com/photos/35034346243@N01",
+      "file": "recipes/ch63/pecan-sticky-buns.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Pecan Sticky Buns food",
+      "sourceUrl": "https://www.flickr.com/photos/35034346243@N01/3628431565"
+    },
+    "ch63|Smoked Bloody Mary": {
+      "credit": "schopie1",
+      "creditUrl": "https://www.flickr.com/photos/53346660@N00",
+      "file": "recipes/ch63/smoked-bloody-mary.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Smoked Bloody Mary food",
+      "sourceUrl": "https://www.flickr.com/photos/53346660@N00/3747338937"
+    },
+    "ch63|Smoked Deviled Eggs": {
+      "credit": "istolethetv",
+      "creditUrl": "https://www.flickr.com/photos/44124401641@N01",
+      "file": "recipes/ch63/smoked-deviled-eggs.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Smoked Deviled Eggs food",
+      "sourceUrl": "https://www.flickr.com/photos/44124401641@N01/3857907760"
+    },
+    "ch64|Café de Olla & Agua de Melón": {
+      "credit": "City Foodsters",
+      "creditUrl": "https://www.flickr.com/photos/89060048@N03",
+      "file": "recipes/ch64/caf-de-olla-agua-de-mel-n.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Café de Olla food",
+      "sourceUrl": "https://www.flickr.com/photos/89060048@N03/11398186484"
+    },
+    "ch64|Chilaquiles": {
+      "credit": "rpongsaj",
+      "creditUrl": "https://www.flickr.com/photos/15131913@N00",
+      "file": "recipes/ch64/chilaquiles.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Chilaquiles food",
+      "sourceUrl": "https://www.flickr.com/photos/15131913@N00/2644345268"
+    },
+    "ch64|Churros with Cajeta": {
+      "credit": "Didriks",
+      "creditUrl": "https://www.flickr.com/photos/49889671@N03",
+      "file": "recipes/ch64/churros-with-cajeta.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Eggs barbecue",
+      "sourceUrl": "https://www.flickr.com/photos/49889671@N03/14272326440"
+    },
+    "ch64|Frijoles Refritos": {
+      "credit": "rvacapinta",
+      "creditUrl": "https://www.flickr.com/photos/34427465953@N01",
+      "file": "recipes/ch64/frijoles-refritos.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Frijoles Refritos food",
+      "sourceUrl": "https://www.flickr.com/photos/34427465953@N01/947770500"
+    },
+    "ch64|Guacamole in the Molcajete": {
+      "credit": "gabrielsaldana",
+      "creditUrl": "https://www.flickr.com/photos/99058473@N00",
+      "file": "recipes/ch64/guacamole-in-the-molcajete.jpg",
+      "license": "BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "query": "Guacamole in the Molcajete food",
+      "sourceUrl": "https://www.flickr.com/photos/99058473@N00/5470363602"
+    },
+    "ch64|Hand-Made Corn Tortillas": {
+      "credit": "Waywuwei",
+      "creditUrl": "https://www.flickr.com/photos/20081019@N00",
+      "file": "recipes/ch64/hand-made-corn-tortillas.jpg",
+      "license": "BY-ND 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "query": "Hand-Made Corn Tortillas food",
+      "sourceUrl": "https://www.flickr.com/photos/20081019@N00/4626430379"
+    },
+    "ch64|Huevos Rancheros": {
+      "credit": "London Chow",
+      "creditUrl": "https://www.flickr.com/photos/53013126@N07",
+      "file": "recipes/ch64/huevos-rancheros.jpg",
+      "license": "BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "query": "Huevos Rancheros food",
+      "sourceUrl": "https://www.flickr.com/photos/53013126@N07/5317589202"
+    }
+  }
+}

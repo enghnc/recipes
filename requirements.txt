@@ -1,3 +1,4 @@
 beautifulsoup4>=4.12
 weasyprint>=60      # PDF build only
 pypdf>=4.0          # page count reporting
+pillow>=10.0        # resizes/compresses sourced photos (scripts/fetch_images.py)

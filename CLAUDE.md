@@ -55,14 +55,48 @@ facets hand-written in `extract.py`'s `META` dict: `region`, `continent`,
 `season[]`, `occasion[]`, `proteins[]`, `complexity`, `kettles`,
 `accessories[]`, `leadHours`, `activeMin`, `totalMin`, `wood[]`, `cost`,
 `heat`, `coldOK`, `diet[]`, `special[]`, `technique[]`. Plus `cap`,
-`maxServes` and `fuel` from `capacity.py`, and `impress` / `impressWhy`.
+`maxServes` and `fuel` from `capacity.py`, `impress` / `impressWhy`, and
+`image` from `media/manifest.json`.
 
 A **recipe** has `title`, `native`, `meta`, `course`, `headnote`,
 `ingredients[]` (`{type: 'item'|'sub', text}`), `method[]`, `notes[]`,
-`plating` and `cap`. Course is derived from the `meta` line by `classify()`.
+`plating`, `cap` and `image`. Course is derived from the `meta` line by
+`classify()`.
 
 **Library** entries are the shared doughs, sauces, rubs and marinades
 (chapters 19–24, 51–53, 56). **Showpieces** are chapter 50.
+
+## Photos
+
+`media/` holds real, checked-in photo files plus `media/manifest.json`
+(menu id, or `chapterId|title` for a recipe, -> `{file, credit, creditUrl,
+license, licenseUrl, sourceUrl, query}`). `extract.py` attaches whichever
+entry matches by exact key as each menu/recipe's `image` field — no entry
+means no photo, which the app already renders fine (`photoTag` in `app.js`
+returns `''` and skips the space entirely).
+
+- `npm run fetch-images [-- --menus|--recipes|--only chNN|--limit N]` sources
+  new photos from Openverse (CC-licensed, `license_type=commercial` since
+  this book is print-and-sell) and fills gaps in the manifest. Safe to
+  re-run — it only fetches keys that aren't already in the manifest, so
+  interrupted or rate-limited runs (anonymous Openverse quota) just resume.
+- `npm run review-images` builds `media/review.html`, a local-only contact
+  sheet grouped by menu, to actually look at every match before trusting it
+  — a keyword search matching a specific recipe title is inherently
+  imperfect and needs a human's eye, not just a confidence score. Not
+  published anywhere; delete a manifest entry (and re-run fetch) to replace
+  a bad match.
+- `npm run build` copies `media/` into `app/images/` (generated, gitignored,
+  same treatment as `app/data.js`) so `npm run dev` and the real AWS-hosted
+  app can serve them. The single-file artifact build
+  (`dist/fire-and-kettle-app.html`) deliberately never inlines them —
+  hundreds of base64 photos would defeat the point of that build — so
+  photos simply don't render in that context, by design, not as a bug.
+- CC-BY-style licenses require attribution: `photoTag()` always prints the
+  photo's credit/license as a link on detail pages. It never does this
+  inside a card grid, because those cards are `<button>`s — nesting an `<a>`
+  inside one is invalid HTML and the click would also fire the card's own
+  navigation (the credit is only omitted there, never dropped altogether).
 
 ## Adding to the book
 
@@ -121,9 +155,31 @@ The most intricate part of `app.js`, in this order:
 3. `recipeEntries` — applies the serving multiplier. Sections headed
    **per glass** multiply by the number of servings; everything else scales by
    `servings / 8`.
-4. `aggregate` — merges by normalised name across units.
+4. `aggregate` — merges by normalised name across units. **Called exactly
+   once, on the concatenation of every cart item's raw entries** (see
+   `viewList`) — never per-recipe/per-menu, or items that two different
+   recipes both call for show up as separate, unmerged lines.
 5. `shoppingLine` — converts to something a shop sells: bottles for drinks,
    jars and bags for spices and dry goods, bunches and heads for loose produce.
+   The `PACKS` table is ordered and first-match-wins — a compound name like
+   `"garlic salt"` must match a specific jar/bag/bottle pattern *before* it
+   falls through to a generic bare-word rule (e.g. `/\bsalt\b/`), or it gets
+   sized like the generic rule's container instead of its own.
+6. `buyLinks` — turns the aggregated item's plain name into an Amazon search
+   link and a "near me" local-store search link, rendered next to each row
+   in `viewList`. Both are plain search URLs (no API key, no affiliate
+   integration), so they degrade gracefully — worst case is a broad search
+   rather than a dead link.
 
 When editing it, re-run the tests and eyeball a whole-menu list. The failure
 mode is not a crash, it is a list that quietly says `50 ml Fernet Branca`.
+
+## Glossary links
+
+`GLOSSARY` + `glossify()` in `app.js` link a small, hand-picked set of
+technique/ingredient terms (headnote and method text on recipe pages) out to
+Wikipedia. Every URL in `GLOSSARY` was verified to actually resolve before
+being added — never guess one in. `glossify()` runs on already-`esc()`/`hl()`-
+escaped HTML and splits on existing tags before matching, so it's safe to
+chain after `hl()` without corrupting a `<mark>` or leaving a term linked
+twice.
