@@ -24,7 +24,11 @@ if (theme) document.documentElement.setAttribute('data-theme', theme);
 /* ---------- index ---------- */
 MENUS.forEach(m => {
   m.courses = {};
-  m.recipes.forEach(r => { (m.courses[r.course] = m.courses[r.course] || []).push(r); });
+  // extract.py doesn't stamp menuId onto individual recipes, only ALLR's copies do (below) —
+  // without this, recipeKey() on a recipe reached via m.recipes[] (e.g. window.__rlist on a
+  // menu detail page) falls back to 'x|title' instead of 'ch25|title', a different key than
+  // the same recipe gets in ALLR, so the shopping cart and permalinks can't find it again.
+  m.recipes.forEach(r => { r.menuId = m.id; (m.courses[r.course] = m.courses[r.course] || []).push(r); });
   const ing = m.recipes.flatMap(r => r.ingredients.map(i => i.text)).join(' ');
   const meth = m.recipes.map(r => r.title + ' ' + r.method.join(' ')).join(' ');
   m.hay = (m.title+' '+m.lead+' '+m.region+' '+(m.season||[]).join(' ')+' '+(m.proteins||[]).join(' ')+' '+
@@ -1224,6 +1228,49 @@ function render(){
   if (state.detail || state.recipe !== null) window.scrollTo(0,0);
 }
 
+/* ---------- permalinks & browser back/forward ----------
+   Hash routing: #/menus, #/recipes, #/library, #/build, #/list,
+   #/menu/<id>, #/recipe/<menuId-or-chapterId>|<title>. history.pushState
+   never fires popstate, so our own navigation and the browser's back/forward
+   button can't double-render each other — only real back/forward triggers
+   the popstate listener that re-derives state from the URL.
+   Wrapped in try/catch throughout: window.location/history don't exist in
+   tests/smoke.mjs's stub DOM, and may be restricted in a sandboxed host —
+   this must degrade to "no permalinks" rather than break navigation. */
+function safe(fn){ try { fn(); } catch(e){} }
+const ROUTE_VIEWS = ['menus','recipes','library','build','list'];
+function findRecipeByKey(key){ return ALLR.concat(LIBRARY).find(r => recipeKey(r) === key) || null; }
+function stateToHash(){
+  if (state.recipe !== null) return '#/recipe/' + encodeURIComponent(recipeKey(state.recipe));
+  if (state.detail) return '#/menu/' + encodeURIComponent(state.detail.id);
+  return '#/' + state.view;
+}
+function applyHash(hash){
+  const path = String(hash || '').replace(/^#\/?/, '');
+  const i = path.indexOf('/');
+  const kind = i === -1 ? path : path.slice(0, i);
+  const raw = i === -1 ? '' : decodeURIComponent(path.slice(i + 1));
+  state.detail = null; state.recipe = null;
+  if (kind === 'menu' && MENU_BY_ID[raw]){ state.detail = MENU_BY_ID[raw]; state.view = 'menus'; return; }
+  if (kind === 'recipe'){
+    const r = findRecipeByKey(raw);
+    if (r){
+      state.recipe = r;
+      if (r.menuId){ state.detail = MENU_BY_ID[r.menuId]; state.view = 'menus'; }
+      else { state.view = r.course === 'Library' ? 'library' : 'recipes'; }
+      return;
+    }
+  }
+  state.view = ROUTE_VIEWS.includes(kind) ? kind : 'menus';
+}
+function pushRoute(){
+  safe(() => {
+    const h = stateToHash();
+    if (window.location.hash !== h) window.history.pushState(null, '', h);
+  });
+}
+safe(() => window.addEventListener('popstate', () => { applyHash(window.location.hash); render(); }));
+
 /* ---------- events ---------- */
 document.addEventListener('click', e => {
   const t = e.target.closest('[data-menu],[data-recipe],[data-f],[data-grp],[data-act],[data-course],[data-scale],[data-fav],[data-view],[data-pick],[data-unpick],[data-bopen],[data-bsort]');
@@ -1236,13 +1283,13 @@ document.addEventListener('click', e => {
     const r = ALLR.find(x => x.menuId === mid && x.title === tt); if (r) build.add(r); return render(); }
   if (d.unpick){ const [mid, ...rest] = d.unpick.split('|'); const tt = rest.join('|');
     build.remove({menuId:mid, title:tt}); return render(); }
-  if (d.view){ state.view = d.view; state.detail = null; state.recipe = null; return render(); }
+  if (d.view){ state.view = d.view; state.detail = null; state.recipe = null; pushRoute(); return render(); }
   if (d.fav !== undefined){
     favs = favs.includes(d.fav) ? favs.filter(x => x !== d.fav) : favs.concat(d.fav);
     store.set('favs', favs); return render();
   }
-  if (d.menu){ state.detail = MENUS.find(m => m.id === d.menu); state.recipe = null; return render(); }
-  if (d.recipe !== undefined){ state.recipe = window.__rlist[+d.recipe]; return render(); }
+  if (d.menu){ state.detail = MENUS.find(m => m.id === d.menu); state.recipe = null; pushRoute(); return render(); }
+  if (d.recipe !== undefined){ state.recipe = window.__rlist[+d.recipe]; pushRoute(); return render(); }
   if (d.scale){ state.scale = +d.scale; store.set('scale', state.scale); return render(); }
   if (d.course !== undefined){ state.course = d.course || null; return render(); }
   if (d.grp){ state.openGroups[d.grp] = !isOpen(d.grp);
@@ -1258,6 +1305,9 @@ document.addEventListener('click', e => {
   }
   if (d.act === 'reset'){ FACETS.forEach(f => state.sel[f.id] = []); state.course = null; return render(); }
   if (d.act === 'back'){
+    let went = false;
+    safe(() => { if (window.history && typeof window.history.back === 'function'){ window.history.back(); went = true; } });
+    if (went) return;
     if (state.recipe !== null && state.detail){ state.recipe = null; }
     else { state.recipe = null; state.detail = null; }
     return render();
@@ -1276,7 +1326,7 @@ document.addEventListener('click', e => {
   if (d.act === 'buildclear'){ build.clear(); return render(); }
   if (d.act === 'buildlist'){
     build.items().forEach(r => { if (!inCart('r|' + recipeKey(r))) cart.push({kind:'recipe', id:recipeKey(r)}); });
-    store.set('cart', cart); state.view = 'list'; return render();
+    store.set('cart', cart); state.view = 'list'; pushRoute(); return render();
   }
   if (d.act === 'print' || d.act === 'copy'){ exportText(); return; }
 });
@@ -1302,17 +1352,22 @@ qEl.addEventListener('input', () => {
   clearTimeout(tId);
   tId = setTimeout(() => {
     state.q = qEl.value;
-    if (state.q && (state.detail || state.recipe !== null)){ state.detail = null; state.recipe = null; }
+    if (state.q && (state.detail || state.recipe !== null)){
+      state.detail = null; state.recipe = null; pushRoute();
+    }
     render();
   }, 130);
 });
 document.getElementById('qclr').onclick = () => { qEl.value = ''; state.q = ''; render(); qEl.focus(); };
 document.getElementById('brand').onclick = () => {
-  state.detail = null; state.recipe = null; state.view = 'menus'; state.q = ''; qEl.value = ''; render();
+  state.detail = null; state.recipe = null; state.view = 'menus'; state.q = ''; qEl.value = '';
+  pushRoute(); render();
 };
 document.getElementById('openfilters').onclick = () => document.getElementById('aside').classList.add('open');
 document.getElementById('closefilters').onclick = () => document.getElementById('aside').classList.remove('open');
-document.getElementById('tolist').onclick = () => { state.view='list'; state.detail=null; state.recipe=null; render(); };
+document.getElementById('tolist').onclick = () => {
+  state.view='list'; state.detail=null; state.recipe=null; pushRoute(); render();
+};
 document.getElementById('themebtn').onclick = () => {
   const cur = document.documentElement.getAttribute('data-theme');
   const next = cur === 'dark' ? 'light' : cur === 'light' ? 'dark'
@@ -1320,4 +1375,5 @@ document.getElementById('themebtn').onclick = () => {
   document.documentElement.setAttribute('data-theme', next);
   store.set('theme', next);
 };
+safe(() => { applyHash(window.location.hash); window.history.replaceState(null, '', stateToHash()); });
 render();
