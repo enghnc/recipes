@@ -50,7 +50,7 @@ def inject_plating(html):
     if not lookup:
         return html
     soup = BeautifulSoup(html, "html.parser")
-    n = 0
+    n = already = 0
     for sec in soup.select("section.chapter"):
         cid = sec.get("id")
         for div in sec.select(".recipe"):
@@ -65,11 +65,17 @@ def inject_plating(html):
             pl = lookup.get((cid, title))
             if not pl:
                 continue
+            # A chapter written with an inline <div class="plate"> already carries
+            # the note, and parse_recipe reads that same note into data.json — so
+            # appending from the lookup here would print it twice.
+            if div.select_one(".plate"):
+                already += 1
+                continue
             block = BeautifulSoup(
                 '<div class="plate"><span class="lbl">' + ("Keeping" if pl["style"] == "keeping" else "To the table \u00b7 " + pl["style"]) + '</span>' + pl["text"] + '</div>', "html.parser")
             div.append(block)
             n += 1
-    print(f"  · plating blocks injected: {n}")
+    print(f"  · plating blocks injected: {n}, already inline: {already}")
     return str(soup)
 
 

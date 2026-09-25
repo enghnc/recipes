@@ -1,0 +1,67 @@
+{
+  "kind": "recipe",
+  "menuId": "ch25",
+  "placement": {
+    "after": "Provoleta"
+  },
+  "recipe": {
+    "title": "Morcilla a la Parrilla",
+    "native": "blood sausage over the embers",
+    "course": "Starter",
+    "serves": "Serves 8",
+    "time": "15 min",
+    "headnote": "Morcilla is already cooked, so the only job on the grill is to warm it through and split the skin. Left too long it bursts and empties itself into the fire.",
+    "ingredients": [
+      "8 morcilla, about 2 lb",
+      "2 baguettes, sliced on the diagonal",
+      "Chimichurri ((Chapter 22))"
+    ],
+    "method": [
+      "Bring the morcilla to room temperature. Cold sausage splits before the middle is warm.",
+      "Set them over the cooler edge of the embers on Kettle A, turning every 2 minutes, **8 to 10 minutes** total.",
+      "They are ready when the skin has tightened and blistered in a few places and the sausage feels soft through. Do not press them.",
+      "Split each one lengthways, lay it on bread, and spoon chimichurri over."
+    ],
+    "notes": [
+      {
+        "kind": "warn",
+        "label": "Watch out",
+        "text": "A burst morcilla drips fat straight onto the coals and flares. Keep them off the hottest part of the bed and move them the moment a skin splits."
+      }
+    ],
+    "plating": {
+      "style": "board",
+      "text": "Split and open on the same board as the bread, chimichurri in a bowl beside it, eaten standing up before anything else comes off the fire."
+    }
+  },
+  "menuLine": {
+    "dishes": [
+      "Morcilla a la parrilla"
+    ],
+    "note": "split over bread while everyone is still standing"
+  },
+  "shoppingAdds": {},
+  "capacity": {
+    "items": [
+      {
+        "match": "Morcilla",
+        "type": "grate",
+        "sqin8": 70,
+        "zone": "direct"
+      }
+    ]
+  },
+  "facetAdds": {
+    "proteins": [
+      "Sausage"
+    ]
+  },
+  "timelineAdds": [
+    {
+      "when": "T–20 min",
+      "what": "Morcilla onto the cool edge of Kettle A.",
+      "after": "T–24 hr"
+    }
+  ],
+  "newFacetValues": {}
+}

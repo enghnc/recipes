@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Extract every menu chapter and recipe from the book HTML into structured JSON."""
 
-import json, pathlib, re
+import json, pathlib, re, sys
 from bs4 import BeautifulSoup
 from capacity import CAPACITY, KETTLE
 try:
@@ -17,6 +17,10 @@ try:
     from impress import IMPRESS_MENUS, IMPRESS_RECIPES
 except ImportError:
     IMPRESS_MENUS, IMPRESS_RECIPES = {}, {}
+try:
+    import content
+except ImportError:
+    content = None
 
 MEDIA = pathlib.Path(__file__).resolve().parent.parent / "media"
 try:
@@ -265,6 +269,16 @@ PART_OF = {"ch25":"Around the Fire","ch26":"Around the Fire","ch27":"Around the 
  "ch57":"Sandwiches","ch58":"Sandwiches","ch59":"Sandwiches","ch60":"Sandwiches","ch62":"Sandwiches",
  "ch61":"Brunch","ch63":"Brunch","ch64":"Brunch"}
 
+# content/*.json extends the tables above without anyone hand-editing them.
+PAYLOADS = []
+if content:
+    try:
+        PAYLOADS = content.load()
+        content.merge_python_tables(PAYLOADS, META, PART_OF, CAPACITY,
+                                    IMPRESS_MENUS, IMPRESS_RECIPES)
+    except content.ContentError as e:
+        raise SystemExit("content/ payload is not usable:\n" + str(e))
+
 COURSE_WORDS = [
  ("Drink",  ["drink", "drinks"]),
  ("Sauce",  ["sauce", "marinade", "rub"]),
@@ -403,6 +417,8 @@ def parse_library():
     secs = []
     for fn in LIB_FILES:
         soup = BeautifulSoup((BOOK / fn).read_text(encoding="utf-8"), "html.parser")
+        if content:
+            content.splice_into(soup, PAYLOADS, classify)
         secs.extend(soup.select("section.chapter"))
     for sec in secs:
         cid = sec.get("id")
@@ -444,16 +460,69 @@ def parse_showpieces():
     return out
 
 
+def book_section_ids():
+    """Every section.chapter id already used in book/, for collision checks."""
+    ids = set()
+    for path in BOOK.glob("*.html"):
+        if path.name.startswith("_"):
+            continue
+        text = path.read_text(encoding="utf-8")
+        ids.update(re.findall(r'<section[^>]*class="chapter"[^>]*id="([^"]+)"', text))
+    return ids
+
+
+def print_vocab():
+    """Print the open facet vocabulary, for pasting into content/PROMPT.md."""
+    import content as _c
+    for key in _c.GATED_FACETS:
+        vals = set()
+        for m in META.values():
+            v = m.get(key)
+            vals.update(v if isinstance(v, list) else [v] if v else [])
+        print(f"- **{key}** ({len(vals)}): "
+              + ", ".join('"' + v + '"' for v in sorted(vals)))
+    styles = sorted({r["plating"]["style"] for m in json.loads(
+        (HERE / "data.json").read_text(encoding="utf-8"))["menus"]
+        for r in m["recipes"] if r.get("plating")})
+    print(f"- **plating.style** ({len(styles)}): "
+          + ", ".join('"' + v + '"' for v in styles))
+
+
 def main():
+    check_only = "--check" in sys.argv
+    if "--vocab" in sys.argv:
+        return print_vocab()
     menus = []
     for fn in MENU_FILES:
         soup = BeautifulSoup((BOOK / fn).read_text(encoding="utf-8"), "html.parser")
+        if content:
+            content.splice_into(soup, PAYLOADS, classify)
         for sec in soup.select("section.chapter"):
             if sec.get("id") in META:
                 menus.append(parse_menu_chapter(sec))
+    if content:
+        # Generated chapters land next to afterChapter so the app's part grouping,
+        # which follows first appearance, stays stable.
+        for payload, sec in content.generated_sections(
+                PAYLOADS, lambda h: BeautifulSoup(h, "html.parser")):
+            after = payload.get("afterChapter")
+            idx = next((i for i, x in enumerate(menus) if x["id"] == after), len(menus) - 1)
+            menus.insert(idx + 1, parse_menu_chapter(sec))
+
     data = {"menus": menus, "library": parse_library(),
             "showpieces": parse_showpieces(), "kettle": KETTLE}
-    (HERE / "data.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+
+    errors, warnings = [], []
+    if content:
+        errors, warnings = content.check(data, PAYLOADS, META, LIB_CHAPTERS,
+                                         book_section_ids(), classify)
+    for w in warnings:
+        print("  ~", w)
+    if errors:
+        print(f"\n{len(errors)} problem(s) in content/:")
+        for e in errors:
+            print("  !", e)
+        raise SystemExit(1)
 
     nrec = sum(len(m["recipes"]) for m in menus)
     print(f"menus: {len(menus)}  menu recipes: {nrec}  library recipes: {len(data['library'])}")
@@ -462,6 +531,19 @@ def main():
     missing = [m["id"] for m in menus if not m["blocks"].get("shopping")]
     if missing:
         print("! missing shopping block:", missing)
+    if content:
+        content.report(PAYLOADS, data)
+
+    if content and "--emit-html" in sys.argv:
+        # The bridge back to the printed book: the same markup the app was built
+        # from, ready to paste into a book/ file when the PDF is next reprinted.
+        for path in content.emit_html(PAYLOADS, BOOK / "_generated"):
+            print("  wrote", path.relative_to(BOOK.parent))
+
+    if check_only:
+        print("checked only, data.json not rewritten")
+        return
+    (HERE / "data.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
 
 
 if __name__ == "__main__":

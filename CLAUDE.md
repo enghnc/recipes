@@ -1,10 +1,11 @@
 # Fire &amp; Kettle — project notes
 
-A live-fire cookbook that exists in two forms built from one source: a 433-page
-PDF and a searchable web app. **The book HTML in `book/` is the single source of
-truth.** The app is generated from it. Never hand-edit `app/data.js`,
-`data/data.json` or anything in `dist/` — they are build artefacts and will be
-overwritten.
+A live-fire cookbook that exists in two forms: a 424-page PDF and a searchable
+web app. **The book HTML in `book/` is the source of truth for the PDF, and for
+everything written by hand.** `content/*.json` is a second, additive source that
+feeds the app only — see "Adding from a JSON payload". Never hand-edit
+`app/data.js`, `data/data.json` or anything in `dist/` — they are build artefacts
+and will be overwritten.
 
 ## The rule the whole book obeys
 
@@ -19,8 +20,13 @@ explicit note that it breaks the rule (see `asado al palo`, Ch 50).
 ```
 book/          chapter HTML, numbered in reading order. The source of truth.
   print.css    stylesheet for the PDF only
+content/       JSON payloads that add menus/recipes/library items to the app
+  PROMPT.md    the authoring brief to paste into Claude on the web
+  examples/    one worked payload per kind (not built — outside the glob)
 data/          Python modules that annotate and extract the book
-  extract.py   parses book/ -> data/data.json          (run by both builds)
+  extract.py   parses book/ + content/ -> data/data.json   (run by both builds)
+  content.py   loads, validates and renders content/*.json into book markup
+  schema/      content.schema.json, the payload contract
   capacity.py  equipment limits per menu (vessels, grate area, spit loads)
   plating_a.py  plating_b.py   "To the table" notes, keyed chapter -> recipe
   impress.py   which menus and recipes carry a showpiece moment
@@ -41,6 +47,9 @@ npm run build        # extract, then build the web app into dist/
 npm run build:pdf    # extract, then build the PDF into dist/
 npm test             # run the smoke tests against dist/
 npm run dev          # serve app/ at http://localhost:8000
+npm run validate     # check content/*.json without writing anything
+npm run vocab        # print the current facet vocabulary
+npm run emit-html    # write generated chapters to book/_generated/ to paste into book/
 ```
 
 `npm run dev` needs `npm run build` first, because the app reads `app/data.js`.
@@ -111,6 +120,52 @@ chapter to `META` and `PART_OF` in `extract.py`, add an entry to `CAPACITY` in
 To add a **recipe** to an existing menu: add a `<div class="recipe">` block in
 the right course order. Give it a `.plate` block or an entry in `plating_b.py` —
 `npm run build` prints any recipe missing one.
+
+## Adding from a JSON payload
+
+The seven coordinated edits above are the hand-authoring path. The other path is
+one JSON file in `content/`, which needs none of them: no `MENU_FILES`, no `META`,
+no `PART_OF`, no `CAPACITY`, no plating table, no TOC entry.
+
+```bash
+# write content/ch65-whatever.json (see content/PROMPT.md and content/examples/)
+npm run validate && npm run build && npm test
+```
+
+Four payload kinds: `menu` (a whole chapter), `recipe` (one dish into an existing
+chapter), `library` (a shared sauce/dough/rub), `patch` (facet edits to an existing
+menu, which is how you change categories without touching recipe text).
+
+`content/PROMPT.md` is the brief to paste into Claude on the web along with
+`data/schema/content.schema.json`. It carries the two-kettle rule, the prose style,
+the closed enums and a live snapshot of the open facet vocabulary — regenerate that
+snapshot with `npm run vocab` when the book has grown.
+
+**How it works.** `data/content.py` renders each payload into the same chapter
+markup `parse_recipe` and `parse_menu_chapter` already read, in memory, and
+`extract.py` parses it like any other chapter. One parser, one data model. Payload
+facets are merged into `META` / `PART_OF` / `CAPACITY` / `IMPRESS_*` at extract
+time, so those tables stop being the complete inventory — `npm run build` prints
+what it merged.
+
+**Generated HTML is never written into `book/`.** A machine-generated file in there
+would become a second place to fix content that the next build silently overwrites.
+
+**The PDF does not see `content/`.** `build_pdf.py` still assembles `book/` only, so
+the app will report more menus than the book prints. `npm run emit-html` writes the
+generated chapters to `book/_generated/` to paste into a `book/` file when you next
+reprint. Full parity later is small: `build_pdf.py` would call
+`content.insert_chapters(soup)` and `content.splice_into(soup)` on the assembled
+document, plus a TOC `<li>` and a glance-table `<tr>`.
+
+**Validation is the point.** `npm run validate` fails on a missing plating note, a
+closed-enum violation (`complexity`, `cost`, `kettles`, `heat` — the app hardcodes
+those filter lists), a capacity `match` that hits zero or two recipe titles, a
+duplicate recipe key, raw HTML or a literal `\uXXXX` in prose, a course that
+`classify()` would read differently from the one declared, a library title that
+would hijack a `((Chapter NN))` cross-reference, and any facet value not already in
+the book that is not declared in `newFacetValues`. That last gate is what stops a
+`Cast Iron` typo becoming a duplicate one-item filter chip alongside `Cast iron`.
 
 ## Conventions that matter
 

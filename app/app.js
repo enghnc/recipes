@@ -91,6 +91,11 @@ const FACETS = [
   {id:'plate',    label:'Served as',    type:'plate', opts:[...new Set(MENUS.flatMap(m=>m.recipes).filter(r=>r.plating).map(r=>r.plating.style))].sort()},
 ];
 const COURSES = ['Starter','Main','Side','Sauce','Dessert','Drink','Showpiece'];
+/* classify() can produce a course COURSES does not list. Grouping strictly by
+   COURSES would drop those recipes from the page while leaving them in search,
+   so anything unexpected is appended rather than lost. */
+const courseOrder = (m) => COURSES.concat(
+  Object.keys(m.courses || {}).filter(c => !COURSES.includes(c)));
 
 /* ---------- state ---------- */
 const state = {
@@ -371,7 +376,7 @@ function menuCard(m){
   const on = favs.includes(m.id);
   return '<div class="cardwrap"><button class="card" data-menu="' + m.id + '">' +
     photoTag(m.image, m.title, 'card-photo', false) +
-    '<div class="kicker">' + esc(m.region) + '</div>' +
+    '<div class="kicker">' + esc(m.region || '') + '</div>' +
     '<h3>' + hl(m.title) + '</h3>' +
     '<p>' + hl(m.lead.replace(/ · /g, ' · ')) + '</p>' +
     '<div class="meta-row">' +
@@ -491,7 +496,7 @@ function textForCurrentView(){
     if (m.blocks.timeline) t += '\n--- PREP COUNTDOWN ---\n' + stripHTML(m.blocks.timeline) + '\n';
     if (m.blocks.shopping) t += '\n--- SHOPPING LIST (for 8) ---\n' + stripHTML(m.blocks.shopping) + '\n';
     t += '\n--- RECIPES ---\n';
-    COURSES.forEach(c => (m.courses[c] || []).forEach(r => {
+    courseOrder(m).forEach(c => (m.courses[c] || []).forEach(r => {
       t += '\n\n' + '='.repeat(48) + '\n' + recipeText(r, factor);
     }));
     return t;
@@ -683,7 +688,7 @@ function viewBuild(){
     let ranked = pool.map(r => Object.assign({r}, pairScore(r, items)));
     if (sort === 'az') ranked.sort((a,b) => a.r.title.localeCompare(b.r.title));
     else if (sort === 'region') ranked.sort((a,b) =>
-      a.r.region.localeCompare(b.r.region) || b.score - a.score);
+      (a.r.region||'').localeCompare(b.r.region||'') || b.score - a.score);
     else ranked.sort((a,b) => b.score - a.score);
 
     const shown = open ? ranked : ranked.slice(0, 5);
@@ -708,8 +713,9 @@ function viewBuild(){
       h += '<div class="rlist' + (open ? ' picklist' : '') + '">';
       let lastRegion = null;
       shown.forEach(x => {
-        if (open && sort === 'region' && x.r.region !== lastRegion){
-          lastRegion = x.r.region;
+        const rgroup = x.r.region || 'Showpieces';
+        if (open && sort === 'region' && rgroup !== lastRegion){
+          lastRegion = rgroup;
           h += '<div class="pickgroup">' + esc(lastRegion) + '</div>';
         }
         const strong = x.score >= 6;
@@ -1089,7 +1095,7 @@ function viewMenuDetail(m){
   const fav = favs.includes(m.id);
   let h = '<div class="detail"><button class="backbtn" data-act="back">← All menus</button>' +
     photoTag(m.image, m.title, 'detail-photo', true) +
-    '<div class="kicker">' + esc(m.part) + ' · ' + esc(m.region) + '</div>' +
+    '<div class="kicker">' + esc(m.part) + ' · ' + esc(m.region || '') + '</div>' +
     '<h1>' + esc(m.title) + '</h1><p class="lede">' + esc(m.lead) + '</p>' +
     '<div class="factgrid">' +
       fact('Season', (m.season||[]).join(', ')) +
@@ -1124,7 +1130,7 @@ function viewMenuDetail(m){
 
   window.__rlist = m.recipes;
   h += '<div class="sect"><h2>Recipes</h2><div class="rlist">';
-  COURSES.forEach(c => (m.courses[c] || []).forEach(r => {
+  courseOrder(m).forEach(c => (m.courses[c] || []).forEach(r => {
     const i = m.recipes.indexOf(r);
     h += '<button class="rrow" data-recipe="' + i + '"><span class="c">' + esc(r.course) + '</span>' +
       '<span class="t">' + esc(r.title) + (r.native ? ' <span class="drop">' + esc(r.native) + '</span>' : '') +

@@ -48,7 +48,8 @@ const api = new Function(code + `
 ;return { state, MENUS, LIBRARY, ALLR, build, viewMenus, viewRecipes, viewLibrary,
           viewBuild, viewList, viewMenuDetail, viewRecipeDetail, menuCartItems,
           recipeCartItems, splitIngredient, libraryRef, textForCurrentView,
-          cart, recipeKey, aggregate, buyLinks, glossify, photoTag };`)();
+          cart, recipeKey, aggregate, buyLinks, glossify, photoTag,
+          COURSES, SHOWPIECES, courseOrder };`)();
 
 console.log(`\nFire & Kettle smoke tests — ${path.relative(ROOT, FILE)}\n`);
 check('data loads', () => `${api.MENUS.length} menus, ${api.LIBRARY.length} library, ${api.ALLR.length} recipes`);
@@ -140,6 +141,96 @@ check('shopping list rows carry buy links', () => {
   if (/%28|%29/.test(buy.amazon)) throw new Error(`parenthetical leaked into query: ${buy.amazon}`);
   if (!/near\+me|near%20me/.test(buy.nearby)) throw new Error(`bad nearby link: ${buy.nearby}`);
   return buy.amazon;
+});
+
+/* ---------- data integrity ----------
+   These assert on the parsed JSON rather than through the views, because the
+   stub DOM's querySelectorAll returns [] and anything routed through
+   parseShopping would pass vacuously. They guard the invariants that
+   content/*.json payloads could break. */
+const DB = JSON.parse(dataRaw);
+
+check('every menu recipe lands in a course the menu page renders', () => {
+  const bad = [];
+  for (const m of DB.menus)
+    for (const r of m.recipes)
+      if (!api.COURSES.includes(r.course)) bad.push(`${m.id} "${r.title}" -> ${r.course}`);
+  if (bad.length) throw new Error(`${bad.length} off-list: ${bad.slice(0, 3).join('; ')}`);
+  return `${DB.menus.reduce((n, m) => n + m.recipes.length, 0)} recipes, all in COURSES`;
+});
+
+check('recipe keys are unique across menus, library and showpieces', () => {
+  const seen = new Map();
+  const add = (k, where) => seen.set(k, (seen.get(k) || []).concat(where));
+  for (const m of DB.menus) for (const r of m.recipes) add(`${m.id}|${r.title}`, m.id);
+  for (const r of DB.library.concat(DB.showpieces)) add(`${r.chapterId}|${r.title}`, r.chapterId);
+  const dupes = [...seen].filter(([, w]) => w.length > 1);
+  if (dupes.length) throw new Error(`the cart and permalinks cannot tell these apart: ` +
+    dupes.slice(0, 3).map(([k]) => k).join('; '));
+  return `${seen.size} distinct keys`;
+});
+
+check('every menu has a shopping block parseShopping can read', () => {
+  const bad = DB.menus.filter(m => !/<li><strong>[^<]+:<\/strong>/.test(m.blocks.shopping || ''));
+  if (bad.length) throw new Error(`no parseable shopping block: ${bad.map(m => m.id).join(', ')}`);
+  return `${DB.menus.length} menus`;
+});
+
+check('every recipe carries a plating note', () => {
+  const bad = [];
+  for (const m of DB.menus)
+    for (const r of m.recipes)
+      if (!r.plating || !String(r.plating.text || '').trim()) bad.push(`${m.id} "${r.title}"`);
+  for (const r of DB.library)
+    if (!r.plating || !String(r.plating.text || '').trim()) bad.push(`${r.chapterId} "${r.title}"`);
+  if (bad.length) throw new Error(`${bad.length} without one: ${bad.slice(0, 3).join('; ')}`);
+  return 'zero gaps';
+});
+
+check('no text anywhere carries an undecoded \\uXXXX escape', () => {
+  /* 18 of these once sat in the book HTML and rendered as literal backslash-u-2014.
+     content/*.json is validated for it; hand-written book/ HTML is not. Walk the
+     whole payload rather than a chosen set of fields, because the last batch
+     turned up in chapter prose as well as in recipes. */
+  const bad = [];
+  const walk = (node, path) => {
+    if (typeof node === 'string') {
+      if (/\\u[0-9a-fA-F]{4}/.test(node)) bad.push(path);
+    } else if (Array.isArray(node)) {
+      node.forEach((v, i) => walk(v, `${path}[${i}]`));
+    } else if (node && typeof node === 'object') {
+      for (const [k, v] of Object.entries(node)) walk(v, path ? `${path}.${k}` : k);
+    }
+  };
+  walk(DB, '');
+  if (bad.length) throw new Error(`${bad.length} literal escape(s): ${bad.slice(0, 3).join('; ')}`);
+  return 'clean';
+});
+
+check('sorting a build pool by region survives regionless showpieces', () => {
+  if (!api.SHOWPIECES.length) throw new Error('no showpieces to trip over');
+  api.state.view = 'build';
+  api.state.bOpen.Main = true;
+  api.state.bSort.Main = 'region';
+  const out = api.viewBuild();
+  api.state.bOpen.Main = false;
+  api.state.bSort.Main = 'suggested';
+  api.state.view = 'menus';
+  if (!/pickgroup/.test(out)) throw new Error('region grouping did not render');
+  return `${api.SHOWPIECES.length} showpieces, grouped without throwing`;
+});
+
+check('a recipe with an unexpected course still renders on its menu page', () => {
+  const m = DB.menus[0];
+  const fake = { ...m, courses: { ...(m.courses || {}), Other: [{ ...m.recipes[0], course: 'Other',
+    title: 'ZZ Off-list Dish' }] }, recipes: m.recipes.concat([{ ...m.recipes[0],
+    course: 'Other', title: 'ZZ Off-list Dish' }]) };
+  const order = api.courseOrder(fake);
+  if (!order.includes('Other')) throw new Error('courseOrder dropped the unexpected course');
+  const out = api.viewMenuDetail(fake);
+  if (!out.includes('ZZ Off-list Dish'))
+    throw new Error('recipe is in the data but absent from its own menu page');
+  return `rendered after ${api.COURSES.length} known courses`;
 });
 
 console.log(failed ? `\n${failed} failing\n` : '\nall passing\n');

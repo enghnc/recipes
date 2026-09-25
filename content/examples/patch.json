@@ -1,0 +1,8 @@
+{
+  "kind": "patch",
+  "target": "ch25",
+  "set": {"cost": "$$"},
+  "add": {"season": ["Fall"], "occasion": ["Cookout"]},
+  "remove": {"diet": ["No shellfish"]},
+  "newFacetValues": {}
+}

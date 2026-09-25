@@ -1,0 +1,30 @@
+{
+  "kind": "library",
+  "chapterId": "ch22",
+  "placement": {"after": "Tzatziki"},
+  "recipe": {
+    "title": "Tkemali",
+    "native": "Georgian sour plum sauce",
+    "context": "Georgian Supra",
+    "yield": "Makes 2 cups",
+    "headnote": "Sour plums, not ripe ones. A sweet plum makes a chutney, and the point of tkemali is that it is sharp enough to cut through grilled pork fat.",
+    "ingredients": [
+      "2 lb sour plums, stoned",
+      "4 cloves garlic",
+      "1 tsp ground coriander",
+      "1 tsp blue fenugreek",
+      "Small bunch dill",
+      "Small bunch coriander",
+      "Salt",
+      "Water as needed"
+    ],
+    "method": [
+      "Simmer the plums in a splash of water until they collapse, about 20 minutes.",
+      "Push them through a sieve to leave the skins behind, or leave them in for a rougher sauce.",
+      "Pound the garlic, herbs and spices with a good pinch of salt and stir that into the warm purée.",
+      "Thin with water until it pours thickly from a spoon. Taste for salt and cool before serving."
+    ],
+    "plating": {"style": "keeping", "text": "Keeps a week in the fridge and freezes well. Make a double batch while sour plums are around."}
+  },
+  "newFacetValues": {}
+}

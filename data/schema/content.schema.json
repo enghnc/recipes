@@ -1,0 +1,308 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fire-and-kettle.local/content.schema.json",
+  "title": "Fire & Kettle content payload",
+  "description": "One JSON file describing one addition to the book: a whole menu chapter, a recipe for an existing chapter, an entry for the shared library, or a patch to an existing menu's facets. Drop the file into content/ and run npm run build.",
+  "type": "object",
+  "required": ["kind"],
+  "oneOf": [
+    {"$ref": "#/$defs/MenuPayload"},
+    {"$ref": "#/$defs/RecipePayload"},
+    {"$ref": "#/$defs/LibraryPayload"},
+    {"$ref": "#/$defs/PatchPayload"}
+  ],
+  "$defs": {
+    "Prose": {
+      "type": "string",
+      "description": "Plain text. No HTML and no backslash-u escapes. Three markers are expanded: **bold** for pull temperatures and key numbers, *italic* for foreign words, and ((Chapter 22)) for a cross-reference to a library recipe.",
+      "pattern": "^[^<>]*$"
+    },
+    "NewFacetValues": {
+      "type": "object",
+      "description": "Every facet value that is not already used somewhere in the book must be listed here, keyed by facet name. Use {} when the payload reuses only existing values. This exists because a typo silently creates a duplicate filter chip in the app; run npm run vocab to see the current vocabulary.",
+      "additionalProperties": {"type": "array", "items": {"type": "string"}}
+    },
+    "Plating": {
+      "type": "object",
+      "description": "The 'To the table' note. Every recipe in the book has one; this is a hard requirement, not a nicety.",
+      "required": ["style", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "style": {
+          "type": "string",
+          "pattern": "^[a-z][a-z ]*$",
+          "description": "How it reaches the table, lowercase. Existing styles: board, platter, plate, bowl, communal, in the pan, in the dish, hand, newspaper, glass, basket, keeping. Use 'keeping' for something that is stored rather than served."
+        },
+        "text": {"$ref": "#/$defs/Prose", "description": "One or two sentences on how it actually arrives in front of people."}
+      }
+    },
+    "Note": {
+      "type": "object",
+      "required": ["kind", "label", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"enum": ["note", "warn", "ahead"], "description": "'note' for an aside, 'warn' for the specific way this dish fails, 'ahead' for what can be made in advance."},
+        "label": {"type": "string", "description": "The bold run-in heading, e.g. 'On doneness' or 'Watch out'."},
+        "text": {"$ref": "#/$defs/Prose"}
+      }
+    },
+    "Ingredient": {
+      "description": "A string is one ingredient line. An object inserts a sub-heading inside the ingredient list, e.g. {\"sub\": \"For the marinade\"}.",
+      "oneOf": [
+        {"$ref": "#/$defs/Prose"},
+        {"type": "object", "required": ["sub"], "additionalProperties": false,
+         "properties": {"sub": {"type": "string"}}}
+      ]
+    },
+    "Recipe": {
+      "type": "object",
+      "required": ["title", "course", "serves", "ingredients", "method", "plating"],
+      "additionalProperties": false,
+      "properties": {
+        "title": {"type": "string", "maxLength": 70, "description": "Unique within its chapter. It keys the shopping cart and the permalink, so it must not repeat another title in the same chapter."},
+        "native": {"type": "string", "description": "The grey gloss after the title, e.g. 'cross-cut short ribs'."},
+        "course": {"enum": ["Starter", "Main", "Side", "Sauce", "Dessert", "Drink"], "description": "Declared, never inferred. The build asserts that the assembled meta line classifies back to this value."},
+        "serves": {"type": "string", "description": "e.g. 'Serves 8'. The book is written for eight people."},
+        "time": {"type": "string", "description": "e.g. '45-75 min'. An estimate, unlike a temperature."},
+        "metaExtra": {"type": "string", "description": "An extra segment on the meta line, e.g. 'Deflector'. Must not contain a course word (main, side, sauce, drink, dessert, appetizer, rub, marinade, bread) or it will be classified as the wrong course."},
+        "headnote": {"$ref": "#/$defs/Prose", "description": "Two or three sentences naming the specific way this dish fails, not that it is tricky."},
+        "ingredients": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/Ingredient"}},
+        "method": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/Prose"},
+                   "description": "Numbered steps. Write pull temperatures in **bold**, because temperatures are instructions and times are only estimates."},
+        "notes": {"type": "array", "items": {"$ref": "#/$defs/Note"}},
+        "plating": {"$ref": "#/$defs/Plating"}
+      }
+    },
+    "LibraryRecipe": {
+      "type": "object",
+      "required": ["title", "context", "yield", "ingredients", "method", "plating"],
+      "additionalProperties": false,
+      "properties": {
+        "title": {"type": "string", "maxLength": 70, "description": "Must not be a prefix or substring of an existing library title. Cross-references are resolved fuzzily, so 'Chimichurri Rojo' would hijack every '(Chapter 22)' reference to 'Chimichurri'."},
+        "native": {"type": "string"},
+        "context": {"type": "string", "description": "Where it is used, e.g. 'Argentine Asado'. Shown as the first column in the library list."},
+        "yield": {"type": "string", "description": "e.g. 'Makes 2 cups'."},
+        "headnote": {"$ref": "#/$defs/Prose"},
+        "ingredients": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/Ingredient"}},
+        "method": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/Prose"}},
+        "notes": {"type": "array", "items": {"$ref": "#/$defs/Note"}},
+        "plating": {"$ref": "#/$defs/Plating"}
+      }
+    },
+    "Facets": {
+      "type": "object",
+      "description": "Everything the app filters on. All 19 keys are required: a missing one prints 'undefined' on the page and in search.",
+      "required": ["slug", "region", "continent", "season", "occasion", "proteins",
+                   "complexity", "kettles", "accessories", "leadHours", "activeMin",
+                   "totalMin", "wood", "cost", "heat", "coldOK", "diet", "special", "technique"],
+      "additionalProperties": false,
+      "properties": {
+        "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "region": {"type": "string", "description": "Country, or 'Country · Region' for a large country."},
+        "continent": {"type": "string", "description": "Existing values: Africa, Asia, Caribbean, Europe, North America, Pacific, South America."},
+        "season": {"type": "array", "minItems": 1, "items": {"enum": ["Spring", "Summer", "Fall", "Winter"]}},
+        "occasion": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "proteins": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "complexity": {"enum": ["Light", "Moderate", "Heavy", "All day"], "description": "Closed: the filter list is hardcoded in the app."},
+        "kettles": {"enum": [1, 2], "description": "Closed, and it is the book's central rule: no menu uses more than two 22-inch kettles."},
+        "accessories": {"type": "array", "items": {"enum": ["Deflector", "Rotisserie", "Stone", "Vortex", "Plancha"]}, "description": "Empty array when none are needed. Only a heat deflector, a rotisserie and a pizza stone are allowed by the book's rule; Vortex and Plancha are existing exceptions."},
+        "leadHours": {"type": "integer", "minimum": 0, "maximum": 336, "description": "Hours between starting any prep and serving."},
+        "activeMin": {"type": "integer", "minimum": 5, "description": "Minutes of hands-on work."},
+        "totalMin": {"type": "integer", "minimum": 5, "description": "Minutes from lighting the first chimney to serving. Must be at least activeMin."},
+        "wood": {"type": "array", "items": {"type": "string"}, "description": "Empty array for charcoal only."},
+        "cost": {"enum": ["$", "$$", "$$$", "$$$$"], "description": "Closed."},
+        "heat": {"enum": [1, 2, 3, 5], "description": "Closed, and 4 is deliberately absent: the app maps it to a blank label. 1 mild, 2 medium, 3 hot, 5 fierce."},
+        "coldOK": {"type": "boolean", "description": "True if the menu works in winter weather."},
+        "diet": {"type": "array", "items": {"type": "string"}},
+        "special": {"type": "array", "items": {"type": "string"}, "description": "Ingredients that need ordering ahead. These drive an 'order ahead' badge on the shopping list."},
+        "technique": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+      }
+    },
+    "MenuLine": {
+      "type": "object",
+      "required": ["dishes"],
+      "additionalProperties": false,
+      "properties": {
+        "dishes": {"type": "array", "minItems": 1, "items": {"type": "string"}, "description": "Dish names, bolded in the printed menu list. Two or more on one line are joined with 'and'."},
+        "note": {"$ref": "#/$defs/Prose", "description": "A short clause after an em dash."}
+      }
+    },
+    "Blocks": {
+      "type": "object",
+      "description": "The four prose sections of a chapter. They are rendered into HTML the app injects verbatim, so they are written as structured data here rather than as markup.",
+      "required": ["menu", "grill", "timeline", "shopping"],
+      "additionalProperties": false,
+      "properties": {
+        "menu": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/MenuLine"}, "description": "One line per dish or pair of dishes, in serving order."},
+        "grill": {
+          "type": "object",
+          "required": ["fuel", "paragraphs"],
+          "additionalProperties": false,
+          "properties": {
+            "fuel": {"$ref": "#/$defs/Prose", "description": "What to burn and roughly how much."},
+            "paragraphs": {"type": "array", "minItems": 1, "items": {
+              "type": "object", "required": ["text"], "additionalProperties": false,
+              "properties": {
+                "lead": {"type": "string", "description": "Bold run-in, e.g. 'Kettle A - the embers.'"},
+                "text": {"$ref": "#/$defs/Prose"}
+              }}, "description": "One paragraph per kettle, plus a charcoal-quantity paragraph."}
+          }
+        },
+        "timeline": {"type": "array", "minItems": 2, "items": {
+          "type": "object", "required": ["when", "what"], "additionalProperties": false,
+          "properties": {
+            "when": {"type": "string", "description": "Counting back from serving, e.g. 'T-24 hr', 'T-45 min', 'T-0'."},
+            "what": {"$ref": "#/$defs/Prose"}
+          }}, "description": "The prep countdown, ending at T-0."},
+        "shopping": {
+          "type": "object",
+          "description": "Category to list of items. Categories used in the book: Meat, Seafood, Poultry, Fish, Produce, Dairy, Bakery, Pantry, Drinks, Special, Fuel. 'Special' is load-bearing: the app reads it to flag order-ahead items.",
+          "minProperties": 1,
+          "additionalProperties": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/Prose"}}
+        }
+      }
+    },
+    "CapItem": {
+      "type": "object",
+      "description": "One constraint on what fits. The app uses these to answer honestly whether a menu scales to 12 or 16; a dish with no entry is silently reported as scaling fine.",
+      "required": ["match", "type"],
+      "properties": {
+        "match": {"type": "string", "description": "A substring of exactly one recipe title in this chapter."},
+        "type": {"enum": ["dutch", "skillet", "grate", "spit", "stone", "vortex", "steamer", "fry", "pan"]},
+        "note": {"$ref": "#/$defs/Prose"},
+        "label": {"type": "string", "description": "Display name when 'match' deliberately names something that is not a recipe."},
+        "qt8": {"type": "number", "description": "dutch, steamer, fry: quarts needed at 8 servings."},
+        "loads8": {"type": "number", "description": "skillet: how many 12-inch pan loads at 8 servings."},
+        "sqin8": {"type": "number", "description": "grate: square inches of cooking grate at 8 servings."},
+        "zone": {"enum": ["direct", "indirect", "full"], "description": "grate: which zone it needs."},
+        "lb8": {"type": "number", "description": "spit: pounds on the rotisserie at 8 servings."},
+        "len8": {"type": "number", "description": "spit: inches of spit used at 8 servings."},
+        "units8": {"type": "number", "description": "stone: items cooked at 8 servings."},
+        "minEach": {"type": "number", "description": "stone: minutes per item."},
+        "pieces8": {"type": "number", "description": "vortex: pieces ringed around the vortex at 8 servings."},
+        "name": {"type": "string", "description": "pan: what the vessel is, e.g. 'foil pan', 'muffin tin'."},
+        "count8": {"type": "number", "description": "pan: how many at 8 servings."},
+        "perUnit": {"type": "number", "description": "pan: servings per vessel."}
+      },
+      "allOf": [
+        {"if": {"properties": {"type": {"const": "grate"}}}, "then": {"required": ["sqin8", "zone"]}},
+        {"if": {"properties": {"type": {"const": "dutch"}}}, "then": {"required": ["qt8"]}},
+        {"if": {"properties": {"type": {"const": "steamer"}}}, "then": {"required": ["qt8"]}},
+        {"if": {"properties": {"type": {"const": "fry"}}}, "then": {"required": ["qt8"]}},
+        {"if": {"properties": {"type": {"const": "skillet"}}}, "then": {"required": ["loads8"]}},
+        {"if": {"properties": {"type": {"const": "spit"}}}, "then": {"required": ["lb8", "len8"]}},
+        {"if": {"properties": {"type": {"const": "stone"}}}, "then": {"required": ["units8", "minEach"]}},
+        {"if": {"properties": {"type": {"const": "vortex"}}}, "then": {"required": ["pieces8"]}},
+        {"if": {"properties": {"type": {"const": "pan"}}}, "then": {"required": ["name", "count8", "perUnit"]}}
+      ]
+    },
+    "MenuPayload": {
+      "type": "object",
+      "required": ["kind", "chapterId", "afterChapter", "title", "lead", "part",
+                   "partLabel", "facets", "blocks", "capacity", "recipes", "newFacetValues"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "menu"},
+        "chapterId": {"type": "string", "pattern": "^ch[0-9]{2,3}$", "description": "A new chapter number not used anywhere in the book, e.g. 'ch65'."},
+        "afterChapter": {"type": "string", "pattern": "^ch[0-9]{2,3}$", "description": "An existing menu chapter id. The new menu appears straight after it in the app."},
+        "title": {"type": "string"},
+        "lead": {"type": "string", "description": "One line: 'Season · Occasion · Kettles · Accessories', matching the style of the existing chapters."},
+        "part": {"type": "string", "description": "The section it belongs to, e.g. 'Around the Fire'. Reuse an existing part name."},
+        "partLabel": {"type": "string", "description": "e.g. 'Part Four'. Shown before the part name."},
+        "intro": {"type": "array", "minItems": 1, "maxItems": 3, "items": {"$ref": "#/$defs/Prose"}},
+        "facets": {"$ref": "#/$defs/Facets"},
+        "blocks": {"$ref": "#/$defs/Blocks"},
+        "capacity": {
+          "type": "object",
+          "required": ["maxServes", "fuel", "items", "notes"],
+          "additionalProperties": false,
+          "properties": {
+            "maxServes": {"type": "integer", "description": "The largest number this menu honestly feeds on two kettles."},
+            "fuel": {"type": "number", "description": "Chimneys of charcoal across the whole session at 8 servings."},
+            "items": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/CapItem"}},
+            "notes": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/Prose"}, "description": "What actually limits this menu."}
+          }
+        },
+        "impress": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "why": {"$ref": "#/$defs/Prose", "description": "The single moment that carries the meal."},
+            "recipes": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "recipes": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/Recipe"}},
+        "newFacetValues": {"$ref": "#/$defs/NewFacetValues"}
+      }
+    },
+    "RecipePayload": {
+      "type": "object",
+      "required": ["kind", "menuId", "recipe", "menuLine", "shoppingAdds", "capacity", "newFacetValues"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "recipe"},
+        "menuId": {"type": "string", "pattern": "^ch[0-9]{2,3}$", "description": "The existing menu chapter this recipe joins."},
+        "placement": {
+          "type": "object", "additionalProperties": false,
+          "description": "Where it sits among the chapter's existing recipes. Omit to place it in course order, which is usually right.",
+          "properties": {
+            "after": {"type": "string", "description": "A substring matching exactly one existing recipe title."},
+            "position": {"const": "end"}
+          }
+        },
+        "recipe": {"$ref": "#/$defs/Recipe"},
+        "menuLine": {"$ref": "#/$defs/MenuLine", "description": "The line added to the chapter's printed menu list. Required, because the app renders that list verbatim."},
+        "shoppingAdds": {"type": "object", "additionalProperties": {"type": "array", "items": {"$ref": "#/$defs/Prose"}}, "description": "Items added to the chapter's printed shopping list, keyed by category. Use {} when the chapter already lists everything the new dish needs."},
+        "capacity": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "items": {"type": "array", "items": {"$ref": "#/$defs/CapItem"}},
+            "notesAdd": {"type": "array", "items": {"$ref": "#/$defs/Prose"}}
+          }
+        },
+        "facetAdds": {"type": "object", "description": "List facets only (season, occasion, proteins, accessories, wood, diet, special, technique). Scalar facets need a patch payload.", "additionalProperties": {"type": "array", "items": {"type": "string"}}},
+        "timelineAdds": {"type": "array", "items": {
+          "type": "object", "required": ["when", "what"], "additionalProperties": false,
+          "properties": {
+            "when": {"type": "string"},
+            "what": {"$ref": "#/$defs/Prose"},
+            "after": {"type": "string", "description": "The existing 'when' label to insert after. Defaults to just before T-0."}
+          }}},
+        "impress": {"type": "boolean", "description": "True if this dish is the showpiece moment of its menu."},
+        "newFacetValues": {"$ref": "#/$defs/NewFacetValues"}
+      }
+    },
+    "LibraryPayload": {
+      "type": "object",
+      "required": ["kind", "chapterId", "recipe"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "library"},
+        "chapterId": {"enum": ["ch19", "ch20", "ch21", "ch22", "ch23", "ch24", "ch51", "ch52", "ch53", "ch56"],
+                      "description": "19 enriched dough, 20 flatbread dough, 21 pastry and batter, 22 sauces, 23 rubs and spice blends, 24 brines and marinades, 51 stock and small sauces, 52 more sauces, 53 steak and bistro, 56 sandwich components."},
+        "placement": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "after": {"type": "string"},
+            "position": {"const": "end"}
+          }
+        },
+        "recipe": {"$ref": "#/$defs/LibraryRecipe"},
+        "newFacetValues": {"$ref": "#/$defs/NewFacetValues"}
+      }
+    },
+    "PatchPayload": {
+      "type": "object",
+      "description": "Change the facets of a menu that already exists. Touches no recipe text.",
+      "required": ["kind", "target"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {"const": "patch"},
+        "target": {"type": "string", "pattern": "^ch[0-9]{2,3}$", "description": "An existing menu chapter id."},
+        "set": {"type": "object", "description": "Replace a facet outright. Use for scalars such as cost, complexity, heat, kettles, coldOK, leadHours, activeMin, totalMin, region, continent.", "additionalProperties": true},
+        "add": {"type": "object", "description": "Union values into a list facet.", "additionalProperties": {"type": "array", "items": {"type": "string"}}},
+        "remove": {"type": "object", "description": "Remove values from a list facet.", "additionalProperties": {"type": "array", "items": {"type": "string"}}},
+        "newFacetValues": {"$ref": "#/$defs/NewFacetValues"}
+      }
+    }
+  }
+}

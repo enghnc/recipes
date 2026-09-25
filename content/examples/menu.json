@@ -1,0 +1,407 @@
+{
+  "kind": "menu",
+  "chapterId": "ch65",
+  "afterChapter": "ch48",
+  "title": "Georgian Supra",
+  "lead": "Late summer · Long table · Two kettles · No accessories",
+  "part": "Around the Fire",
+  "partLabel": "Part Four",
+  "intro": [
+    "A supra is a long lunch with a toastmaster and no clear end. Dishes arrive together and stay on the table, so almost everything here is built to be good warm rather than hot. That suits two kettles: one carries the skewers, the other carries everything else, and neither is ever rushed.",
+    "Vine cuttings are the traditional fuel for *mtsvadi* and they burn fast and hot. Start them early, let them collapse to embers, and cook over the embers rather than the flame."
+  ],
+  "facets": {
+    "slug": "georgian-supra",
+    "region": "Georgia",
+    "continent": "Europe",
+    "season": [
+      "Summer",
+      "Fall"
+    ],
+    "occasion": [
+      "Long lunch",
+      "Family gathering",
+      "Celebration"
+    ],
+    "proteins": [
+      "Pork",
+      "Chicken"
+    ],
+    "complexity": "Moderate",
+    "kettles": 2,
+    "accessories": [],
+    "leadHours": 12,
+    "activeMin": 120,
+    "totalMin": 300,
+    "wood": [
+      "Vine cuttings",
+      "Oak"
+    ],
+    "cost": "$$",
+    "heat": 1,
+    "coldOK": false,
+    "diet": [
+      "No shellfish"
+    ],
+    "special": [
+      "Blue fenugreek",
+      "Sour plums"
+    ],
+    "technique": [
+      "Direct",
+      "Two-zone",
+      "Cast iron",
+      "Dutch oven",
+      "Embers"
+    ]
+  },
+  "newFacetValues": {
+    "region": [
+      "Georgia"
+    ],
+    "special": [
+      "Blue fenugreek",
+      "Sour plums"
+    ]
+  },
+  "blocks": {
+    "menu": [
+      {
+        "dishes": [
+          "Badrijani Nigvzit"
+        ],
+        "note": "grilled aubergine rolled around walnut paste"
+      },
+      {
+        "dishes": [
+          "Mtsvadi"
+        ],
+        "note": "pork neck over vine-cutting embers, the centre of the meal"
+      },
+      {
+        "dishes": [
+          "Shkmeruli"
+        ],
+        "note": "chicken finished in garlic milk in a cast-iron pan"
+      },
+      {
+        "dishes": [
+          "Lobio"
+        ],
+        "note": "red beans cooked down in the Dutch oven"
+      },
+      {
+        "dishes": [
+          "Tkemali"
+        ],
+        "note": "sour plum sauce, sharp enough to cut the pork"
+      }
+    ],
+    "grill": {
+      "fuel": "hardwood lump on both kettles, plus a bundle of **vine cuttings** for Kettle A and 2 **oak** chunks for Kettle B. Vine cuttings burn out fast, so light them about 40 minutes before the skewers go on.",
+      "paragraphs": [
+        {
+          "lead": "Kettle A — the embers.",
+          "text": "Full chimney of lump, then the vine cuttings on top. Wait until the flame has gone and you have a bed of grey embers. Skewers go directly over that, close to the coals, turned often."
+        },
+        {
+          "lead": "Kettle B — two zones.",
+          "text": "Bank the coals to one side. The aubergine chars over the hot side, then the cast-iron pan goes over the same coals for the chicken, and the Dutch oven sits on the cool side for the whole afternoon."
+        },
+        {
+          "lead": "Charcoal:",
+          "text": "about 2 chimneys per kettle across the session. Kettle A needs a second load if the skewers run in two rounds."
+        }
+      ]
+    },
+    "timeline": [
+      {
+        "when": "T–12 hr",
+        "what": "Salt the pork neck and leave it uncovered in the fridge. Soak the beans."
+      },
+      {
+        "when": "T–3 hr",
+        "what": "Tkemali. It keeps a week and is better made ahead."
+      },
+      {
+        "when": "T–2 hr",
+        "what": "Walnut paste for the badrijani. Light Kettle B and start the lobio."
+      },
+      {
+        "when": "T–1 hr",
+        "what": "Cut and skewer the pork. Light Kettle A."
+      },
+      {
+        "when": "T–40 min",
+        "what": "Char the aubergine on Kettle B, then roll it while it is still warm."
+      },
+      {
+        "when": "T–25 min",
+        "what": "Chicken on Kettle B, skin down, then into the pan with the garlic milk."
+      },
+      {
+        "when": "T–0",
+        "what": "Mtsvadi over the embers. Everything else is already on the table."
+      }
+    ],
+    "shopping": {
+      "Meat": [
+        "pork neck or shoulder 4 lb, in one piece",
+        "1 whole chicken about 4 lb"
+      ],
+      "Produce": [
+        "4 large aubergines",
+        "3 heads garlic",
+        "2 lb sour plums or 1 cup tkemali",
+        "large bunch coriander",
+        "large bunch dill"
+      ],
+      "Pantry": [
+        "1 lb walnut halves",
+        "1 lb dried red kidney beans",
+        "red wine vinegar",
+        "ground coriander"
+      ],
+      "Dairy": [
+        "1 quart whole milk",
+        "8 oz butter"
+      ],
+      "Bakery": [
+        "2 large flatbreads or 1 loaf"
+      ],
+      "Special": [
+        "Blue fenugreek",
+        "Sour plums"
+      ],
+      "Fuel": [
+        "lump ~20 lb",
+        "vine cuttings, one bundle",
+        "oak chunks ×2"
+      ]
+    }
+  },
+  "capacity": {
+    "maxServes": 16,
+    "fuel": 4,
+    "items": [
+      {
+        "match": "Mtsvadi",
+        "type": "grate",
+        "sqin8": 180,
+        "zone": "direct",
+        "note": "Skewers need one uncrowded layer close to the embers. A second round is easier than a crowded first one."
+      },
+      {
+        "match": "Badrijani",
+        "type": "grate",
+        "sqin8": 90,
+        "zone": "direct"
+      },
+      {
+        "match": "Shkmeruli",
+        "type": "skillet",
+        "loads8": 1,
+        "note": "One chicken fills a 12-inch pan. Two chickens means two pans or two rounds."
+      },
+      {
+        "match": "Lobio",
+        "type": "dutch",
+        "qt8": 5
+      }
+    ],
+    "notes": [
+      "Kettle A is ember-only and can be rebuilt between rounds, so the skewers scale further than the pan does. The cast-iron pan is the real ceiling here."
+    ]
+  },
+  "impress": {
+    "why": "The skewers come off the embers all at once and go straight onto flatbread, which soaks up everything that drips.",
+    "recipes": [
+      "Mtsvadi"
+    ]
+  },
+  "recipes": [
+    {
+      "title": "Badrijani Nigvzit",
+      "native": "aubergine with walnut paste",
+      "course": "Starter",
+      "serves": "Serves 8",
+      "time": "40 min",
+      "headnote": "The failure here is watery aubergine. Salt the slices and let them drain for half an hour before they go near the fire, or the paste slides straight off.",
+      "ingredients": [
+        "4 large aubergines, sliced lengthways about 1/4 inch thick",
+        "Salt for drawing out water",
+        "Olive oil for brushing",
+        {
+          "sub": "Walnut paste"
+        },
+        "2 cups walnut halves",
+        "4 cloves garlic",
+        "2 tsp ground coriander",
+        "1 tsp **blue fenugreek**",
+        "2 tbsp red wine vinegar",
+        "Large handful coriander leaves, chopped",
+        "Pomegranate seeds to finish"
+      ],
+      "method": [
+        "Salt the aubergine slices on both sides and lay them in a colander for **30 minutes**. Press them dry.",
+        "Grind the walnuts, garlic, spices and vinegar to a thick paste. Loosen with water a spoonful at a time until it spreads without tearing the aubergine.",
+        "Brush the slices with oil and grill over the hot side of Kettle B, about 3 minutes a side, until they are soft enough to roll without cracking.",
+        "Spread each warm slice with paste, roll it, and stand the rolls on a platter. Scatter coriander and pomegranate over the top."
+      ],
+      "notes": [
+        {
+          "kind": "ahead",
+          "label": "Make ahead",
+          "text": "The paste keeps three days in the fridge. Bring it back to room temperature before spreading or it tears the aubergine."
+        }
+      ],
+      "plating": {
+        "style": "platter",
+        "text": "Stood upright in rows on a flat platter, pomegranate scattered over at the last moment so it stays bright."
+      }
+    },
+    {
+      "title": "Mtsvadi",
+      "native": "pork neck over vine cuttings",
+      "course": "Main",
+      "serves": "Serves 8",
+      "time": "25–35 min",
+      "headnote": "Salt and onion, nothing else. The onion is not a marinade in the usual sense — it is squeezed over the meat and left to sit, and its juice is what keeps the pork from drying at the edges.",
+      "ingredients": [
+        "4 lb pork neck or shoulder, cut into 2-inch cubes",
+        "3 large onions, grated and squeezed over the meat",
+        "Coarse salt",
+        "Black pepper",
+        "Flatbread, to catch the juices",
+        "Tkemali, to serve"
+      ],
+      "method": [
+        "Toss the pork with the grated onion, salt and pepper. Leave it cool for **at least 3 hours**, ideally overnight.",
+        "Wipe the onion off and thread the cubes tight onto skewers, fat pieces mixed through so nothing dries out.",
+        "Light the vine cuttings on top of a full chimney of lump and wait for the flame to die. You want grey embers, not fire — flame scorches the outside before the middle is done.",
+        "Cook directly over the embers, turning every couple of minutes, **25 to 35 minutes**, until the cubes read **145°F** at the centre and the fat has coloured.",
+        "Slide the meat off the skewers onto flatbread and let it rest there for 5 minutes. The bread takes up the juice and goes to the table with the meat."
+      ],
+      "notes": [
+        {
+          "kind": "warn",
+          "label": "Watch out",
+          "text": "Vine cuttings burn out much faster than lump. If the embers go grey and cool before the skewers are done, move them to the second kettle rather than adding fresh fuel underneath."
+        }
+      ],
+      "plating": {
+        "style": "board",
+        "text": "Straight onto the flatbread it rested on, carried to the table on a board with the tkemali alongside and no plates until people ask."
+      }
+    },
+    {
+      "title": "Shkmeruli",
+      "native": "chicken in garlic milk",
+      "course": "Main",
+      "serves": "Serves 8",
+      "time": "50 min",
+      "headnote": "The garlic milk splits if it boils. Keep the pan on the cooler part of the grate once the milk goes in and it stays a sauce rather than turning into curds and oil.",
+      "ingredients": [
+        "1 whole chicken, spatchcocked and cut into 8 pieces",
+        "Salt",
+        "3 tbsp butter",
+        {
+          "sub": "Garlic milk"
+        },
+        "2 heads garlic, crushed to a paste",
+        "2 cups whole milk",
+        "1 tsp **blue fenugreek**",
+        "Salt to taste"
+      ],
+      "method": [
+        "Salt the chicken an hour ahead. Grill the pieces skin down over the hot side of Kettle B until the skin is properly browned, about 8 minutes.",
+        "Move a 12-inch cast-iron pan over the coals, melt the butter and lay the chicken in skin up.",
+        "Whisk the garlic, milk and fenugreek together and pour it around, not over, the chicken so the skin stays out of the liquid.",
+        "Slide the pan to the cool side. Cook at a bare shiver, never a boil, **20 to 25 minutes**, until the thigh reads **175°F** and the milk has thickened around the garlic.",
+        "Spoon the sauce over the chicken only at the table, so the skin is still crisp when it arrives."
+      ],
+      "notes": [
+        {
+          "kind": "note",
+          "label": "On the garlic",
+          "text": "Two whole heads sounds like a lot and is not. Slow cooking in milk takes the heat out of it and leaves it sweet."
+        }
+      ],
+      "plating": {
+        "style": "in the pan",
+        "text": "The pan goes to the table on a folded towel, chicken skin up, sauce spooned over in front of everyone."
+      }
+    },
+    {
+      "title": "Lobio",
+      "native": "red beans with walnut and coriander",
+      "course": "Side",
+      "serves": "Serves 8",
+      "time": "3 hr",
+      "headnote": "This sits on the cool side of the kettle all afternoon and asks nothing of you. Undersalt it early — the liquid reduces by half and salt added at the start ends up twice as strong.",
+      "ingredients": [
+        "1 lb dried red kidney beans, soaked overnight",
+        "2 onions, finely chopped",
+        "3 cloves garlic",
+        "1/2 cup walnuts, ground",
+        "2 tsp ground coriander",
+        "1 tsp **blue fenugreek**",
+        "2 tbsp red wine vinegar",
+        "Large bunch coriander leaves, chopped",
+        "Salt, added late"
+      ],
+      "method": [
+        "Drain the soaked beans and put them in the Dutch oven with the onion, garlic and enough fresh water to cover by two inches.",
+        "Set the pot on the cool side of Kettle B with the lid on. Let it go **2 to 3 hours**, topping up with hot water if it threatens to dry out.",
+        "When the beans crush easily against the side of the pot, stir in the walnuts, spices and vinegar and let it thicken uncovered for 20 minutes.",
+        "Salt now, off the heat, and fold the coriander through at the last minute so it stays green."
+      ],
+      "notes": [
+        {
+          "kind": "ahead",
+          "label": "Make ahead",
+          "text": "Better the next day. Reheat gently with a splash of water; it thickens a lot as it cools."
+        }
+      ],
+      "plating": {
+        "style": "bowl",
+        "text": "A deep bowl with a spoon standing in it, coriander scattered on top, put down early and left there for the whole meal."
+      }
+    },
+    {
+      "title": "Tkemali",
+      "native": "sour plum sauce",
+      "course": "Sauce",
+      "serves": "Makes 2 cups",
+      "time": "45 min",
+      "headnote": "Sour plums, not ripe ones. A sweet plum makes a chutney, and the whole point of tkemali is that it is sharp enough to cut through the pork fat.",
+      "ingredients": [
+        "2 lb sour plums, stoned",
+        "4 cloves garlic",
+        "1 tsp ground coriander",
+        "1 tsp **blue fenugreek**",
+        "Small bunch dill",
+        "Small bunch coriander",
+        "Salt",
+        "Water as needed"
+      ],
+      "method": [
+        "Simmer the plums in a splash of water in a small pan on the cool side of the grate until they collapse, about 20 minutes.",
+        "Push them through a sieve to leave the skins behind, or leave the skins in if you want it rougher.",
+        "Pound the garlic, herbs and spices with a good pinch of salt and stir that into the warm purée.",
+        "Thin with water until it pours thickly from a spoon. Taste for salt and let it cool before serving."
+      ],
+      "notes": [
+        {
+          "kind": "ahead",
+          "label": "Make ahead",
+          "text": "Keeps a week in the fridge and freezes well. Make a double batch while the plums are around."
+        }
+      ],
+      "plating": {
+        "style": "bowl",
+        "text": "A small bowl next to the mtsvadi board, with a spoon. It gets refilled at least once."
+      }
+    }
+  ]
+}
