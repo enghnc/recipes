@@ -273,7 +273,7 @@ PART_OF = {"ch25":"Around the Fire","ch26":"Around the Fire","ch27":"Around the 
 PAYLOADS = []
 if content:
     try:
-        PAYLOADS = content.load()
+        PAYLOADS = content.load(persist="--check" not in sys.argv)
         content.merge_python_tables(PAYLOADS, META, PART_OF, CAPACITY,
                                     IMPRESS_MENUS, IMPRESS_RECIPES)
     except content.ContentError as e:
@@ -460,17 +460,6 @@ def parse_showpieces():
     return out
 
 
-def book_section_ids():
-    """Every section.chapter id already used in book/, for collision checks."""
-    ids = set()
-    for path in BOOK.glob("*.html"):
-        if path.name.startswith("_"):
-            continue
-        text = path.read_text(encoding="utf-8")
-        ids.update(re.findall(r'<section[^>]*class="chapter"[^>]*id="([^"]+)"', text))
-    return ids
-
-
 def print_vocab():
     """Print the open facet vocabulary, for pasting into content/PROMPT.md."""
     import content as _c
@@ -481,11 +470,14 @@ def print_vocab():
             vals.update(v if isinstance(v, list) else [v] if v else [])
         print(f"- **{key}** ({len(vals)}): "
               + ", ".join('"' + v + '"' for v in sorted(vals)))
-    styles = sorted({r["plating"]["style"] for m in json.loads(
-        (HERE / "data.json").read_text(encoding="utf-8"))["menus"]
-        for r in m["recipes"] if r.get("plating")})
+    menus = json.loads((HERE / "data.json").read_text(encoding="utf-8"))["menus"]
+    styles = sorted({r["plating"]["style"] for m in menus
+                     for r in m["recipes"] if r.get("plating")})
     print(f"- **plating.style** ({len(styles)}): "
           + ", ".join('"' + v + '"' for v in styles))
+    print("\nMenus, for `menuId` and `afterChapter`:\n\n```")
+    print(_c.menu_index(menus))
+    print("```")
 
 
 def main():
@@ -515,7 +507,7 @@ def main():
     errors, warnings = [], []
     if content:
         errors, warnings = content.check(data, PAYLOADS, META, LIB_CHAPTERS,
-                                         book_section_ids(), classify)
+                                         content.book_section_ids(), classify)
     for w in warnings:
         print("  ~", w)
     if errors:

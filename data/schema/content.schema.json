@@ -198,13 +198,13 @@
     },
     "MenuPayload": {
       "type": "object",
-      "required": ["kind", "chapterId", "afterChapter", "title", "lead", "part",
+      "required": ["kind", "afterChapter", "title", "lead", "part",
                    "partLabel", "facets", "blocks", "capacity", "recipes", "newFacetValues"],
       "additionalProperties": false,
       "properties": {
         "kind": {"const": "menu"},
-        "chapterId": {"type": "string", "pattern": "^ch[0-9]{2,3}$", "description": "A new chapter number not used anywhere in the book, e.g. 'ch65'."},
-        "afterChapter": {"type": "string", "pattern": "^ch[0-9]{2,3}$", "description": "An existing menu chapter id. The new menu appears straight after it in the app."},
+        "chapterId": {"type": "string", "description": "Write \"auto\" or leave it out. The build assigns the next free chapter number and writes it back into the file."},
+        "afterChapter": {"type": "string", "pattern": "^ch[0-9]{2,3}$", "description": "An existing menu chapter id, from the menu list in content/PROMPT.md. The new menu appears straight after it in the app."},
         "title": {"type": "string"},
         "lead": {"type": "string", "description": "One line: 'Season · Occasion · Kettles · Accessories', matching the style of the existing chapters."},
         "part": {"type": "string", "description": "The section it belongs to, e.g. 'Around the Fire'. Reuse an existing part name."},
@@ -240,7 +240,7 @@
       "additionalProperties": false,
       "properties": {
         "kind": {"const": "recipe"},
-        "menuId": {"type": "string", "pattern": "^ch[0-9]{2,3}$", "description": "The existing menu chapter this recipe joins."},
+        "menuId": {"type": "string", "pattern": "^ch[0-9]{2,3}$", "description": "The existing menu chapter this recipe joins, from the menu list in content/PROMPT.md. Never a placeholder: which menu a dish belongs to cannot be assigned automatically."},
         "placement": {
           "type": "object", "additionalProperties": false,
           "description": "Where it sits among the chapter's existing recipes. Omit to place it in course order, which is usually right.",

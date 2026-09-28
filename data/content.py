@@ -26,6 +26,13 @@ from bs4 import BeautifulSoup
 
 HERE = pathlib.Path(__file__).resolve().parent
 CONTENT = HERE.parent / "content"
+BOOK = HERE.parent / "book"
+
+# A real chapter id. Anything else in an id field ("chXX", "auto", "") is a
+# placeholder left by a model that could not see which numbers are taken.
+REAL_ID = re.compile(r"ch\d{2,3}")
+# Placeholder text a model writes when it cannot see the chapter's recipes.
+UNSET = re.compile(r"\s*(tbd|tbc|todo|auto|none|n/?a|\?*)\s*", re.I)
 
 KINDS = ("menu", "recipe", "library", "patch")
 
@@ -130,8 +137,12 @@ def norm(value):
 
 
 # ---------------------------------------------------------------- loading
-def load(directory=None):
-    """Read and structurally validate every content/*.json. Raises ContentError."""
+def load(directory=None, persist=False):
+    """Read and structurally validate every content/*.json. Raises ContentError.
+
+    persist=True writes any chapter number assigned by assign_chapter_ids()
+    back into its file; --check leaves the files alone.
+    """
     root = pathlib.Path(directory) if directory else CONTENT
     if not root.is_dir():
         return []
@@ -147,11 +158,85 @@ def load(directory=None):
             continue
         data["_file"] = path.name
         payloads.append(data)
+    for note in assign_chapter_ids(payloads, persist) + _drop_unset_placement(payloads):
+        print("  ·", note)
     errors.extend(_schema_errors(payloads))
     errors.extend(check_structure(payloads))
     if errors:
         raise ContentError("\n".join("  ! " + e for e in errors))
     return payloads
+
+
+def book_section_ids():
+    """Every section.chapter id already used in book/, for collision checks."""
+    ids = set()
+    for path in BOOK.glob("*.html"):
+        if path.name.startswith("_"):
+            continue
+        text = path.read_text(encoding="utf-8")
+        ids.update(re.findall(r'<section[^>]*class="chapter"[^>]*id="([^"]+)"', text))
+    return ids
+
+
+def assign_chapter_ids(payloads, persist):
+    """Give every kind:"menu" payload a chapter number nobody else uses.
+
+    Whoever writes a payload cannot see the book, so cannot know which numbers
+    are free. A missing, placeholder or colliding chapterId is replaced with the
+    next number after the highest in use. The id keys permalinks and photos, so
+    the build writes it back to the file and it never moves again.
+    """
+    taken = book_section_ids()
+    todo = []
+    for p in payloads:
+        if p.get("kind") != "menu":
+            continue
+        cid = p.get("chapterId")
+        if isinstance(cid, str) and REAL_ID.fullmatch(cid) and cid not in taken:
+            taken.add(cid)
+        else:
+            todo.append(p)
+    nxt = max((int(c[2:]) for c in taken if REAL_ID.fullmatch(c)), default=0) + 1
+    notes = []
+    for p in todo:
+        old, new = p.get("chapterId"), f"ch{nxt}"
+        nxt += 1
+        p["chapterId"] = new
+        if persist:
+            _write_chapter_id(p, old, new)
+        why = "was taken" if isinstance(old, str) and REAL_ID.fullmatch(old) else "was unset"
+        done = "written back" if persist else "not saved until npm run build"
+        notes.append(f"{p['_file']}: chapterId {old!r} {why}; assigned {new} ({done})")
+    return notes
+
+
+def _write_chapter_id(p, old, new):
+    path = CONTENT / p["_file"]
+    text = path.read_text(encoding="utf-8")
+    if isinstance(old, str):
+        text, n = re.subn(r'("chapterId"\s*:\s*)"' + re.escape(old) + '"',
+                          lambda m: m.group(1) + '"' + new + '"', text, count=1)
+        if n:
+            path.write_text(text, encoding="utf-8")
+            return
+    # No chapterId string to swap in place: rewrite the file with it after "kind".
+    body = {k: v for k, v in p.items() if k != "_file"}
+    ordered = {"kind": body.pop("kind"), "chapterId": body.pop("chapterId"), **body}
+    path.write_text(json.dumps(ordered, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def _drop_unset_placement(payloads):
+    """placement.after "TBD" means no preference, which is course order."""
+    notes = []
+    for p in payloads:
+        place = p.get("placement")
+        if isinstance(place, dict) and isinstance(place.get("after"), str) \
+                and UNSET.fullmatch(place["after"]):
+            notes.append(f"{p['_file']}: placement.after {place.pop('after')!r} ignored; "
+                         f"placed in course order")
+            if not place:
+                del p["placement"]
+    return notes
 
 
 SCHEMA = HERE / "schema" / "content.schema.json"
@@ -185,7 +270,9 @@ def _schema_errors(payloads):
         validator = jsonschema.Draft202012Validator(
             {"$ref": "#/$defs/" + name, "$defs": schema["$defs"]})
         body = {k: v for k, v in p.items() if k != "_file"}
-        for e in sorted(validator.iter_errors(body), key=lambda e: list(e.path))[:6]:
+        # check() owns menuId, and can list the menus to choose from.
+        errs = [e for e in validator.iter_errors(body) if list(e.path) != ["menuId"]]
+        for e in sorted(errs, key=lambda e: list(e.path))[:6]:
             where = ".".join(str(x) for x in e.path) or "payload"
             out.append(f"{p['_file']}: {where}: {e.message}")
     return out
@@ -309,7 +396,6 @@ def _check_capacity(cap, where, out, f, require_totals):
 def check_structure(payloads):
     """Errors that need no book context. Run before anything is merged."""
     out = []
-    seen_ids = {}
     for p in payloads:
         f = p.get("_file", "?")
         kind = p.get("kind")
@@ -323,14 +409,8 @@ def check_structure(payloads):
                        f"reuses facet values the book already has")
 
         if kind == "menu":
-            for key in ("chapterId", "afterChapter", "title", "lead", "part", "partLabel"):
+            for key in ("afterChapter", "title", "lead", "part", "partLabel"):
                 _need(p, key, "a string", "payload", out, f, str)
-            cid = p.get("chapterId", "")
-            if cid and not re.fullmatch(r"ch\d{2,3}", cid):
-                out.append(f"{f}: chapterId {cid!r} must look like 'ch65'")
-            if cid in seen_ids:
-                out.append(f"{f}: chapterId {cid!r} is already used by {seen_ids[cid]}")
-            seen_ids[cid] = f
             facets = p.get("facets")
             if not isinstance(facets, dict):
                 out.append(f"{f}: 'facets' must be an object with all {len(FACET_KEYS)} keys")
@@ -363,7 +443,6 @@ def check_structure(payloads):
                     titles[t] = i
 
         elif kind == "recipe":
-            _need(p, "menuId", "a string", "payload", out, f, str)
             _check_recipe(p.get("recipe", {}), "recipe", out, f)
             for key in ("menuLine", "shoppingAdds", "capacity"):
                 if key not in p:
@@ -587,7 +666,9 @@ def merge_python_tables(payloads, META, PART_OF, CAPACITY, IMPRESS_MENUS, IMPRES
                 IMPRESS_RECIPES[cid] = list(imp["recipes"])
 
         elif kind == "recipe":
-            cid = p["menuId"]
+            cid = p.get("menuId")
+            if not (isinstance(cid, str) and REAL_ID.fullmatch(cid)):
+                continue  # check() asks which menu it joins
             entry = CAPACITY.setdefault(cid, dict(maxServes=12, fuel=4, items=[], notes=[]))
             entry.setdefault("items", []).extend(dict(i) for i in (p.get("capacity") or {}).get("items") or [])
             entry.setdefault("notes", []).extend((p.get("capacity") or {}).get("notesAdd") or [])
@@ -653,10 +734,12 @@ def _place(sec, div, placement, course, classify):
     existing = sec.select(".recipe")
     after = (placement or {}).get("after")
     if after:
-        for d in existing:
-            if after.lower() in _recipe_title(d).lower():
-                d.insert_after(div)
-                return
+        # Only an unambiguous match counts; anything else falls through to course
+        # order, and check() says where the dish landed.
+        hits = [d for d in existing if after.lower() in _recipe_title(d).lower()]
+        if len(hits) == 1:
+            hits[0].insert_after(div)
+            return
     if (placement or {}).get("position") == "end" or not existing or not classify:
         sec.append(div)
         return
@@ -780,9 +863,14 @@ def check(data, payloads, meta_table, lib_chapters, book_ids, classify):
             warnings.extend(_kit(p["recipes"], p["capacity"].get("items") or [], f))
 
         elif kind == "recipe":
-            cid = p["menuId"]
+            cid = p.get("menuId")
             if cid not in menus:
-                errors.append(f"{f}: menuId {cid!r} is not an existing menu chapter")
+                what = "is not an existing menu chapter" if isinstance(cid, str) \
+                    and REAL_ID.fullmatch(cid) else "is a placeholder"
+                errors.append(f"{f}: menuId {cid!r} {what}. A recipe joins a menu that "
+                              f"already exists, and which one is an editorial choice, so it "
+                              f"cannot be assigned automatically. Set menuId to one of:\n"
+                              + menu_index(data["menus"], indent="      "))
                 continue
             r = p["recipe"]
             got = classify(meta_line(r))
@@ -796,8 +884,15 @@ def check(data, payloads, meta_table, lib_chapters, book_ids, classify):
                 want = p["placement"]["after"].lower()
                 hits = [t for t in titles if want in t.lower() and t != r["title"]]
                 if len(hits) != 1:
-                    errors.append(f"{f}: placement.after {p['placement']['after']!r} matches "
-                                  f"{len(hits)} existing recipes in {cid}; it must match one")
+                    # Whoever wrote the payload could not see this chapter's titles,
+                    # so a miss is not fatal: course order is usually the right spot.
+                    at = titles.index(r["title"])
+                    where = f"after {titles[at - 1]!r}" if at else "first"
+                    warnings.append(
+                        f"{f}: placement.after {p['placement']['after']!r} matches "
+                        f"{len(hits)} recipes in {cid}, so it was placed in course order, "
+                        f"{where}. To move it, set placement.after to one of:\n"
+                        + "\n".join(f"      {t}" for t in titles if t != r["title"]))
             for it in (p.get("capacity") or {}).get("items") or []:
                 hits = [t for t in titles if it["match"].lower() in t.lower()]
                 if len(hits) != 1:
@@ -839,6 +934,11 @@ def check(data, payloads, meta_table, lib_chapters, book_ids, classify):
     errors.extend(_integrity(data, added, hard=True))
     warnings.extend(_integrity(data, added, hard=False))
     return errors, warnings
+
+
+def menu_index(menus, indent=""):
+    """One 'ch25  Title' line per menu, for choosing a menuId or afterChapter."""
+    return "\n".join(f"{indent}{m['id']:<6}{m['title']}" for m in menus)
 
 
 def _declared(p):

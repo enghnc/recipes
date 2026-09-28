@@ -1,0 +1,136 @@
+{
+  "kind": "recipe",
+  "menuId": "ch29",
+  "placement": {
+    "after": "TBD"
+  },
+  "recipe": {
+    "title": "Wagyu Filet and Burrata Toast",
+    "native": "with smoked tomato jam",
+    "course": "Starter",
+    "serves": "Serves 8",
+    "time": "2 hr, or 30 min with the jam made ahead",
+    "headnote": "Wagyu fat melts at a lower temperature than ordinary beef fat, so this filet wants a hard sear and very little time. Cook it like a normal filet and the marbling runs out into the coals and you have paid for nothing. Everything else on the toast is there to stand up to it: the burrata for cream, the jam for smoke and sharpness.",
+    "ingredients": [
+      "1 1/2 lb wagyu filet, centre cut, trimmed",
+      "Coarse salt",
+      "Black pepper",
+      "2 balls burrata, about 8 oz each",
+      "1 large sourdough loaf, cut into 16 slices about 1/2 inch thick",
+      "Olive oil for brushing",
+      "1 clove garlic, halved",
+      "Flaky salt to finish",
+      "Small handful basil leaves",
+      {
+        "sub": "Smoked tomato jam"
+      },
+      "2 lb ripe plum tomatoes, halved lengthways",
+      "1 shallot, finely chopped",
+      "1/2 cup light brown sugar",
+      "1/4 cup sherry vinegar",
+      "Pinch chilli flakes",
+      "1 tsp salt"
+    ],
+    "method": [
+      "For the jam, set the tomatoes cut side up on the cool side of Kettle A with a wood chunk on the coals. Lid on, vents half open, **45 minutes**, until they have slumped and taken on colour.",
+      "Chop them roughly and put them in a small pan with the shallot, sugar, vinegar, chilli and salt. Simmer over the cool side, stirring more often as it thickens, **40 to 45 minutes**, until a spoon dragged across the bottom leaves a clean line. Cool to room temperature.",
+      "Salt the filet an hour ahead and leave it on a rack at room temperature. Take the burrata out of the fridge at the same time; cold burrata tastes of nothing.",
+      "Sear the filet directly over the hottest part of Kettle A, turning a quarter turn every 90 seconds, until crusted on all sides. Move it to the cool side, lid on, until it reads **125°F** at the centre, about **10 to 15 minutes** in total.",
+      "Rest it **10 minutes** and pepper it now, not before, so the pepper does not scorch.",
+      "While it rests, brush the bread with oil and toast it over the hot side, about 1 minute a side, then rub each slice once with the cut garlic.",
+      "Slice the filet as thinly as you can across the grain. Spread each toast with jam, tear burrata over it, lay beef on top and finish with flaky salt and a torn basil leaf."
+    ],
+    "notes": [
+      {
+        "kind": "warn",
+        "label": "Watch out",
+        "text": "The fat renders fast and flares hard. If the fire jumps, move the filet to the cool side for a moment rather than closing the lid on it, which smothers the flame but coats the meat in soot."
+      },
+      {
+        "kind": "ahead",
+        "label": "Make ahead",
+        "text": "The jam keeps two weeks in the fridge and is better after a day. Bring it back to room temperature before spreading."
+      },
+      {
+        "kind": "note",
+        "label": "On the beef",
+        "text": "This is written for American or Australian wagyu. Japanese A5 is too rich to eat in these quantities; if that is what you have, halve the amount and slice it thinner still."
+      }
+    ],
+    "plating": {
+      "style": "board",
+      "text": "Assembled on the board at the last moment and passed by hand, one toast each, before anyone has sat down. The burrata goes limp if they wait."
+    }
+  },
+  "menuLine": {
+    "dishes": [
+      "Wagyu filet and burrata toast"
+    ],
+    "note": "with smoked tomato jam, passed before anyone sits"
+  },
+  "shoppingAdds": {
+    "Meat": [
+      "wagyu filet 1 1/2 lb, centre cut"
+    ],
+    "Produce": [
+      "2 lb ripe plum tomatoes",
+      "1 shallot",
+      "1 head garlic",
+      "small bunch basil"
+    ],
+    "Dairy": [
+      "2 balls burrata, about 8 oz each"
+    ],
+    "Bakery": [
+      "1 large sourdough loaf"
+    ],
+    "Pantry": [
+      "light brown sugar",
+      "sherry vinegar",
+      "chilli flakes",
+      "flaky salt"
+    ]
+  },
+  "capacity": {
+    "items": [
+      {
+        "match": "Wagyu",
+        "type": "grate",
+        "sqin8": 150,
+        "zone": "direct",
+        "note": "Filet and toast share the hot side. Toast the bread while the beef rests, not alongside it."
+      },
+      {
+        "match": "Wagyu",
+        "type": "grate",
+        "sqin8": 100,
+        "zone": "indirect",
+        "note": "Only on the day if the jam is not made ahead."
+      }
+    ]
+  },
+  "facetAdds": {
+    "proteins": [
+      "Beef"
+    ]
+  },
+  "timelineAdds": [
+    {
+      "when": "T–3 hr",
+      "what": "Smoke the tomatoes on the cool side of Kettle A, then cook down the jam. Or make it up to two weeks ahead."
+    },
+    {
+      "when": "T–1 hr",
+      "what": "Salt the wagyu and leave it out. Burrata out of the fridge."
+    },
+    {
+      "when": "T–30 min",
+      "what": "Sear the wagyu on Kettle A, then finish on the cool side to 125°F."
+    },
+    {
+      "when": "T–15 min",
+      "what": "Toast the bread while the beef rests. Slice and assemble."
+    }
+  ],
+  "newFacetValues": {}
+}

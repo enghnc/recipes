@@ -1,0 +1,114 @@
+{
+  "kind": "recipe",
+  "menuId": "ch25",
+  "placement": {
+    "after": "Morcilla a la Parrilla"
+  },
+  "recipe": {
+    "title": "Seared Scallops with Balsamic Bacon Jam",
+    "native": "scallops in a hot iron pan, bacon jam on top",
+    "course": "Starter",
+    "serves": "Serves 8",
+    "time": "1 hr",
+    "headnote": "A wet scallop steams instead of searing, and a steamed scallop is grey and rubbery. Buy dry-packed, pat them dry, and get the pan hotter than feels sensible. The jam does the rest: sweet, sharp and smoky against the one caramelised face.",
+    "ingredients": [
+      "24 large dry-packed sea scallops, about 2 lb, side muscle removed",
+      "Coarse salt",
+      "2 tbsp neutral oil",
+      "1 tbsp butter",
+      {
+        "sub": "Balsamic bacon jam"
+      },
+      "12 oz thick-cut bacon, cut into 1/2-inch pieces",
+      "1 large onion, finely diced",
+      "2 cloves garlic, minced",
+      "1/3 cup dark brown sugar",
+      "1/4 cup balsamic vinegar",
+      "1/4 cup water",
+      "Pinch of chilli flakes",
+      "Black pepper",
+      "Chives, finely cut, to finish"
+    ],
+    "method": [
+      "For the jam, render the bacon in a 12-inch cast-iron pan over the cooler side of Kettle A until crisp, about **12 minutes**. Lift it out and pour off all but 2 tbsp of the fat.",
+      "Cook the onion in that fat until soft and golden, about **10 minutes**, then add the garlic for a minute.",
+      "Return the bacon with the sugar, vinegar, water and chilli. Simmer, stirring, **15 to 20 minutes**, until it is thick and glossy and a spoon dragged through leaves a clear track. Chop it roughly and keep it warm at the edge of the grill.",
+      "Wipe the pan out and set it over the hottest coals for a good **5 minutes**. Pat the scallops dry again and salt them only now.",
+      "Oil the pan and lay the scallops in clockwise, 12 at a time, flat side down. Leave them alone for **2 minutes** until a deep brown crust releases them from the pan.",
+      "Flip, add the butter, and give them **1 minute** more, until the centre reads **120°F**. They should still give slightly when pressed. Repeat with the second batch.",
+      "Top each scallop with a small spoonful of warm jam and a pinch of chives."
+    ],
+    "notes": [
+      {
+        "kind": "warn",
+        "label": "Watch out",
+        "text": "Wet-packed scallops will not brown however hot the pan is. If that is all you can get, lay them on paper towels in the fridge for an hour before cooking, and crowd the pan less."
+      },
+      {
+        "kind": "ahead",
+        "label": "Make ahead",
+        "text": "The jam keeps a week in the fridge. Warm it through with a splash of water before spooning it on, or it sits on the scallop in a cold lump."
+      }
+    ],
+    "plating": {
+      "style": "platter",
+      "text": "Seared side up in rows on a warm platter, a spoonful of jam on each, handed round with cocktail forks while the next batch is in the pan."
+    }
+  },
+  "menuLine": {
+    "dishes": [
+      "Seared scallops with balsamic bacon jam"
+    ],
+    "note": "a hard sear in the iron pan, eaten straight off the platter"
+  },
+  "shoppingAdds": {
+    "Seafood": [
+      "24 large dry-packed sea scallops, about 2 lb"
+    ],
+    "Meat": [
+      "thick-cut bacon 12 oz"
+    ],
+    "Produce": [
+      "1 large onion",
+      "1 head garlic",
+      "small bunch chives"
+    ],
+    "Pantry": [
+      "balsamic vinegar",
+      "dark brown sugar",
+      "chilli flakes"
+    ]
+  },
+  "capacity": {
+    "items": [
+      {
+        "match": "Seared Scallops",
+        "type": "skillet",
+        "loads8": 2,
+        "note": "A 12-inch pan takes 12 scallops without crowding. Crowd it and they steam."
+      }
+    ]
+  },
+  "facetAdds": {
+    "proteins": [
+      "Shellfish",
+      "Pork"
+    ],
+    "technique": [
+      "Cast iron"
+    ]
+  },
+  "timelineAdds": [
+    {
+      "when": "T–3 hr",
+      "what": "Bacon jam. Keep it warm at the edge of the grill or reheat it later.",
+      "after": "T–24 hr"
+    },
+    {
+      "when": "T–15 min",
+      "what": "Cast-iron pan over the hottest coals on Kettle A. Sear the scallops in two batches.",
+      "after": "T–20 min"
+    }
+  ],
+  "newFacetValues": {}
+}

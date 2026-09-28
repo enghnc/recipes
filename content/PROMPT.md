@@ -64,6 +64,51 @@ Never write a literal `\uXXXX` escape. Write the character: `—`, `·`, `°`, `
 | `library` | Adding a shared sauce, dough, rub or marinade that several menus can reference. |
 | `patch` | Only changing the facets of an existing menu. Touches no recipe text. |
 
+**Chapter numbers.** For a `menu`, write `"chapterId": "auto"`. You cannot see which
+numbers the book has used, so the build assigns the next free one. For `recipe` and
+`patch`, and for a menu's `afterChapter`, pick a real id from this list. Which menu a
+dish joins is a choice, so it can never be left as a placeholder like `chXX`:
+
+```
+ch25  Argentine Asado
+ch26  Fourth of July Low & Slow
+ch27  Yakitori & Robata
+ch28  Aegean Seafood
+ch29  Mexican Taquiza
+ch30  Moroccan Mechoui
+ch31  Tuscan Harvest
+ch32  Pollo a la Brasa
+ch33  Punjabi Tandoori
+ch34  Jamaican Jerk
+ch35  Alsatian Christmas
+ch36  Hanoi Bún Chả
+ch37  Down East Clambake
+ch38  Santa Maria Style
+ch39  New Orleans Winter
+ch40  Pacific Northwest
+ch41  Wisconsin Tailgate
+ch42  Island Style Luau
+ch43  Lunar New Year Duck
+ch44  Kettle Thanksgiving
+ch45  Owensboro Mutton
+ch46  Nordic Hunter's Table
+ch47  Calçotada
+ch48  Nochebuena Lechón
+ch54  Bistro Classique
+ch55  Grand Aïoli
+ch57  Carolina Pulled Pork
+ch58  Philadelphia Roast Pork
+ch59  Gua Bao
+ch60  Bánh Mì
+ch61  Turkish Kahvaltı
+ch62  New York Deli
+ch63  Southern Smoke Brunch
+ch64  Almuerzo Mexicano
+```
+
+For a `recipe`, leave out `placement`. You cannot see the chapter's existing titles,
+and the build puts the dish in course order, which is almost always right.
+
 The full field list is in `data/schema/content.schema.json`, and there is a complete
 worked example of each kind in `content/examples/`. Read the schema — every field has
 a description explaining what it is for.
@@ -92,7 +137,8 @@ These grow as the book grows, and every distinct value becomes a filter chip. A 
 miss like `Cast Iron` when the book already says `Cast iron` creates a duplicate chip
 that splits the filter in two. **Reuse an existing value whenever one fits.**
 
-Current vocabulary (run `npm run vocab` for the live list):
+Current vocabulary (run `npm run vocab` for the live list, which also prints the
+menu list in §4):
 
 - **region** (31): "Argentina", "China", "Cuba", "France · Alsace", "France · Paris", "France · Provence", "Greece", "Hawaii", "India · Punjab", "Italy", "Jamaica", "Japan", "Mexico", "Morocco", "Peru", "Scandinavia", "Spain · Catalonia", "Taiwan", "Turkey", "United States", "United States · California", "United States · Carolinas", "United States · Kentucky", "United States · Louisiana", "United States · Midwest", "United States · New England", "United States · New York", "United States · Pacific NW", "United States · Philadelphia", "United States · South", "Vietnam"
 - **continent** (7): "Africa", "Asia", "Caribbean", "Europe", "North America", "Pacific", "South America"
@@ -218,7 +264,7 @@ Check each of these:
 - [ ] Every new facet value is declared in `newFacetValues`.
 - [ ] `totalMin` ≥ `activeMin`.
 - [ ] No HTML, no `\uXXXX` escapes, no unbalanced `**` or `((`.
-- [ ] `chapterId` is a number not already used in the book, and `afterChapter` is an
-      existing menu chapter.
+- [ ] A menu's `chapterId` is `"auto"`. Every `menuId`, `target` and `afterChapter`
+      is a real id from the list in §4, never a placeholder.
 
 Then output the JSON object alone.

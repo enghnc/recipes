@@ -47,7 +47,7 @@ npm run build        # extract, then build the web app into dist/
 npm run build:pdf    # extract, then build the PDF into dist/
 npm test             # run the smoke tests against dist/
 npm run dev          # serve app/ at http://localhost:8000
-npm run validate     # check content/*.json without writing anything
+npm run validate     # check content/*.json without writing anything (build assigns ids)
 npm run vocab        # print the current facet vocabulary
 npm run emit-html    # write generated chapters to book/_generated/ to paste into book/
 ```
@@ -135,6 +135,17 @@ npm run validate && npm run build && npm test
 Four payload kinds: `menu` (a whole chapter), `recipe` (one dish into an existing
 chapter), `library` (a shared sauce/dough/rub), `patch` (facet edits to an existing
 menu, which is how you change categories without touching recipe text).
+
+**Chapter ids are assigned, not authored.** Whoever writes a payload cannot see
+which chapter numbers are free, so a `menu` payload's `chapterId` may be `"auto"`,
+missing, or already taken. `content.assign_chapter_ids()` gives it the next free
+number. `npm run build` writes that number back into the JSON so permalinks and photo
+keys never move; `npm run validate` only reports it. A `recipe` payload's `menuId` is
+not assigned: which menu a dish joins is an editorial choice, so a placeholder there
+fails with the list of menus to choose from. A `placement.after` that is
+`"TBD"` is dropped. One that matches no recipe title, or more than one, is a warning
+rather than an error: the dish lands in course order, and the warning says where and
+lists the chapter's titles.
 
 `content/PROMPT.md` is the brief to paste into Claude on the web along with
 `data/schema/content.schema.json`. It carries the two-kettle rule, the prose style,
